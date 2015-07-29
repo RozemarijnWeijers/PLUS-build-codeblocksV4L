@@ -1,0 +1,6 @@
+set(ITKIOTIFF_LOADED 1)
+set(ITKIOTIFF_DEPENDS "ITKIOImageBase;ITKTIFF")
+set(ITKIOTIFF_LIBRARIES "ITKIOTIFF")
+set(ITKIOTIFF_INCLUDE_DIRS "/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/TIFF/include")
+set(ITKIOTIFF_LIBRARY_DIRS "")
+

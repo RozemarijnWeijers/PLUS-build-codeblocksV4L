@@ -1,0 +1,9 @@
+# Target labels
+ ITKVNL
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core/testlib/testlib_test.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core/testlib/testlib_test.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core/testlib/testlib_register.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core/testlib/testlib_main.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core/testlib/testlib_root_dir.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core/testlib/testlib_root_dir.cxx

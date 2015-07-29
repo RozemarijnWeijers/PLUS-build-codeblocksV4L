@@ -1,0 +1,30 @@
+# Target labels
+ vtkParallelCore
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkCommunicator.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkDummyCommunicator.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkDummyController.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkMultiProcessController.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkMultiProcessStream.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkProcess.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkProcessGroup.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSocketCommunicator.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSocketController.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSubCommunicator.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSubGroup.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkFieldDataSerializer.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Parallel/Core/vtkSocketCommunicatorHash.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkCommunicator.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkDummyCommunicator.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkDummyController.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkMultiProcessController.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkMultiProcessStream.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkProcess.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkProcessGroup.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSocketCommunicator.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSocketController.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSubCommunicator.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkSubGroup.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Parallel/Core/vtkFieldDataSerializer.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Parallel/Core/vtkParallelCoreModule.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Parallel/Core/vtkSocketCommunicatorHash.h.rule

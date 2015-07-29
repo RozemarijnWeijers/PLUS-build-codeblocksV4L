@@ -1,0 +1,14 @@
+# Target labels
+ vtkRenderingQt
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQImageToImageSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtInitialization.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtLabelRenderStrategy.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtStringToImage.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtTreeRingLabelMapper.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQImageToImageSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtInitialization.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtLabelRenderStrategy.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtStringToImage.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Qt/vtkQtTreeRingLabelMapper.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/Qt/vtkRenderingQtModule.h

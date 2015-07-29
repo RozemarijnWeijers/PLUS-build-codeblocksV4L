@@ -1,0 +1,6 @@
+time|level|timeoffset|message|location
+070915_135131.017|INFO|000.000385| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+070915_135131.017|INFO|000.000450| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/070915_135131_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+070915_135131.017|ERROR|000.000636| VTK log: ERROR: In /home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLParser.cxx, line 483|vtkXMLDataParser (0x2ac4a60): Error parsing XML in stream at line 55, column 8, byte index 2020: mismatched tag||| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(75)
+070915_135131.017|ERROR|000.000665| Last error: Success| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(81)
+070915_135131.017|ERROR|000.000706| Reading device set configuration file failed: syntax error in /home/snr/Documents/slicerigt-data/SlicerIGT-Data/Config_roos/OpenIGTLink-Device-config.xml| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(101)

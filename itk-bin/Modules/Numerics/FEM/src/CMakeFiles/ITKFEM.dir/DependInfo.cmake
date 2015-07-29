@@ -1,0 +1,136 @@
+# The set of languages for which implicit dependencies are needed:
+SET(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+SET(CMAKE_DEPENDS_CHECK_C
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/dsrc2c.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/dsrc2c.c.o"
+  )
+SET(CMAKE_C_COMPILER_ID "GNU")
+SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearLine.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearLine.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearLineStress.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearLineStress.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearQuadrilateral.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearQuadrilateral.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearQuadrilateralMembrane.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearQuadrilateralMembrane.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearQuadrilateralStrain.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearQuadrilateralStrain.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearQuadrilateralStress.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearQuadrilateralStress.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearTriangular.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearTriangular.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearTriangularMembrane.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearTriangularMembrane.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearTriangularStrain.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearTriangularStrain.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0LinearTriangularStress.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0LinearTriangularStress.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0QuadraticTriangular.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0QuadraticTriangular.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0QuadraticTriangularStrain.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0QuadraticTriangularStrain.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC0QuadraticTriangularStress.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC0QuadraticTriangularStress.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement2DC1Beam.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement2DC1Beam.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearHexahedron.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearHexahedron.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearHexahedronMembrane.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearHexahedronMembrane.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearHexahedronStrain.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearHexahedronStrain.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearTetrahedron.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearTetrahedron.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearTetrahedronMembrane.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearTetrahedronMembrane.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearTetrahedronStrain.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearTetrahedronStrain.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearTriangular.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearTriangular.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearTriangularLaplaceBeltrami.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearTriangularLaplaceBeltrami.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElement3DC0LinearTriangularMembrane.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElement3DC0LinearTriangularMembrane.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMElementBase.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMElementBase.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMException.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMException.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMFactoryBase.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMFactoryBase.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMItpackSparseMatrix.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMItpackSparseMatrix.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLightObject.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLightObject.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLinearSystemWrapper.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLinearSystemWrapper.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLinearSystemWrapperDenseVNL.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLinearSystemWrapperDenseVNL.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLinearSystemWrapperItpack.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLinearSystemWrapperItpack.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLinearSystemWrapperVNL.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLinearSystemWrapperVNL.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadBC.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadBC.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadBCMFC.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadBCMFC.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadBase.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadBase.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadEdge.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadEdge.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadElementBase.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadElementBase.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadGrav.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadGrav.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadLandmark.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadLandmark.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadNode.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadNode.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadNoisyLandmark.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadNoisyLandmark.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMLoadPoint.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMLoadPoint.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMMaterialBase.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMMaterialBase.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMMaterialLinearElasticity.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMMaterialLinearElasticity.cxx.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/src/itkFEMUtility.cxx" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/FEM/src/CMakeFiles/ITKFEM.dir/itkFEMUtility.cxx.o"
+  )
+SET(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Pairs of files generated by the same build rule.
+SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/lib/libITKFEM-4.7.so" "/home/snr/Support/Plus-build-codeblocks/itk-bin/lib/libITKFEM-4.7.so.1"
+  )
+
+
+# Targets to which this target links.
+SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/MetaIO/src/MetaIO/CMakeFiles/ITKMetaIO.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Core/Common/src/CMakeFiles/ITKCommon.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/Statistics/src/CMakeFiles/ITKStatistics.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Core/SpatialObjects/src/CMakeFiles/ITKSpatialObjects.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Filtering/Path/src/CMakeFiles/ITKPath.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Numerics/Optimizers/src/CMakeFiles/ITKOptimizers.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/ZLIB/src/itkzlib/CMakeFiles/itkzlib.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/Core/Mesh/src/CMakeFiles/ITKMesh.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/IO/ImageBase/src/CMakeFiles/ITKIOImageBase.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/itksys.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/VNLInstantiation/src/CMakeFiles/ITKVNLInstantiation.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo/CMakeFiles/itkvnl_algo.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib/linalg/CMakeFiles/itkv3p_lsqr.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/VNL/src/vxl/core/vnl/CMakeFiles/itkvnl.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/VNL/src/vxl/vcl/CMakeFiles/itkvcl.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/DoubleConversion/src/double-conversion/CMakeFiles/itkdouble-conversion.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/DependInfo.cmake"
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib/CMakeFiles/itkv3p_netlib.dir/DependInfo.cmake"
+  )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion"
+  "Modules/ThirdParty/KWSys/src"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/v3p/netlib"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/vcl"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core"
+  "Modules/ThirdParty/VNL/src/vxl/v3p/netlib"
+  "Modules/ThirdParty/VNL/src/vxl/vcl"
+  "Modules/ThirdParty/VNL/src/vxl/core"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNLInstantiation/include"
+  "Modules/Core/Common"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/Common/include"
+  "Modules/IO/ImageBase"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/ImageBase/include"
+  "Modules/ThirdParty/Expat/src/expat"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Expat/src/expat"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/XML/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/ImageAdaptors/include"
+  "Modules/ThirdParty/Netlib"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageFilterBase/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/Transform/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/ImageFunction/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/Mesh/include"
+  "Modules/ThirdParty/ZLIB/src"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/ZLIB/src"
+  "Modules/ThirdParty/MetaIO/src/MetaIO"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/MetaIO/src/MetaIO"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/SpatialObjects/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/SpatialObjects/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageGrid/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageCompose/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageStatistics/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/Path/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageIntensity/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/DisplacementField/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/FiniteDifference/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/Smoothing/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageGradient/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageSources/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageFeature/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Registration/Common/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/FEM/include"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

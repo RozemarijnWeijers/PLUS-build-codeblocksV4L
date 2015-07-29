@@ -1,0 +1,13 @@
+# Target labels
+ ITKStatistics
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkDenseFrequencyContainer2.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkSparseFrequencyContainer2.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkChiSquareDistribution.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkGaussianDistribution.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkTDistribution.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkNormalVariateGenerator.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkDecisionRule.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkMaximumDecisionRule.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkMaximumRatioDecisionRule.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/src/itkMinimumDecisionRule.cxx

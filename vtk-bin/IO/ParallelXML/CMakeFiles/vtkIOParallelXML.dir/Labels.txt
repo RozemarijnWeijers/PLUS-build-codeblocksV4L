@@ -1,0 +1,28 @@
+# Target labels
+ vtkIOParallelXML
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPDataSetWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPDataWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPImageDataWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPPolyDataWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPRectilinearGridWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPStructuredDataWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPStructuredGridWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPDataSetWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPDataWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPImageDataWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPPolyDataWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPRectilinearGridWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPStructuredDataWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPStructuredGridWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/ParallelXML/vtkIOParallelXMLModule.h

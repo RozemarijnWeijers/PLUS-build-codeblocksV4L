@@ -1,0 +1,20 @@
+# Target labels
+ vtkpng
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngget.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngrio.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngwrite.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/png.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngmem.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngrtran.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngtrans.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngwtran.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngerror.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngpread.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngrutil.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngvcrd.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngwutil.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pnggccrd.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngread.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngset.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/png/vtkpng/pngwio.c

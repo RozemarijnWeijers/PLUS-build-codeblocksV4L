@@ -1,0 +1,4 @@
+# Target labels
+ ITKNIFTI
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/NIFTI/src/nifti/niftilib/nifti1_io.c

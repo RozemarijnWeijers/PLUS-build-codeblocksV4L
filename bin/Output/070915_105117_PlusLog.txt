@@ -1,0 +1,3 @@
+time|level|timeoffset|message|location
+070915_105117.977|INFO|000.000412| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+070915_105117.977|ERROR|000.000488| --config-file argument is required!| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(80)

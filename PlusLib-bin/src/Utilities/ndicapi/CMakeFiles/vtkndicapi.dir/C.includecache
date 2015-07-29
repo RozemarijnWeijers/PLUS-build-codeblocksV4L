@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^(ndicapi|polaris).*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi.c
+ndicapi.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi.h
+ndicapi_thread.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_thread.h
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi.h
+ndicapi_serial.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_serial.h
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_math.c
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_serial.c
+ndicapi_serial.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_serial.h
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_serial.h
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_thread.c
+ndicapi_thread.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_thread.h
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/ndicapi/ndicapi_thread.h
+

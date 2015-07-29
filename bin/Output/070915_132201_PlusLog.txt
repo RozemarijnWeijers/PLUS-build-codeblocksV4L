@@ -1,0 +1,9 @@
+time|level|timeoffset|message|location
+070915_132201.654|INFO|000.000387| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+070915_132201.654|INFO|000.000466| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/070915_132201_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+070915_132201.656|ERROR|000.002376| Video image orientation is not defined in the source 'Video' element - please set PortUsImageOrientation in the source configuration| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDataSource.cxx(273)
+070915_132201.657|INFO|000.002676| TrackedVideoDevice3: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+070915_132202.156|ERROR|000.502394| Socket error in device TrackedVideoDevice3: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(214)
+070915_132202.157|WARNING|000.502665| No OpenIGTLink message has been received in device TrackedVideoDevice3: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(196)
+070915_132202.660|INFO|001.005926| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+070915_132202.660|INFO|001.006041| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)

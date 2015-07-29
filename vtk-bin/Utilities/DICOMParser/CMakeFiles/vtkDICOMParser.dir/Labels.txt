@@ -1,0 +1,6 @@
+# Target labels
+ vtkDICOMParser
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/DICOMParser/DICOMFile.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/DICOMParser/DICOMParser.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/DICOMParser/DICOMAppHelper.cxx

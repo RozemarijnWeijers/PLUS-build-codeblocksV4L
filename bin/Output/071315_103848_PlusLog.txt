@@ -1,0 +1,6 @@
+time|level|timeoffset|message|location
+071315_103848.584|INFO|000.000462| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+071315_103848.584|INFO|000.000531| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/071315_103848_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+071315_103848.584|ERROR|000.000701| VTK log: ERROR: In /home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLParser.cxx, line 483|vtkXMLDataParser (0x2967a60): Error parsing XML in stream at line 68, column 16, byte index 2408: not well-formed (invalid token)||| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(75)
+071315_103848.584|ERROR|000.000731| Last error: Success| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(81)
+071315_103848.584|ERROR|000.000769| Reading device set configuration file failed: syntax error in /home/snr/Documents/slicerigt-data/SlicerIGT-Data/Config_roos/OpenIGTLink-Device-config.xml| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(101)

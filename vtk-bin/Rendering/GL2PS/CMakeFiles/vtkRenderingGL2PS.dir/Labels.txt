@@ -1,0 +1,8 @@
+# Target labels
+ vtkRenderingGL2PS
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/GL2PS/vtkGL2PSContextDevice2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/GL2PS/vtkGL2PSUtilities.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/GL2PS/vtkGL2PSContextDevice2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/GL2PS/vtkGL2PSUtilities.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/GL2PS/vtkRenderingGL2PSModule.h

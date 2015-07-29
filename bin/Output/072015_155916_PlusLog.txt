@@ -1,0 +1,12 @@
+time|level|timeoffset|message|location
+072015_155916.035|INFO|000.000402| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+072015_155916.035|INFO|000.000483| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/072015_155916_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+072015_155916.038|INFO|000.004045| EmTracker: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+072015_155921.437|INFO|005.402815| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+072015_155921.437|INFO|005.403031| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+072015_155922.954|INFO|006.919719| Received new client connection (client 1 at 127.0.0.1:18944). Number of connected clients: 1| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(200)
+072015_155923.038|INFO|007.003622| OpenIGTLink broadcasting started. No data was available between 0-4.40857sec, therefore no data were broadcasted during this time period.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(387)
+072015_155959.336|INFO|043.301828| Stop requested...| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(354)
+072015_160000.137|INFO|044.102268| Client disconnected (127.0.0.1:18944). Number of connected clients: 0| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(742)
+072015_160000.137|INFO|044.102317| Plus OpenIGTLink server stopped.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(157)
+072015_160000.137|INFO|044.102338| Shutdown successful.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(259)

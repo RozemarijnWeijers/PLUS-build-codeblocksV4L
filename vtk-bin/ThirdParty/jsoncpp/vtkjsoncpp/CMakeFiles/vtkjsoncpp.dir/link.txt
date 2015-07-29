@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -w -w -w -g -Wl,--fatal-warnings -Wl,--no-undefined -lc    -shared -Wl,-soname,libvtkjsoncpp-6.2.so.1 -o /home/snr/Support/Plus-build-codeblocks/bin/libvtkjsoncpp-6.2.so.1 CMakeFiles/vtkjsoncpp.dir/json_reader.cpp.o CMakeFiles/vtkjsoncpp.dir/json_value.cpp.o CMakeFiles/vtkjsoncpp.dir/json_writer.cpp.o 

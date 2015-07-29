@@ -1,0 +1,9 @@
+time|level|timeoffset|message|location
+071515_160548.446|INFO|000.000471| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+071515_160548.447|INFO|000.001249| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/071515_160548_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+071515_160548.451|INFO|000.005411| EmTracker: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+071515_160553.878|INFO|005.432166| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+071515_160553.878|INFO|005.432379| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+071515_160701.384|INFO|072.938159| Received new client connection (client 1 at 127.0.0.1:18944). Number of connected clients: 1| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(200)
+071515_160701.503|INFO|073.057709| OpenIGTLink broadcasting started. No data was available between 0-48.2954sec, therefore no data were broadcasted during this time period.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(387)
+071515_160724.367|INFO|095.921069| Received new client connection (client 2 at 127.0.0.1:18944). Number of connected clients: 2| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(200)

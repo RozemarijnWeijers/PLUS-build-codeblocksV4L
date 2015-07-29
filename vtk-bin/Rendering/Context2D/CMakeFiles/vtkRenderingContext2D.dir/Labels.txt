@@ -1,0 +1,44 @@
+# Target labels
+ vtkRenderingContext2D
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkAbstractContextBufferId.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkAbstractContextItem.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkBlockItem.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkBrush.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContext2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContext3D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextActor.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextClip.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextDevice2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextDevice3D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextItem.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextKeyEvent.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextMapper2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextMouseEvent.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextScene.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextTransform.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkImageItem.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkMarkerUtilities.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkPen.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkTooltipItem.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkAbstractContextBufferId.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkAbstractContextItem.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkBlockItem.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkBrush.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContext2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContext3D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextActor.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextClip.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextDevice2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextDevice3D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextItem.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextKeyEvent.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextMapper2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextMouseEvent.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextScene.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkContextTransform.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkImageItem.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkMarkerUtilities.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkPen.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Context2D/vtkTooltipItem.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/Context2D/vtkRenderingContext2DModule.h

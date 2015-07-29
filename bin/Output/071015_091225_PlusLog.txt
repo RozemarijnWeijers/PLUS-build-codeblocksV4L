@@ -1,0 +1,8 @@
+time|level|timeoffset|message|location
+071015_091225.078|INFO|000.000407| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+071015_091225.078|INFO|000.000474| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/071015_091225_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+071015_091225.079|INFO|000.001918| Selected US image orientation: MF| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDataSource.cxx(264)
+071015_091225.080|INFO|000.002162| VideoDevice: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+071015_091226.083|WARNING|001.005127| EmbeddedTransformToFrame attribute of ImageNames/Image element is missing. This element will be ignored.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusOpenIGTLink/PlusIgtlClientInfo.cxx(100)
+071015_091226.083|INFO|001.005295| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+071015_091226.083|INFO|001.005391| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)

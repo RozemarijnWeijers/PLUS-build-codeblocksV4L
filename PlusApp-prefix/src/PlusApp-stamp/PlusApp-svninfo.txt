@@ -1,0 +1,3 @@
+repository='https://subversion.assembla.com/svn/plus/trunk/PlusApp user=perklab_anonymous password=anonymous'
+module=''
+tag=''

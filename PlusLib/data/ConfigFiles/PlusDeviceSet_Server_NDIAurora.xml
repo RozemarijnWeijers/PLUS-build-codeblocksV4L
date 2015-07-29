@@ -1,0 +1,36 @@
+<PlusConfiguration version="2.1" PlusRevision="Plus-2.1.2.3381 - Win32">
+  <DataCollection StartupDelaySec="1">
+    <DeviceSet
+      Name="PlusServer: NDI Aurora tracker"
+      Description="Broadcasting tool tracking data through OpenIGTLink
+      Tracking a single EM pointer." />
+    <Device
+      Id="EmTracker"
+      Type="AuroraTracker"
+      SerialPort="4"
+      BaudRate="115200"
+      AcquisitionRate="20"
+      LocalTimeOffsetSec="0.0"
+      ToolReferenceFrame="EmTracker" >
+      <DataSources>
+        <DataSource Type="Tool" Id="EmPointer" PortName="0" BufferSize="500" AverageItemsForFiltering="20" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="EmTrackerStream">
+          <DataSource Id="EmPointer" />
+        </OutputChannel>
+      </OutputChannels>
+    </Device>
+  </DataCollection>
+
+  <PlusOpenIGTLinkServer ListeningPort="18944" OutputChannelId="EmTrackerStream">
+    <DefaultClientInfo>
+      <MessageTypes>
+        <Message Type="TRANSFORM" />
+      </MessageTypes>
+      <TransformNames>
+        <Transform Name="EmPointerToEmTracker" />
+      </TransformNames>
+    </DefaultClientInfo>
+  </PlusOpenIGTLinkServer>
+</PlusConfiguration>

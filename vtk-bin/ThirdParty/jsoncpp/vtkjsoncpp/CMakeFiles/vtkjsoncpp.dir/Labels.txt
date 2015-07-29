@@ -1,0 +1,9 @@
+# Target labels
+ vtkjsoncpp
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/jsoncpp/vtkjsoncpp/json_tool.h
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/jsoncpp/vtkjsoncpp/json_reader.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/jsoncpp/vtkjsoncpp/json_batchallocator.h
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/jsoncpp/vtkjsoncpp/json_valueiterator.inl
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/jsoncpp/vtkjsoncpp/json_value.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/jsoncpp/vtkjsoncpp/json_writer.cpp

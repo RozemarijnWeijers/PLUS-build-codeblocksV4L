@@ -1,0 +1,19 @@
+<PlusConfiguration version="2.0">
+
+  <DataCollection StartupDelaySec="2.0" >
+    <DeviceSet 
+      Name="PlusServer: Video for Linux video capture device"
+      Description="Broadcasting acquired video through OpenIGTLink" />
+    <Device
+      Id="VideoDevice" 
+      Type="VFLVideo" >
+      <DataSources>
+        <DataSource Type="Video" Id="Video" PortUsImageOrientation="MF"  />     
+      </DataSources>      
+      <OutputChannels>
+        <OutputChannel Id="VideoStream" VideoDataSourceId="Video" />
+      </OutputChannels>
+    </Device>
+  </DataCollection>
+
+</PlusConfiguration>

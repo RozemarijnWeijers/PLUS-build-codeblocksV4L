@@ -1,0 +1,36 @@
+# Target labels
+ vtkMetaIO
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaTypes.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaUtils.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaArrow.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaBlob.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaCommand.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaCommand.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaContour.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaContour.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaDTITube.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaEllipse.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaGroup.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaGaussian.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaImage.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaImageUtils.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaLandmark.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaLine.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaMesh.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaMesh.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaObject.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaOutput.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaOutput.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaScene.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaSurface.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaTube.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaVesselTube.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaTransform.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaTubeGraph.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaForm.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaForm.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaArray.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaArray.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaFEMObject.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/MetaIO/vtkmetaio/metaFEMObject.cxx

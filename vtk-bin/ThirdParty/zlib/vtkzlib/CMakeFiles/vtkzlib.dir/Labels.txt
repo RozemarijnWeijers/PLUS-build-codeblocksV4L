@@ -1,0 +1,14 @@
+# Target labels
+ vtkzlib
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/adler32.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/compress.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/crc32.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/deflate.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/gzio.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/inffast.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/inflate.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/inftrees.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/trees.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/uncompr.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/zlib/vtkzlib/zutil.c

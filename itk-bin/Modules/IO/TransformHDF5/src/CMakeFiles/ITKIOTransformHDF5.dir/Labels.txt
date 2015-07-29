@@ -1,0 +1,5 @@
+# Target labels
+ ITKIOTransformHDF5
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/TransformHDF5/src/itkHDF5TransformIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/TransformHDF5/src/itkHDF5TransformIOFactory.cxx

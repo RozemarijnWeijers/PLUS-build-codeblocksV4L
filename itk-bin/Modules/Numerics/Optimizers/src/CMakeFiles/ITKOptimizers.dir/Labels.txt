@@ -1,0 +1,31 @@
+# Target labels
+ ITKOptimizers
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkConjugateGradientOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkRegularStepGradientDescentOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkLBFGSOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkExhaustiveOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkLevenbergMarquardtOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkSingleValuedNonLinearVnlOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkQuaternionRigidTransformGradientDescentOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkSPSAOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkSingleValuedVnlCostFunctionAdaptor.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkMultipleValuedNonLinearVnlOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkPowellOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkVersorRigid3DTransformOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkVersorTransformOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkOnePlusOneEvolutionaryOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkMultipleValuedNonLinearOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkLBFGSBOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkCumulativeGaussianOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkAmoebaOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkCumulativeGaussianCostFunction.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkFRPROptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkGradientDescentOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkSingleValuedNonLinearOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkRegularStepGradientDescentBaseOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkMultipleValuedVnlCostFunctionAdaptor.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkParticleSwarmOptimizerBase.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkParticleSwarmOptimizer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/src/itkInitializationBiasedParticleSwarmOptimizer.cxx

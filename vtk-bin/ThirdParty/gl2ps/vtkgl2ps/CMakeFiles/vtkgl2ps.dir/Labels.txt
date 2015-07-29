@@ -1,0 +1,4 @@
+# Target labels
+ vtkgl2ps
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/gl2ps/vtkgl2ps/gl2ps.c

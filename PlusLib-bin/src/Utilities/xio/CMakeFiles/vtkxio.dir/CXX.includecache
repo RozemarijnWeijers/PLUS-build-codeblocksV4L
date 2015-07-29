@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/AhrsAlgo.h
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/MadgwickAhrsAlgo.cxx
+MadgwickAhrsAlgo.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/MadgwickAhrsAlgo.h
+math.h
+-
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/MadgwickAhrsAlgo.h
+AhrsAlgo.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/AhrsAlgo.h
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/MahonyAhrsAlgo.cxx
+MahonyAhrsAlgo.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/MahonyAhrsAlgo.h
+math.h
+-
+
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/MahonyAhrsAlgo.h
+AhrsAlgo.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/Utilities/xio/AhrsAlgo.h
+

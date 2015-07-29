@@ -1,0 +1,10 @@
+# Target labels
+ vtkIOXMLParser
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLDataParser.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLParser.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLUtilities.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLDataParser.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLParser.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLUtilities.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/XMLParser/vtkIOXMLParserModule.h

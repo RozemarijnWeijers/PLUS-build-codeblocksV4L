@@ -1,0 +1,11 @@
+-I/usr/include/qt4
+-I/usr/include/qt4/QtOpenGL
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-DVTK_IN_VTK
+-DQT_OPENGL_LIB
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-o
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/GUISupport/QtOpenGL/moc_QVTKWidget2.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/GUISupport/QtOpenGL/QVTKWidget2.h

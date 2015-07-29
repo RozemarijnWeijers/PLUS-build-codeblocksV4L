@@ -1,0 +1,4 @@
+time|level|timeoffset|message|location
+070915_130241.636|INFO|000.000395| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+070915_130241.636|INFO|000.000474| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/070915_130241_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+070915_130241.637|ERROR|000.000529| Reading device set configuration file failed: home/snr/Documents/slicerigt-data/SlicerIGT-Data/Config_roos/OpenIGTLink-Device-config.xml does not exist in the current directory or in /home/snr/Documents/slicerigt-data/SlicerIGT-Data/Config_roos| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(94)

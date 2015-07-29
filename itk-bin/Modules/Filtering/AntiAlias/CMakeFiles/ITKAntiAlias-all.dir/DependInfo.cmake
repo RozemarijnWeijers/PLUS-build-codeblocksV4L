@@ -1,0 +1,67 @@
+# The set of languages for which implicit dependencies are needed:
+SET(CMAKE_DEPENDS_LANGUAGES
+  )
+# The set of files for implicit dependencies of each language:
+
+# Targets to which this target links.
+SET(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion"
+  "Modules/ThirdParty/KWSys/src"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/v3p/netlib"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/vcl"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core"
+  "Modules/ThirdParty/VNL/src/vxl/v3p/netlib"
+  "Modules/ThirdParty/VNL/src/vxl/vcl"
+  "Modules/ThirdParty/VNL/src/vxl/core"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNLInstantiation/include"
+  "Modules/Core/Common"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/Common/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/FiniteDifference/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageFilterBase/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/CurvatureFlow/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/ImageAdaptors/include"
+  "Modules/ThirdParty/Netlib"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Statistics/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/Transform/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/ImageFunction/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageGrid/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/AnisotropicSmoothing/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageCompose/include"
+  "Modules/IO/ImageBase"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/ImageBase/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/Mesh/include"
+  "Modules/ThirdParty/ZLIB/src"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/ZLIB/src"
+  "Modules/ThirdParty/MetaIO/src/MetaIO"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/MetaIO/src/MetaIO"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/SpatialObjects/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageStatistics/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/Path/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageIntensity/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageLabel/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/Thresholding/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/ConnectedComponents/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/MathematicalMorphology/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/LabelMap/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/BinaryMathematicalMorphology/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/NarrowBand/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/DistanceMap/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Core/QuadEdgeMesh/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/FastMarching/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageCompare/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/Smoothing/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageGradient/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageSources/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/ImageFeature/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizers/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/SignedDistanceFunction/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/LevelSets/include"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/Filtering/AntiAlias/include"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

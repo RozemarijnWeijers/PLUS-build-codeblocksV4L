@@ -1,0 +1,6 @@
+set(ITKIONRRD_LOADED 1)
+set(ITKIONRRD_DEPENDS "ITKIOImageBase;ITKNrrdIO")
+set(ITKIONRRD_LIBRARIES "ITKIONRRD")
+set(ITKIONRRD_INCLUDE_DIRS "/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/NRRD/include")
+set(ITKIONRRD_LIBRARY_DIRS "")
+

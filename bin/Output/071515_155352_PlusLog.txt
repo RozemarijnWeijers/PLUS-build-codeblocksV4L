@@ -1,0 +1,8 @@
+time|level|timeoffset|message|location
+071515_155352.601|INFO|000.000450| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+071515_155352.601|INFO|000.000526| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/071515_155352_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+071515_155352.605|INFO|000.004369| EmTracker: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+071515_155352.605|ERROR|000.004528| Failed to open port: /dev/ttyS1 - Error opening serial connection| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/PolarisTracking/vtkNDITracker.cxx(228)
+071515_155352.605|ERROR|000.004556| EmTracker: Cannot connect to data source, ConnectInternal failed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(960)
+071515_155352.605|ERROR|000.004570| Unable to connect device: EmTracker.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(306)
+071515_155352.605|ERROR|000.004591| Datacollector failed to connect to devices| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(132)

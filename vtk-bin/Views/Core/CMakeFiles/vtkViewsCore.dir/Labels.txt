@@ -1,0 +1,16 @@
+# Target labels
+ vtkViewsCore
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkConvertSelectionDomain.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkDataRepresentation.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkEmptyRepresentation.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkRenderViewBase.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkView.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkViewTheme.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkConvertSelectionDomain.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkDataRepresentation.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkEmptyRepresentation.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkRenderViewBase.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkView.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Core/vtkViewTheme.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Views/Core/vtkViewsCoreModule.h

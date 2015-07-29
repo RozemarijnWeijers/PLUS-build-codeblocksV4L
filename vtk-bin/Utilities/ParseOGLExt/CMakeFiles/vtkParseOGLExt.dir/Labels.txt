@@ -1,0 +1,5 @@
+# Target labels
+ vtkParseOGLExt
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/ParseOGLExt/Tokenizer.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/ParseOGLExt/ParseOGLExt.cxx

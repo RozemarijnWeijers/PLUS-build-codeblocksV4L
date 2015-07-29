@@ -1,0 +1,46 @@
+# Target labels
+ vtklibxml2
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/DOCBparser.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/HTMLparser.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/HTMLtree.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/SAX.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/SAX2.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/c14n.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/catalog.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/chvalid.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/debugXML.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/dict.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/encoding.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/entities.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/error.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/globals.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/hash.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/legacy.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/list.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/nanoftp.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/nanohttp.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/parser.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/parserInternals.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/pattern.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/relaxng.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/schematron.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/threads.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/tree.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/uri.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/valid.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xinclude.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xlink.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlIO.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlmemory.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlmodule.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlreader.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlregexp.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlsave.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlschemas.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlschemastypes.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlstring.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlunicode.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xmlwriter.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xpath.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/libxml2/vtklibxml2/xpointer.c

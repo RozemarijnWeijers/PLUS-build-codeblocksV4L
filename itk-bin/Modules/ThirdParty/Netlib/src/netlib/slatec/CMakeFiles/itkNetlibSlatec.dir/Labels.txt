@@ -1,0 +1,23 @@
+# Target labels
+ ITKNetlib
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d1mach.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9lgmc.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9gmit.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9lgic.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9lgit.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dbetai.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dcsevl.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgami.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamit.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamlm.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamma.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamr.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlbeta.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlgams.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlngam.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlnrel.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/initds.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/xermsg.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d_int.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d_mod.c

@@ -1,0 +1,8 @@
+# Target labels
+ vtkRenderingFreeTypeOpenGL
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLModule.h

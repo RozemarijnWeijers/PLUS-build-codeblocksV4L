@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="PlusBuild" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\Plus-build-codeblocks\;CMake Files\..\Plus-build-codeblocks\vtk-prefix\;CMake Files\..\Plus-build-codeblocks\vtk-prefix\tmp\;CMake Files\..\Plus-build-codeblocks\itk-prefix\;CMake Files\..\Plus-build-codeblocks\itk-prefix\tmp\;CMake Files\..\Plus-build-codeblocks\OpenIGTLink-prefix\;CMake Files\..\Plus-build-codeblocks\OpenIGTLink-prefix\tmp\;CMake Files\..\Plus-build-codeblocks\PlusLib-prefix\;CMake Files\..\Plus-build-codeblocks\PlusLib-prefix\tmp\;CMake Files\..\Plus-build-codeblocks\PlusApp-prefix\;CMake Files\..\Plus-build-codeblocks\PlusApp-prefix\tmp\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Continuous">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 Continuous" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Experimental">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 Experimental" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Nightly">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 Nightly" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OpenIGTLink">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 OpenIGTLink" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="PlusApp">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 PlusApp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="PlusLib">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 PlusLib" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="itk">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 itk" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 test" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="vtk">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 vtk" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/snr/Support/Plus/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/CTestConfig.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/External_VTK.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/External_ITK.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/External_OpenIGTLink.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/External_PlusLib.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/External_PlusApp.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/BuildAndTest.bat.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/BuildAndTest.sh.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/PlusBuildAndTest.bat.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/PlusBuildAndTest.sh.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/../Plus-build-codeblocks/vtk-prefix/tmp/vtk-cfgcmd.txt.in">
+          <Option virtualFolder="CMake Files\..\Plus-build-codeblocks\vtk-prefix\tmp\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/../Plus-build-codeblocks/itk-prefix/tmp/itk-cfgcmd.txt.in">
+          <Option virtualFolder="CMake Files\..\Plus-build-codeblocks\itk-prefix\tmp\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/../Plus-build-codeblocks/OpenIGTLink-prefix/tmp/OpenIGTLink-cfgcmd.txt.in">
+          <Option virtualFolder="CMake Files\..\Plus-build-codeblocks\OpenIGTLink-prefix\tmp\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/../Plus-build-codeblocks/PlusLib-prefix/tmp/PlusLib-cfgcmd.txt.in">
+          <Option virtualFolder="CMake Files\..\Plus-build-codeblocks\PlusLib-prefix\tmp\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus/../Plus-build-codeblocks/PlusApp-prefix/tmp/PlusApp-cfgcmd.txt.in">
+          <Option virtualFolder="CMake Files\..\Plus-build-codeblocks\PlusApp-prefix\tmp\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

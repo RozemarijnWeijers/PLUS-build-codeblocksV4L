@@ -1,0 +1,17 @@
+Determining if glXGetProcAddressARB exists in GL/glx.h TRUE with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/vtk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1064492015/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/vtk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1064492015.dir/build.make CMakeFiles/cmTryCompileExec1064492015.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/vtk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/vtk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1064492015.dir/CheckglXGetProcAddressARB.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1064492015.dir/CheckglXGetProcAddressARB.cxx.o -c /home/snr/Support/Plus-build-codeblocks/vtk/Rendering/OpenGL/CheckglXGetProcAddressARB.cxx
+Linking CXX executable cmTryCompileExec1064492015
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1064492015.dir/link.txt --verbose=1
+/usr/bin/c++          CMakeFiles/cmTryCompileExec1064492015.dir/CheckglXGetProcAddressARB.cxx.o  -o cmTryCompileExec1064492015 -rdynamic -lGLU -lGL -lSM -lICE -lX11 -lXext -lpthread -lm 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/vtk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/vtk-bin/CMakeFiles/CMakeTmp'
+
+

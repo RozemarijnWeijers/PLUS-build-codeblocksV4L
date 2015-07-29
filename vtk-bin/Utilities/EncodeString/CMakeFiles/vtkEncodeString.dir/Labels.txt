@@ -1,0 +1,4 @@
+# Target labels
+ vtkUtilitiesEncodeString
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Utilities/EncodeString/vtkEncodeString.cxx

@@ -1,0 +1,10 @@
+# Target labels
+ vtkFiltersVerdict
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Verdict/vtkCellQuality.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Verdict/vtkMatrixMathFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Verdict/vtkMeshQuality.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Verdict/vtkCellQuality.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Verdict/vtkMatrixMathFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Verdict/vtkMeshQuality.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Filters/Verdict/vtkFiltersVerdictModule.h

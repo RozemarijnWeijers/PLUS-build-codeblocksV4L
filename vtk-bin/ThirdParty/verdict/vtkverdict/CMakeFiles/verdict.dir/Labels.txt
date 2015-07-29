@@ -1,0 +1,13 @@
+# Target labels
+ vtkverdict
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_EdgeMetric.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_GaussIntegration.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_HexMetric.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_KnifeMetric.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_PyramidMetric.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_QuadMetric.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_TetMetric.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_TriMetric.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/VerdictVector.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/verdict/vtkverdict/V_WedgeMetric.cpp

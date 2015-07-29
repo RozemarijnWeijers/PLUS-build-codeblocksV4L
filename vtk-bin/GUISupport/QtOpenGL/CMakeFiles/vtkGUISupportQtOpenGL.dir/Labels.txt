@@ -1,0 +1,12 @@
+# Target labels
+ vtkGUISupportQtOpenGL
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/GUISupport/QtOpenGL/QVTKGraphicsItem.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/GUISupport/QtOpenGL/QVTKWidget2.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/GUISupport/QtOpenGL/moc_QVTKGraphicsItem.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/GUISupport/QtOpenGL/moc_QVTKWidget2.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/GUISupport/QtOpenGL/QVTKGraphicsItem.h
+/home/snr/Support/Plus-build-codeblocks/vtk/GUISupport/QtOpenGL/QVTKWidget2.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/GUISupport/QtOpenGL/vtkGUISupportQtOpenGLModule.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/GUISupport/QtOpenGL/moc_QVTKGraphicsItem.cxx.rule
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/GUISupport/QtOpenGL/moc_QVTKWidget2.cxx.rule

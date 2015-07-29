@@ -1,0 +1,18 @@
+# Target labels
+ vtkImagingSources
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageCanvasSource2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageEllipsoidSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageGaussianSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageGridSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageMandelbrotSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageNoiseSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageSinusoidSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageCanvasSource2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageEllipsoidSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageGaussianSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageGridSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageMandelbrotSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageNoiseSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Sources/vtkImageSinusoidSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Imaging/Sources/vtkImagingSourcesModule.h

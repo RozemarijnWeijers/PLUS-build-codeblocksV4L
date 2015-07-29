@@ -1,0 +1,6 @@
+# Target labels
+ ITKExpat
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Expat/src/expat/xmlparse.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Expat/src/expat/xmltok.c
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Expat/src/expat/xmlrole.c

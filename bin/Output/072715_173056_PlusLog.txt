@@ -1,0 +1,8 @@
+time|level|timeoffset|message|location
+072715_173056.638|INFO|000.000389| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+072715_173056.638|INFO|000.000466| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/072715_173056_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+072715_173056.638|INFO|000.000933| Constructed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(153)
+072715_173056.639|INFO|000.001942| Selected US image orientation: MF| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDataSource.cxx(264)
+072715_173056.640|ERROR|000.002262| VideoDevice: Cannot start recording, internal StartRecording failed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(1015)
+072715_173056.640|ERROR|000.002299| Failed to start data acquisition for device VideoDevice.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(266)
+072715_173058.640|ERROR|002.002421| Datacollector failed to start| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(138)

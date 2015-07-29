@@ -1,0 +1,8 @@
+time|level|timeoffset|message|location
+071515_151922.601|INFO|000.000482| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+071515_151922.601|INFO|000.000565| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/071515_151922_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+071515_151922.604|ERROR|000.003682| Unknown device type: AuroraTracker. Supported devices: ChRobotics, FakeTracker, GenericSerialDevice, ImageProcessor, Microchip, NoiseVideo, OpenIGTLinkTracker, OpenIGTLinkVideo, SavedDataSource, UsSimulator, VirtualBufferedDiscCapture, VirtualDiscCapture, VirtualMixer, VirtualSwitcher, VirtualVolumeReconstructor| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDeviceFactory.cxx(293)
+071515_151922.604|ERROR|000.003723| Unable to create device: AuroraTracker| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(121)
+071515_151922.605|WARNING|000.003883| No output channels defined. Unable to locate any for data collection.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(162)
+071515_151922.605|ERROR|000.003913| Device TrackerDevice doesn't exist.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(177)
+071515_151922.605|ERROR|000.003943| Datacollector failed to read configuration| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(117)

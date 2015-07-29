@@ -1,0 +1,20 @@
+# Target labels
+ ITKDoubleConversion
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/bignum.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/bignum-dtoa.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/cached-powers.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/diy-fp.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/double-conversion.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/fast-dtoa.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/fixed-dtoa.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/strtod.cc
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/bignum.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/cached-powers.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/diy-fp.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/double-conversion.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/fast-dtoa.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/fixed-dtoa.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/ieee.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/strtod.h
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DoubleConversion/src/double-conversion/utils.h

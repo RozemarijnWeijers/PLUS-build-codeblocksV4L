@@ -1,0 +1,18 @@
+# Target labels
+ vtkFiltersAMR
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRCutPlane.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRGaussianPulseSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRResampleFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRSliceFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRToMultiBlockFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkImageToAMR.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkParallelAMRUtilities.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRCutPlane.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRGaussianPulseSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRResampleFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRSliceFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkAMRToMultiBlockFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkImageToAMR.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/AMR/vtkParallelAMRUtilities.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Filters/AMR/vtkFiltersAMRModule.h

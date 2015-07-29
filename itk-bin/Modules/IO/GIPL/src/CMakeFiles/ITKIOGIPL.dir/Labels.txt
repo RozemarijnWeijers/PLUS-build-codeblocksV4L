@@ -1,0 +1,5 @@
+# Target labels
+ ITKIOGIPL
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GIPL/src/itkGiplImageIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GIPL/src/itkGiplImageIO.cxx

@@ -1,0 +1,11 @@
+time|level|timeoffset|message|location
+070915_132114.411|INFO|000.000396| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+070915_132114.411|INFO|000.000462| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/070915_132114_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+070915_132114.413|ERROR|000.002735| Unable to find video data source that matches Id: Video| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusChannel.cxx(123)
+070915_132114.413|INFO|000.002787| TrackedVideoDevice3: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+070915_132114.912|ERROR|000.502020| Socket error in device TrackedVideoDevice3: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(214)
+070915_132114.913|WARNING|000.502290| No OpenIGTLink message has been received in device TrackedVideoDevice3: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(196)
+070915_132115.416|INFO|001.005738| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+070915_132115.416|INFO|001.005825| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+070915_132116.412|ERROR|002.002006| Socket error in device TrackedVideoDevice3: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(214)
+070915_132116.413|WARNING|002.002247| No OpenIGTLink message has been received in device TrackedVideoDevice3: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(196)

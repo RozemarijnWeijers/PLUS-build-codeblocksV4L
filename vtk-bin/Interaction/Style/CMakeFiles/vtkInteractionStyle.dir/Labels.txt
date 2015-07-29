@@ -1,0 +1,42 @@
+# Target labels
+ vtkInteractionStyle
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleDrawPolygon.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleFlight.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleImage.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleJoystickActor.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleJoystickCamera.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleMultiTouchCamera.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBand2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBand3D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBandPick.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBandZoom.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTerrain.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTrackballActor.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTrackballCamera.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTrackball.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleUnicam.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleUser.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleSwitch.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkParallelCoordinatesInteractorStyle.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Interaction/Style/vtkInteractionStyleObjectFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleDrawPolygon.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleFlight.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleImage.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleJoystickActor.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleJoystickCamera.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleMultiTouchCamera.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBand2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBand3D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBandPick.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleRubberBandZoom.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTerrain.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTrackballActor.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTrackballCamera.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleTrackball.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleUnicam.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleUser.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkInteractorStyleSwitch.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Interaction/Style/vtkParallelCoordinatesInteractorStyle.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Interaction/Style/vtkInteractionStyleObjectFactory.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Interaction/Style/vtkInteractionStyleModule.h

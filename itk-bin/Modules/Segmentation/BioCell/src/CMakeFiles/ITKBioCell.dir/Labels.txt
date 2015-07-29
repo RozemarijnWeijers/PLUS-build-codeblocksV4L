@@ -1,0 +1,8 @@
+# Target labels
+ ITKBioCell
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/BioCell/src/itkBioGenome.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/BioCell/src/itkBioGene.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/BioCell/src/itkBioGeneNetwork.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/BioCell/src/itkBioCellBase.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Segmentation/BioCell/src/itkBioCellularAggregateBase.cxx

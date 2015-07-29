@@ -1,0 +1,18 @@
+# Target labels
+ vtkFiltersTexture
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTextureMapToCylinder.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTextureMapToPlane.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTextureMapToSphere.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkImplicitTextureCoords.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkThresholdTextureCoords.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTransformTextureCoords.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTriangularTCoords.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTextureMapToCylinder.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTextureMapToPlane.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTextureMapToSphere.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkImplicitTextureCoords.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkThresholdTextureCoords.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTransformTextureCoords.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Filters/Texture/vtkTriangularTCoords.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Filters/Texture/vtkFiltersTextureModule.h

@@ -1,0 +1,9 @@
+# Target labels
+ vtkIOMovie
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Movie/vtkGenericMovieWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Movie/vtkOggTheoraWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/Movie/vtkIOMovieConfigure.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Movie/vtkGenericMovieWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Movie/vtkOggTheoraWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/Movie/vtkIOMovieModule.h

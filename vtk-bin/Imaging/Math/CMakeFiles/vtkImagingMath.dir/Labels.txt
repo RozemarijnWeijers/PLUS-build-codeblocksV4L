@@ -1,0 +1,20 @@
+# Target labels
+ vtkImagingMath
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageDivergence.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageDotProduct.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageLogarithmicScale.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageLogic.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageMagnitude.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageMaskBits.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageMathematics.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageWeightedSum.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageDivergence.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageDotProduct.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageLogarithmicScale.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageLogic.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageMagnitude.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageMaskBits.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageMathematics.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Math/vtkImageWeightedSum.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Imaging/Math/vtkImagingMathModule.h

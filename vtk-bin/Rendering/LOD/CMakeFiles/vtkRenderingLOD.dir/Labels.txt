@@ -1,0 +1,8 @@
+# Target labels
+ vtkRenderingLOD
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/LOD/vtkLODActor.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/LOD/vtkQuadricLODActor.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/LOD/vtkLODActor.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/LOD/vtkQuadricLODActor.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/LOD/vtkRenderingLODModule.h

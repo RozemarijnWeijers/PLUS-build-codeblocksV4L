@@ -1,0 +1,10 @@
+# Target labels
+ vtkIOPLY
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/PLY/vtkPLY.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/PLY/vtkPLYReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/PLY/vtkPLYWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/PLY/vtkPLY.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/PLY/vtkPLYReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/PLY/vtkPLYWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/PLY/vtkIOPLYModule.h

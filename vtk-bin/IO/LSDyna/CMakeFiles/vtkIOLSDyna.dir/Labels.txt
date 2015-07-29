@@ -1,0 +1,16 @@
+# Target labels
+ vtkIOLSDyna
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaPart.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaPartCollection.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaSummaryParser.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/private/LSDynaFamily.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/private/LSDynaMetaData.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaPart.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaPartCollection.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/vtkLSDynaSummaryParser.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/private/LSDynaFamily.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/LSDyna/private/LSDynaMetaData.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/LSDyna/vtkIOLSDynaModule.h

@@ -1,0 +1,11 @@
+time|level|timeoffset|message|location
+072015_154854.331|INFO|000.000419| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+072015_154854.331|INFO|000.000505| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/072015_154854_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+072015_154854.335|INFO|000.004293| EmTracker: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+072015_154857.391|INFO|003.060832| Copy buffer to video buffer...| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusBuffer.cxx(705)
+072015_154900.030|INFO|005.700124| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+072015_154900.030|ERROR|005.700153| Cannot create a server socket.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(170)
+072015_154900.031|INFO|005.700556| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+072015_154904.953|INFO|010.622309| Stop requested...| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(354)
+072015_154904.953|INFO|010.622419| Plus OpenIGTLink server stopped.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(157)
+072015_154904.953|INFO|010.622466| Shutdown successful.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(259)

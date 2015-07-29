@@ -1,0 +1,9 @@
+time|level|timeoffset|message|location
+072015_112500.915|INFO|000.010933| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+072015_112500.915|INFO|000.011030| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/072015_112500_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+072015_112500.916|INFO|000.012502| Selected US image orientation: MF| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDataSource.cxx(264)
+072015_112500.917|INFO|000.012774| VideoDevice: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+072015_112501.219|ERROR|000.315530| Cannot connect to the server (localhost:18949).| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(138)
+072015_112501.219|ERROR|000.315612| VideoDevice: Cannot connect to data source, ConnectInternal failed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(960)
+072015_112501.219|ERROR|000.315643| Unable to connect device: VideoDevice.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(306)
+072015_112501.220|ERROR|000.315696| Datacollector failed to connect to devices| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(132)

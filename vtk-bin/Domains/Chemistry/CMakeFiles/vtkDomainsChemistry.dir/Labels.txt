@@ -1,0 +1,28 @@
+# Target labels
+ vtkDomainsChemistry
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkBlueObeliskData.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkBlueObeliskDataParser.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkCMLMoleculeReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeAlgorithm.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeMapper.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeToAtomBallFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeToBondStickFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeToPolyDataFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkPeriodicTable.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkProgrammableElectronicData.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkProteinRibbonFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkSimpleBondPerceiver.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkBlueObeliskData.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkBlueObeliskDataParser.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkCMLMoleculeReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeAlgorithm.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeMapper.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeToAtomBallFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeToBondStickFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkMoleculeToPolyDataFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkPeriodicTable.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkProgrammableElectronicData.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkProteinRibbonFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Domains/Chemistry/vtkSimpleBondPerceiver.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Domains/Chemistry/vtkDomainsChemistryModule.h

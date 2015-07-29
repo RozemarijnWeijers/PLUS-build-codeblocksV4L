@@ -1,0 +1,10 @@
+# Target labels
+ vtkIOImport
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Import/vtk3DSImporter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Import/vtkImporter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Import/vtkVRMLImporter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Import/vtk3DSImporter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Import/vtkImporter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Import/vtkVRMLImporter.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/Import/vtkIOImportModule.h

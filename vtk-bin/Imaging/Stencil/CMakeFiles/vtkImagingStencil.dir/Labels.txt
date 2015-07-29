@@ -1,0 +1,18 @@
+# Target labels
+ vtkImagingStencil
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImageStencil.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImageStencilToImage.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImageToImageStencil.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImplicitFunctionToImageStencil.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkLassoStencilSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkPolyDataToImageStencil.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkROIStencilSource.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImageStencil.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImageStencilToImage.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImageToImageStencil.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkImplicitFunctionToImageStencil.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkLassoStencilSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkPolyDataToImageStencil.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Stencil/vtkROIStencilSource.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Imaging/Stencil/vtkImagingStencilModule.h

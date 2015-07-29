@@ -1,0 +1,22 @@
+# Target labels
+ vtkImagingFourier
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageButterworthHighPass.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageButterworthLowPass.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageFFT.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageFourierCenter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageFourierFilter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageIdealHighPass.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageIdealLowPass.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageRFFT.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkTableFFT.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageButterworthHighPass.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageButterworthLowPass.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageFFT.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageFourierCenter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageFourierFilter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageIdealHighPass.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageIdealLowPass.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkImageRFFT.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Fourier/vtkTableFFT.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Imaging/Fourier/vtkImagingFourierModule.h

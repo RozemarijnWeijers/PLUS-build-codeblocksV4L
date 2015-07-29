@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="OpenIGTLink" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\Source\;CMake Files\Source\igtlutil\;CMake Files\Tools\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OpenIGTLink">
+         <Option output="/home/snr/Support/Plus-build-codeblocks/bin/libOpenIGTLink.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 OpenIGTLink" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OpenIGTLink/fast">
+         <Option output="/home/snr/Support/Plus-build-codeblocks/bin/libOpenIGTLink.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 OpenIGTLink/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="igtlutil">
+         <Option output="/home/snr/Support/Plus-build-codeblocks/bin/libigtlutil.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 igtlutil" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="igtlutil/fast">
+         <Option output="/home/snr/Support/Plus-build-codeblocks/bin/libigtlutil.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source" />
+            <Add directory="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 igtlutil/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/Source/igtlutil/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlBindMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlCapabilityMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlClientSocket.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlColorTableMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlConditionVariable.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlFastMutexLock.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlImageMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlImageMessage2.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlImageMetaMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlLabelMetaMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlLightObject.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMath.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMessageBase.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMultiThreader.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMutexLock.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlNDArrayMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlOSUtil.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlObject.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlObjectFactoryBase.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlPointMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlPolyDataMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlPositionMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlQuaternionTrackingDataMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSensorMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlServerSocket.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSessionManager.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSimpleFastMutexLock.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSocket.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlStatusMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlStringMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTimeStamp.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTrackingDataMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTrajectoryMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTransformMessage.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlUnit.cxx">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_bind.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_capability.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_colortable.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_header.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_image.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_imgmeta.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_lbmeta.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_ndarray.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_point.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_polydata.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_position.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_qtdata.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_qtrans.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_sensor.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_status.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_string.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_tdata.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_trajectory.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_transform.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_unit.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_util.c">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlBindMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlCapabilityMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlClientSocket.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlColorTableMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlConditionVariable.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlFastMutexLock.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlImageMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlImageMessage2.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlImageMetaMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlLabelMetaMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlLightObject.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMath.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMessageBase.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMultiThreader.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlMutexLock.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlNDArrayMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlOSUtil.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlObject.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlObjectFactoryBase.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlPointMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlPolyDataMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlPositionMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlQuaternionTrackingDataMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSensorMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlServerSocket.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSessionManager.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSimpleFastMutexLock.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlSocket.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlStatusMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlStringMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTimeStamp.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTrackingDataMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTrajectoryMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlTransformMessage.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlUnit.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_bind.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_capability.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_colortable.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_header.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_image.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_imgmeta.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_lbmeta.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_ndarray.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_point.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_polydata.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_position.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_qtdata.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_qtrans.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_sensor.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_status.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_string.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_tdata.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_trajectory.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_transform.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_unit.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/igtl_util.h">
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/OpenIGTLinkConfigPlatform.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/igtlConfigure.h.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/igtl_typeconfig.h.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/igtlTypeConfig.h.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/UseOpenIGTLink.cmake.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/GenerateOpenIGTLinkConfig.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/OpenIGTLinkConfig.cmake.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/OpenIGTLinkConfig.cmake.in">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/CMake/OpenIGTLinkCMakeTests.cmake">
+          <Option virtualFolder="CMake Files\CMake\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Source\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Source/igtlutil/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Source\igtlutil\" />
+      </Unit>
+      <Unit filename="/home/snr/Support/Plus-build-codeblocks/OpenIGTLink/Tools/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Tools\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

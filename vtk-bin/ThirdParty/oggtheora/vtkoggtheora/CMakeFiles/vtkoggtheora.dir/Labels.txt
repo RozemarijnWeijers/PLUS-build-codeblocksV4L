@@ -1,0 +1,37 @@
+# Target labels
+ vtkoggtheora
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libogg-1.1.4/src/framing.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libogg-1.1.4/src/bitwise.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/analyze.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/apiwrapper.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/bitpack.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/decapiwrapper.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/decinfo.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/decode.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/dequant.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encapiwrapper.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encfrag.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encinfo.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encode.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/enquant.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/fdct.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/fragment.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/huffdec.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/huffenc.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/idct.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/info.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/internal.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/mathops.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/mcenc.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/quant.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/rate.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/state.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/tokenize.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxencfrag.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxfdct.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxfrag.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxidct.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxstate.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/x86enc.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/x86state.c

@@ -1,0 +1,2 @@
+/usr/bin/ar cr /home/snr/Support/Plus-build-codeblocks/bin/libvtkxio.a  CMakeFiles/vtkxio.dir/MadgwickAhrsAlgo.cxx.o CMakeFiles/vtkxio.dir/MahonyAhrsAlgo.cxx.o
+/usr/bin/ranlib /home/snr/Support/Plus-build-codeblocks/bin/libvtkxio.a

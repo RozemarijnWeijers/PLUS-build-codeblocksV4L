@@ -1,0 +1,9 @@
+<PlusConfig
+  LogLevel="3"
+  DeviceSetConfigurationDirectory="/home/snr/Support/Plus-build-codeblocks/PlusLib/data/ConfigFiles"
+  ImageDirectory="/home/snr/Support/Plus-build-codeblocks/PlusLib/data/TestImages"
+  ModelDirectory="/home/snr/Support/Plus-build-codeblocks/PlusLib/data/CADModels"
+  ScriptsDirectory="/home/snr/Support/Plus-build-codeblocks/PlusLib/src/scripts"
+  Date="2015.07.27 15:20:30"
+  EditorApplicationExecutable="notepad.exe"
+  OutputDirectory="./Output" />

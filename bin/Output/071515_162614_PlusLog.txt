@@ -1,0 +1,6 @@
+time|level|timeoffset|message|location
+071515_162614.797|INFO|000.000459| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+071515_162614.797|INFO|000.000537| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/071515_162614_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+071515_162614.797|ERROR|000.000750| VTK log: ERROR: In /home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLParser.cxx, line 483|vtkXMLDataParser (0xbf2dd0): Error parsing XML in stream at line 68, column 2, byte index 2186: junk after document element||| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(75)
+071515_162614.797|ERROR|000.000789| Last error: Success| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(81)
+071515_162614.797|ERROR|000.000841| Reading device set configuration file failed: syntax error in /home/snr/Documents/NDIAurora.xml| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(101)

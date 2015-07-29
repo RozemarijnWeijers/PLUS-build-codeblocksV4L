@@ -1,0 +1,36 @@
+# Target labels
+ vtkIOInfovis
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkBiomTableReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkChacoGraphReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkDelimitedTextReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkDIMACSGraphReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkDIMACSGraphWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkFixedWidthTextReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkISIReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkMultiNewickTreeReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkNewickTreeReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkNewickTreeWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkPhyloXMLTreeReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkPhyloXMLTreeWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkRISReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkTulipReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkXGMLReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkXMLTreeReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkBiomTableReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkChacoGraphReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkDelimitedTextReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkDIMACSGraphReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkDIMACSGraphWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkFixedWidthTextReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkISIReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkMultiNewickTreeReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkNewickTreeReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkNewickTreeWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkPhyloXMLTreeReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkPhyloXMLTreeWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkRISReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkTulipReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkXGMLReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Infovis/vtkXMLTreeReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/Infovis/vtkIOInfovisModule.h

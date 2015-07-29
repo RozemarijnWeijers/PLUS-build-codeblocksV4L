@@ -1,0 +1,92 @@
+<PlusConfiguration version="2.1" PlusRevision="Plus-2.3.0.4217 - Linux">
+  <DataCollection StartupDelaySec="1">
+    <DeviceSet Name="PlusServer: NDI Aurora tracker" Description="Broadcasting tool tracking data through OpenIGTLink       Tracking a single EM pointer." />
+    <Device
+      Id="EmTracker"
+      Type="AuroraTracker"
+      SerialPort="3"
+      BaudRate="115200"
+      AcquisitionRate="20"
+      LocalTimeOffsetSec="0.0"
+      ToolReferenceFrame="Reference">
+      <DataSources>
+        <DataSource Type="Tool" Id="EmPointer" PortName="0" BufferSize="500" AverageItemsForFiltering="20" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="EmTrackerStream">
+          <DataSource Id="EmPointer" />
+        </OutputChannel>
+      </OutputChannels>
+    </Device>
+    <Device
+      Id="VideoDevice"
+      Type="SavedDataSource"
+      SequenceMetafile="ElbowUltrasoundSweep.mha"
+      UseData="IMAGE_AND_TRANSFORM"
+      UseOriginalTimestamps="TRUE"
+      ToolReferenceFrame="Tracker"
+      RepeatEnabled="TRUE">
+      <DataSources>
+        <DataSource Type="Video" Id="Video" BufferSize="100" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="VideoStream" VideoDataSourceId="Video" />
+      </OutputChannels>
+    </Device>
+    <Device Id="TrackedVideoDevice" Type="VirtualMixer">
+      <InputChannels>
+        <InputChannel Id="EmTrackerStream" />
+        <InputChannel Id="VideoStream" />
+      </InputChannels>
+      <OutputChannels>
+        <OutputChannel Id="TrackedVideoStream" />
+      </OutputChannels>
+    </Device>
+    <Device Id="CaptureDevice" Type="VirtualDiscCapture" BaseFilename="RecordingTest.mha" EnableCapturing="FALSE">
+      <InputChannels>
+        <InputChannel Id="TrackedVideoStream" />
+      </InputChannels>
+    </Device>
+    <Device Id="VolumeReconstructorDevice" Type="VirtualVolumeReconstructor" OutputVolDeviceName="RecVol_Reference">
+      <InputChannels>
+        <InputChannel Id="TrackedVideoStream" />
+      </InputChannels>
+      <VolumeReconstruction
+        ImageCoordinateFrame="Image"
+        ReferenceCoordinateFrame="Reference"
+        Interpolation="LINEAR"
+        Optimization="NONE"
+        CompoundingMode="MEAN"
+        FillHoles="OFF"
+        NumberOfThreads="2"
+        ClipRectangleOrigin="0 0"
+        ClipRectangleSize="820 616"
+        OutputOrigin="-15 -15 30"
+        OutputExtent="0 300 0 300 0 300"
+        OutputSpacing="0.15 0.15 0.15" />
+    </Device>
+  </DataCollection>
+  <PlusOpenIGTLinkServer ListeningPort="18945" OutputChannelId="TrackedVideoStream">
+    <DefaultClientInfo>
+      <MessageTypes>
+        <Message Type="IMAGE" />
+        <Message Type="TRANSFORM" />
+      </MessageTypes>
+      <TransformNames>
+        <Transform Name="EmPointerToReference" />
+      </TransformNames>
+      <ImageNames>
+        <Image Name="Image" EmbeddedTransformToFrame="Reference" />
+      </ImageNames>
+    </DefaultClientInfo>
+  </PlusOpenIGTLinkServer>
+  <CoordinateDefinitions>
+    <Transform From="Image" To="EmPointer"
+      Matrix="
+        1	0	0	-400
+        0	0	1	0
+        0	1	0	0
+        0	0	0	1"
+       Error="0.582721" Date="2012.02.06 17:57:00" />
+  </CoordinateDefinitions>
+</PlusConfiguration>

@@ -1,0 +1,24 @@
+# Target labels
+ vtkImagingMorphological
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageConnector.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageContinuousDilate3D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageContinuousErode3D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageDilateErode3D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageIslandRemoval2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageNonMaximumSuppression.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageOpenClose3D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageSeedConnectivity.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageSkeleton2D.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageThresholdConnectivity.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageConnector.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageContinuousDilate3D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageContinuousErode3D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageDilateErode3D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageIslandRemoval2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageNonMaximumSuppression.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageOpenClose3D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageSeedConnectivity.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageSkeleton2D.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Imaging/Morphological/vtkImageThresholdConnectivity.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Imaging/Morphological/vtkImagingMorphologicalModule.h

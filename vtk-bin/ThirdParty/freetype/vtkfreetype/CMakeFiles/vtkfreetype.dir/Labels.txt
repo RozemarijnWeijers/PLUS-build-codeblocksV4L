@@ -1,0 +1,29 @@
+# Target labels
+ vtkfreetype
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/base/ftbase.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/base/ftbbox.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/base/ftbitmap.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/base/ftglyph.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/base/ftinit.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/base/ftmm.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/bdf/bdf.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/cache/ftcache.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/cff/cff.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/cid/type1cid.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/gzip/ftgzip.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/lzw/ftlzw.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/pcf/pcf.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/pfr/pfr.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/psaux/psaux.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/pshinter/pshinter.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/psnames/psmodule.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/raster/raster.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/sfnt/sfnt.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/smooth/smooth.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/truetype/truetype.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/type1/type1.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/type42/type42.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/winfonts/winfnt.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/src/base/ftdebug.c
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/freetype/vtkfreetype/builds/unix/ftsystem.c

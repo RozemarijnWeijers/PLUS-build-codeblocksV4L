@@ -1,0 +1,6 @@
+time|level|timeoffset|message|location
+071515_162325.890|INFO|000.000430| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+071515_162325.890|INFO|000.000516| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/071515_162325_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+071515_162325.893|INFO|000.004308| EmTracker: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+071515_162325.895|ERROR|000.005735| Multiple devices exist with the same Id: 'TrackedVideoDevice'| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(114)
+071515_162325.895|ERROR|000.005789| Datacollector failed to read configuration| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(117)

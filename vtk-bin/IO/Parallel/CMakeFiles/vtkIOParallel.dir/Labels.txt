@@ -1,0 +1,18 @@
+# Target labels
+ vtkIOParallel
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkEnSightWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPChacoReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPDataSetReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPDataSetWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPImageWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPOpenFOAMReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPSLACReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkEnSightWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPChacoReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPDataSetReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPDataSetWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPImageWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPOpenFOAMReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/Parallel/vtkPSLACReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/Parallel/vtkIOParallelModule.h

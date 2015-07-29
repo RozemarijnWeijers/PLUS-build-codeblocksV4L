@@ -1,0 +1,11 @@
+time|level|timeoffset|message|location
+072015_112100.539|INFO|000.012464| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+072015_112100.540|INFO|000.012551| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/072015_112100_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+072015_112100.542|WARNING|000.015300| Use of Compounding is deprecated. Use CompoundingMode instead.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/VolumeReconstruction/vtkVolumeReconstructor.cxx(148)
+072015_112100.542|WARNING|000.015345| CompoundingMode has not been set. Will assume MEAN.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/VolumeReconstruction/vtkVolumeReconstructor.cxx(165)
+072015_112100.660|INFO|000.133031| Copy buffer to video buffer...| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusBuffer.cxx(705)
+072015_112101.675|INFO|001.147994| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+072015_112101.675|INFO|001.148215| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+072015_112111.245|INFO|010.718161| Received new client connection (client 1 at 127.0.0.1:18944). Number of connected clients: 1| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(200)
+072015_112111.279|INFO|010.752173| OpenIGTLink broadcasting started. No data was available between 0-1.78017sec, therefore no data were broadcasted during this time period.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(387)
+072015_112407.656|INFO|187.129261| Client disconnected (127.0.0.1:18944). Number of connected clients: 0| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(742)

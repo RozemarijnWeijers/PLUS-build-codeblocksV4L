@@ -1,0 +1,8 @@
+# Target labels
+ ITKDICOMParser
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DICOMParser/src/DICOMParser/DICOMSource.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DICOMParser/src/DICOMParser/DICOMBuffer.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DICOMParser/src/DICOMParser/DICOMFile.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DICOMParser/src/DICOMParser/DICOMParser.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/DICOMParser/src/DICOMParser/DICOMAppHelper.cxx

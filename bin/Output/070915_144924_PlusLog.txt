@@ -1,0 +1,13 @@
+time|level|timeoffset|message|location
+070915_144924.457|INFO|000.000390| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+070915_144924.457|INFO|000.000455| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/070915_144924_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+070915_144924.459|ERROR|000.002642| Unable to find video data source that matches Id: Video| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusChannel.cxx(123)
+070915_144924.459|INFO|000.002696| TrackedVideoDevice: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+070915_144924.960|ERROR|000.504088| Socket error in device TrackedVideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(214)
+070915_144924.961|WARNING|000.504413| No OpenIGTLink message has been received in device TrackedVideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(196)
+070915_144925.462|INFO|001.005911| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+070915_144925.462|INFO|001.006025| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+070915_144926.460|ERROR|002.004078| Socket error in device TrackedVideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(214)
+070915_144926.461|WARNING|002.004310| No OpenIGTLink message has been received in device TrackedVideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(196)
+070915_144927.960|ERROR|003.504076| Socket error in device TrackedVideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(214)
+070915_144927.961|WARNING|003.504329| No OpenIGTLink message has been received in device TrackedVideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(196)

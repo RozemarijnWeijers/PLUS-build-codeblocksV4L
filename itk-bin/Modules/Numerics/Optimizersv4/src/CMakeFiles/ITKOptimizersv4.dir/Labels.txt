@@ -1,0 +1,8 @@
+# Target labels
+ ITKOptimizersv4
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizersv4/src/itkSingleValuedNonLinearVnlOptimizerv4.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizersv4/src/itkSingleValuedVnlCostFunctionAdaptorv4.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizersv4/src/itkLBFGSOptimizerv4.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizersv4/src/itkLBFGSBOptimizerv4.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/Numerics/Optimizersv4/src/itkAmoebaOptimizerv4.cxx

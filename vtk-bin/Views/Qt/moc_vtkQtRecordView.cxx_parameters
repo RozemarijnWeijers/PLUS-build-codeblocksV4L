@@ -1,0 +1,11 @@
+-I/usr/include/qt4
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtNetwork
+-I/usr/include/qt4/QtCore
+-DVTK_IN_VTK
+-DQT_GUI_LIB
+-DQT_NETWORK_LIB
+-DQT_CORE_LIB
+-o
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Views/Qt/moc_vtkQtRecordView.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Views/Qt/vtkQtRecordView.h

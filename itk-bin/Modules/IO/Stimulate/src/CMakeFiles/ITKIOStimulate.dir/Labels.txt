@@ -1,0 +1,5 @@
+# Target labels
+ ITKIOStimulate
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Stimulate/src/itkStimulateImageIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Stimulate/src/itkStimulateImageIOFactory.cxx

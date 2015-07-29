@@ -1,0 +1,13 @@
+time|level|timeoffset|message|location
+072715_180922.747|INFO|000.000391| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+072715_180922.748|INFO|000.001759| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/072715_180922_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+072715_180922.749|INFO|000.002239| Constructed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(153)
+072715_180922.750|INFO|000.003177| Selected US image orientation: MF| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDataSource.cxx(264)
+072715_180922.750|INFO|000.003486| start connecting| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(948)
+072715_180922.750|INFO|000.003514| connecting| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(179)
+072715_180923.202|INFO|000.455567| opened| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(206)
+072715_180923.230|INFO|000.483427| init| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(343)
+072715_180923.230|INFO|000.483495| start recording| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(997)
+072715_180923.230|ERROR|000.483510| VideoDevice: Cannot start recording, internal StartRecording failed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(1015)
+072715_180923.230|ERROR|000.483540| Failed to start data acquisition for device VideoDevice.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(266)
+072715_180925.230|ERROR|002.483674| Datacollector failed to start| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(138)

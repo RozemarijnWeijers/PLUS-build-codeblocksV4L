@@ -1,0 +1,142 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3492855489/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3492855489.dir/build.make CMakeFiles/cmTryCompileExec3492855489.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3492855489.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3492855489.dir/CheckSymbolExists.c.o   -c /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3492855489
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3492855489.dir/link.txt --verbose=1
+/usr/bin/cc        CMakeFiles/cmTryCompileExec3492855489.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3492855489 -rdynamic 
+CMakeFiles/cmTryCompileExec3492855489.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec3492855489] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3492855489/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+
+File /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1503612082/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1503612082.dir/build.make CMakeFiles/cmTryCompileExec1503612082.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1503612082.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1503612082.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1503612082
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1503612082.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1503612082.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1503612082 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec1503612082] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1503612082/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getsockname exists in the socket failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3140562166/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3140562166.dir/build.make CMakeFiles/cmTryCompileExec3140562166.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3140562166.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getsockname   -o CMakeFiles/cmTryCompileExec3140562166.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3140562166
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3140562166.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=getsockname    CMakeFiles/cmTryCompileExec3140562166.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3140562166 -rdynamic -lsocket 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [cmTryCompileExec3140562166] Error 1
+make[3]: *** [cmTryCompileExec3140562166/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2595361959/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2595361959.dir/build.make CMakeFiles/cmTryCompileExec2595361959.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2595361959.dir/CMAKE_SIZEOF___INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2595361959.dir/CMAKE_SIZEOF___INT64.c.o   -c /home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF___INT64.c
+/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2595361959.dir/CMAKE_SIZEOF___INT64.c.o] Error 1
+make[3]: *** [cmTryCompileExec2595361959/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CMakeTmp'
+
+/home/snr/Support/Plus-build-codeblocks/OpenIGTLink-bin/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+

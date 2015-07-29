@@ -1,0 +1,5 @@
+# Target labels
+ vtknetcdf
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/netcdf/vtknetcdf/cxx/netcdf.cpp
+/home/snr/Support/Plus-build-codeblocks/vtk/ThirdParty/netcdf/vtknetcdf/cxx/ncvalues.cpp

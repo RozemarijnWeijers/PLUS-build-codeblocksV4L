@@ -1,0 +1,23 @@
+# Target labels
+ vtkIOMINC
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMINCImageAttributes.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMINCImageReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMINCImageWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNIObjectReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNIObjectWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITagPointReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITagPointWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITransformReader.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITransformWriter.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMINC.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMINCImageAttributes.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMINCImageReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMINCImageWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNIObjectReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNIObjectWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITagPointReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITagPointWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITransformReader.h
+/home/snr/Support/Plus-build-codeblocks/vtk/IO/MINC/vtkMNITransformWriter.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/IO/MINC/vtkIOMINCModule.h

@@ -1,0 +1,2 @@
+/usr/bin/ar cr /home/snr/Support/Plus-build-codeblocks/bin/libvtkndicapi.a  CMakeFiles/vtkndicapi.dir/ndicapi.c.o CMakeFiles/vtkndicapi.dir/ndicapi_math.c.o CMakeFiles/vtkndicapi.dir/ndicapi_serial.c.o CMakeFiles/vtkndicapi.dir/ndicapi_thread.c.o
+/usr/bin/ranlib /home/snr/Support/Plus-build-codeblocks/bin/libvtkndicapi.a

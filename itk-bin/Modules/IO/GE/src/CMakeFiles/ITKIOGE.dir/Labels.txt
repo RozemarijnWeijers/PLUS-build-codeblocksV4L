@@ -1,0 +1,9 @@
+# Target labels
+ ITKIOGE
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GE/src/itkGE5ImageIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GE/src/itkGEAdwImageIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GE/src/itkGE4ImageIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GE/src/itkGEAdwImageIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GE/src/itkGE5ImageIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/GE/src/itkGE4ImageIOFactory.cxx

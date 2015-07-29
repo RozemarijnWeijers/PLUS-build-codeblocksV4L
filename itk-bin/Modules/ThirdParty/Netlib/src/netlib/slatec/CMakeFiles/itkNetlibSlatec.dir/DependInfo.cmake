@@ -1,0 +1,53 @@
+# The set of languages for which implicit dependencies are needed:
+SET(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+SET(CMAKE_DEPENDS_CHECK_C
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d1mach.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/d1mach.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9gmit.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/d9gmit.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9lgic.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/d9lgic.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9lgit.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/d9lgit.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d9lgmc.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/d9lgmc.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d_int.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/d_int.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/d_mod.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/d_mod.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dbetai.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dbetai.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dcsevl.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dcsevl.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgami.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dgami.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamit.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dgamit.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamlm.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dgamlm.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamma.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dgamma.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dgamr.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dgamr.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlbeta.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dlbeta.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlgams.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dlgams.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlngam.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dlngam.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/dlnrel.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/dlnrel.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/initds.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/initds.c.o"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/Netlib/src/netlib/slatec/xermsg.c" "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/Netlib/src/netlib/slatec/CMakeFiles/itkNetlibSlatec.dir/xermsg.c.o"
+  )
+SET(CMAKE_C_COMPILER_ID "GNU")
+
+# Pairs of files generated by the same build rule.
+SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/lib/libitkNetlibSlatec-4.7.so" "/home/snr/Support/Plus-build-codeblocks/itk-bin/lib/libitkNetlibSlatec-4.7.so.1"
+  )
+
+
+# Targets to which this target links.
+SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib/CMakeFiles/itkv3p_netlib.dir/DependInfo.cmake"
+  )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/v3p/netlib"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/vcl"
+  "/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/core"
+  "Modules/ThirdParty/VNL/src/vxl/v3p/netlib"
+  "Modules/ThirdParty/VNL/src/vxl/vcl"
+  "Modules/ThirdParty/VNL/src/vxl/core"
+  "Modules/ThirdParty/Netlib"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

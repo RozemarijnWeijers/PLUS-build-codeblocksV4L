@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DCMAKE_BUILD_TYPE:STRING=;-DLIBRARY_OUTPUT_PATH:STRING=/home/snr/Support/Plus-build-codeblocks/bin;-DBUILD_SHARED_LIBS:BOOL=ON;-DBUILD_EXAMPLES:BOOL=OFF;-DBUILD_TESTING:BOOL=OFF;-DOpenIGTLink_PROTOCOL_VERSION_2:BOOL=ON;-DCMAKE_CXX_FLAGS:STRING= ;-DCMAKE_C_FLAGS:STRING= ;-GCodeBlocks - Unix Makefiles;/home/snr/Support/Plus-build-codeblocks/OpenIGTLink'

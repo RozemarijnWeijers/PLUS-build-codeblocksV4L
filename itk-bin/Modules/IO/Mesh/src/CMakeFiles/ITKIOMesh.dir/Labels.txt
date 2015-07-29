@@ -1,0 +1,19 @@
+# Target labels
+ ITKIOMesh
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkBYUMeshIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkBYUMeshIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkFreeSurferAsciiMeshIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkFreeSurferAsciiMeshIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkFreeSurferBinaryMeshIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkFreeSurferBinaryMeshIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkGiftiMeshIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkGiftiMeshIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkMeshIOBase.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkMeshIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkOBJMeshIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkOBJMeshIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkOFFMeshIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkOFFMeshIOFactory.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkVTKPolyDataMeshIO.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/Mesh/src/itkVTKPolyDataMeshIOFactory.cxx

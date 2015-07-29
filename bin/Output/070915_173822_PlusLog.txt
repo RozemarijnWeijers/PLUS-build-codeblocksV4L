@@ -1,0 +1,10 @@
+time|level|timeoffset|message|location
+070915_173822.583|INFO|000.000491| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+070915_173822.583|INFO|000.000592| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/070915_173822_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+070915_173822.585|INFO|000.003140| Selected US image orientation: MF| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDataSource.cxx(264)
+070915_173822.586|INFO|000.003617| VideoDevice: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+070915_173823.088|ERROR|000.506386| Socket error in device VideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(214)
+070915_173823.089|WARNING|000.506754| No OpenIGTLink message has been received in device VideoDevice: failed to receive OpenIGTLink transforms. Attempt to reconnect.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(196)
+070915_173823.591|WARNING|001.008738| EmbeddedTransformToFrame attribute of ImageNames/Image element is missing. This element will be ignored.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusOpenIGTLink/PlusIgtlClientInfo.cxx(100)
+070915_173823.591|INFO|001.009261| Plus OpenIGTLink server started on port: 18944| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+070915_173823.591|INFO|001.009398| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)

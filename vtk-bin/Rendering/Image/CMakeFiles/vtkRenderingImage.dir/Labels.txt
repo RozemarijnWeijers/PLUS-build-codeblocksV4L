@@ -1,0 +1,10 @@
+# Target labels
+ vtkRenderingImage
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Image/vtkImageResliceMapper.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Image/vtkImageSliceCollection.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Image/vtkImageStack.cxx
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Image/vtkImageResliceMapper.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Image/vtkImageSliceCollection.h
+/home/snr/Support/Plus-build-codeblocks/vtk/Rendering/Image/vtkImageStack.h
+/home/snr/Support/Plus-build-codeblocks/vtk-bin/Rendering/Image/vtkRenderingImageModule.h

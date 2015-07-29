@@ -1,0 +1,2061 @@
+Performing C SOURCE FILE Test C_HAS_WARNING-Wno-long-double failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1446244233/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1446244233.dir/build.make CMakeFiles/cmTryCompileExec1446244233.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1446244233.dir/src.c.o
+/usr/bin/cc   -DC_HAS_WARNING-Wno-long-double   -Wno-long-double -o CMakeFiles/cmTryCompileExec1446244233.dir/src.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.c
+<command-line>:0:14: warning: missing whitespace after the macro name [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-long-double" [enabled by default]
+Linking C executable cmTryCompileExec1446244233
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1446244233.dir/link.txt --verbose=1
+/usr/bin/cc    -DC_HAS_WARNING-Wno-long-double    CMakeFiles/cmTryCompileExec1446244233.dir/src.c.o  -o cmTryCompileExec1446244233 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_HAS_WARNING-Wno-long-double failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2383217184/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2383217184.dir/build.make CMakeFiles/cmTryCompileExec2383217184.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2383217184.dir/src.cxx.o
+/usr/bin/c++    -DCXX_HAS_WARNING-Wno-long-double   -Wno-long-double -o CMakeFiles/cmTryCompileExec2383217184.dir/src.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:16: warning: missing whitespace after the macro name [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-long-double" [enabled by default]
+Linking CXX executable cmTryCompileExec2383217184
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2383217184.dir/link.txt --verbose=1
+/usr/bin/c++     -DCXX_HAS_WARNING-Wno-long-double    CMakeFiles/cmTryCompileExec2383217184.dir/src.cxx.o  -o cmTryCompileExec2383217184 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXX_HAS_DISABLE_OPTIMIZATION_FLAG failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4266800471/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4266800471.dir/build.make CMakeFiles/cmTryCompileExec4266800471.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4266800471.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel -DCXX_HAS_DISABLE_OPTIMIZATION_FLAG   -o CMakeFiles/cmTryCompileExec4266800471.dir/src.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx:1:1: error: expected unqualified-id before ‘-’ token
+ -O0
+ ^
+make[4]: *** [CMakeFiles/cmTryCompileExec4266800471.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec4266800471/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source file was:
+-O0
+Checking for non-standard argument to stl allocator<>::max_size failed to compile with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4028240130/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4028240130.dir/build.make CMakeFiles/cmTryCompileExec4028240130.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4028240130.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DKWSYS_STL_HAVE_STD=1 -DTEST_KWSYS_STL_HAS_ALLOCATOR_MAX_SIZE_ARGUMENT -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds    -o CMakeFiles/cmTryCompileExec4028240130.dir/kwsysPlatformTestsCXX.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx: In function ‘void f(const std::allocator<char>&)’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:256:25: error: no matching function for call to ‘std::allocator<char>::max_size(long unsigned int) const’
+   a.max_size(sizeof(int));
+                         ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:256:25: note: candidate is:
+In file included from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/4.8/bits/allocator.h:46,
+                 from /usr/include/c++/4.8/memory:63,
+                 from /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:253:
+/usr/include/c++/4.8/ext/new_allocator.h:113:7: note: __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = char; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int]
+       max_size() const _GLIBCXX_USE_NOEXCEPT
+       ^
+/usr/include/c++/4.8/ext/new_allocator.h:113:7: note:   candidate expects 0 arguments, 1 provided
+make[4]: *** [CMakeFiles/cmTryCompileExec4028240130.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec4028240130/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+
+
+Checking whether "<>" is needed for template friends failed to compile with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1149453827/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1149453827.dir/build.make CMakeFiles/cmTryCompileExec1149453827.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1149453827.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS_NULL_TEMPLATE_ARGS -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds    -o CMakeFiles/cmTryCompileExec1149453827.dir/kwsysPlatformTestsCXX.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:141:21: warning: friend declaration ‘int f(A<T>&)’ declares a non-template function [-Wnon-template-friend]
+   friend int f(A<T>&);
+                     ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:141:21: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx: In instantiation of ‘int f(A<T>&) [with T = int]’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:147:23:   required from here
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:143:7: error: ‘int A<int>::x’ is private
+   int x;
+       ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:146:48: error: within this context
+ template <class T> int f(A<T>& a) { return a.x = 0; }
+                                                ^
+make[4]: *** [CMakeFiles/cmTryCompileExec1149453827.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1149453827/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+
+
+Checking whether C++ compiler has '__int64' failed to compile with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2378299414/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2378299414.dir/build.make CMakeFiles/cmTryCompileExec2378299414.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2378299414.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS___INT64 -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds    -o CMakeFiles/cmTryCompileExec2378299414.dir/kwsysPlatformTestsCXX.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:126:1: error: ‘__int64’ does not name a type
+ __int64 f(__int64 n) { return n; }
+ ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:129:3: error: ‘__int64’ was not declared in this scope
+   __int64 n = 0;
+   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:129:11: error: expected ‘;’ before ‘n’
+   __int64 n = 0;
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:130:29: error: ‘n’ was not declared in this scope
+   return static_cast<int>(f(n));
+                             ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:130:30: error: ‘f’ was not declared in this scope
+   return static_cast<int>(f(n));
+                              ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2378299414.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec2378299414/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec23630247/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec23630247.dir/build.make CMakeFiles/cmTryCompileExec23630247.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec23630247.dir/KWSYS_SIZEOF___INT64.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow     -o CMakeFiles/cmTryCompileExec23630247.dir/KWSYS_SIZEOF___INT64.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[4]: *** [CMakeFiles/cmTryCompileExec23630247.dir/KWSYS_SIZEOF___INT64.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec23630247/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3123625393/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3123625393.dir/build.make CMakeFiles/cmTryCompileExec3123625393.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3123625393.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds    -o CMakeFiles/cmTryCompileExec3123625393.dir/kwsysPlatformTestsCXX.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:450:13: error: ‘environ’ was not declared in this scope
+   char* e = environ[0];
+             ^
+make[4]: *** [CMakeFiles/cmTryCompileExec3123625393.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3123625393/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+
+
+Checking whether CXX compiler has _atoi64 failed to compile with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3465751617/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3465751617.dir/build.make CMakeFiles/cmTryCompileExec3465751617.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3465751617.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS__ATOI64 -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds    -o CMakeFiles/cmTryCompileExec3465751617.dir/kwsysPlatformTestsCXX.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/KWSys/src/KWSys/kwsysPlatformTestsCXX.cxx:493:38: error: ‘_atoi64’ was not declared in this scope
+   return static_cast<int>(_atoi64(str));
+                                      ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec3465751617.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec3465751617/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/KWSys/src/KWSys/CMakeFiles/CMakeTmp'
+
+
+Performing Test VCL_STATIC_CONST_INIT_NO_DEFN failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3382589133/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3382589133.dir/build.make CMakeFiles/cmTryCompileExec3382589133.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3382589133.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_STATIC_CONST_INIT_NO_DEFN   -o CMakeFiles/cmTryCompileExec3382589133.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec3382589133
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3382589133.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_STATIC_CONST_INIT_NO_DEFN    CMakeFiles/cmTryCompileExec3382589133.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec3382589133 -rdynamic 
+CMakeFiles/cmTryCompileExec3382589133.dir/vxl_platform_tests.cxx.o: In function `main':
+vxl_platform_tests.cxx:(.text+0x22): undefined reference to `A::x'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec3382589133] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3382589133/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_OVERLOAD_CAST failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2618473845/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2618473845.dir/build.make CMakeFiles/cmTryCompileExec2618473845.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2618473845.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_OVERLOAD_CAST   -o CMakeFiles/cmTryCompileExec2618473845.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx: In constructor ‘vnl_vector_fixed<n, T>::vnl_vector_fixed()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:380:41: error: ‘data_fixed’ was not declared in this scope
+   vnl_vector_fixed() : vnl_vector<T>(n, data_fixed) {}
+                                         ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2618473845.dir/vxl_platform_tests.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec2618473845/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_NULL_TMPL_ARGS failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec538327192/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec538327192.dir/build.make CMakeFiles/cmTryCompileExec538327192.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec538327192.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_NULL_TMPL_ARGS   -o CMakeFiles/cmTryCompileExec538327192.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx: In instantiation of ‘T dot(const victor<T>&, const victor<T>&) [with T = double]’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:439:67:   required from here
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:428:11: error: ‘double victor<double>::data [3]’ is private
+   T data[3];
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:436:23: error: within this context
+     u.data[2] * v.data[2];
+                       ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:428:11: error: ‘double victor<double>::data [3]’ is private
+   T data[3];
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:436:11: error: within this context
+     u.data[2] * v.data[2];
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:428:11: error: ‘double victor<double>::data [3]’ is private
+   T data[3];
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:435:23: error: within this context
+     u.data[1] * v.data[1] +
+                       ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:428:11: error: ‘double victor<double>::data [3]’ is private
+   T data[3];
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:435:11: error: within this context
+     u.data[1] * v.data[1] +
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:428:11: error: ‘double victor<double>::data [3]’ is private
+   T data[3];
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:434:23: error: within this context
+     u.data[0] * v.data[0] +
+                       ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:428:11: error: ‘double victor<double>::data [3]’ is private
+   T data[3];
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:434:11: error: within this context
+     u.data[0] * v.data[0] +
+           ^
+make[4]: *** [CMakeFiles/cmTryCompileExec538327192.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec538327192/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Try-Run Test VCL_HAS_TEMPLATE_SYMBOLS failed to compile with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec791640866/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec791640866.dir/build.make CMakeFiles/cmTryCompileExec791640866.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec791640866.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_TEMPLATE_SYMBOLS   -o CMakeFiles/cmTryCompileExec791640866.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec791640866
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec791640866.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_TEMPLATE_SYMBOLS    CMakeFiles/cmTryCompileExec791640866.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec791640866 -rdynamic 
+CMakeFiles/cmTryCompileExec791640866.dir/vxl_platform_tests.cxx.o: In function `caller()':
+vxl_platform_tests.cxx:(.text+0x15): undefined reference to `void function<double>(double*, int)'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec791640866] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec791640866/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_NEEDS_NAMESPACE_STD failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1746587697/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1746587697.dir/build.make CMakeFiles/cmTryCompileExec1746587697.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1746587697.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_NEEDS_NAMESPACE_STD   -o CMakeFiles/cmTryCompileExec1746587697.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx: In function ‘void function()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:792:3: error: ‘vector’ was not declared in this scope
+   vector<double> flaz; // correct should be:  std::vector<double>
+   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:792:3: note: suggested alternative:
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:789:
+/usr/include/c++/4.8/bits/stl_vector.h:210:11: note:   ‘std::vector’
+     class vector : protected _Vector_base<_Tp, _Alloc>
+           ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:792:10: error: expected primary-expression before ‘double’
+   vector<double> flaz; // correct should be:  std::vector<double>
+          ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:792:10: error: expected ‘;’ before ‘double’
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:793:3: error: ‘flaz’ was not declared in this scope
+   flaz.push_back(sqrt(2.0));   // should be:  std::sqrt(2.0)
+   ^
+make[4]: *** [CMakeFiles/cmTryCompileExec1746587697.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1746587697/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_HAS_SLICED_DESTRUCTOR_BUG succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2112444184/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2112444184.dir/build.make CMakeFiles/cmTryCompileExec2112444184.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2112444184.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_SLICED_DESTRUCTOR_BUG   -o CMakeFiles/cmTryCompileExec2112444184.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec2112444184
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2112444184.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_SLICED_DESTRUCTOR_BUG    CMakeFiles/cmTryCompileExec2112444184.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec2112444184 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_HAS_WORKING_STRINGSTREAM succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1115034831/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1115034831.dir/build.make CMakeFiles/cmTryCompileExec1115034831.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1115034831.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_WORKING_STRINGSTREAM   -o CMakeFiles/cmTryCompileExec1115034831.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec1115034831
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1115034831.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_WORKING_STRINGSTREAM    CMakeFiles/cmTryCompileExec1115034831.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec1115034831 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_HAS_LFS succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3183477249/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3183477249.dir/build.make CMakeFiles/cmTryCompileExec3183477249.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3183477249.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_LFS   -o CMakeFiles/cmTryCompileExec3183477249.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec3183477249
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3183477249.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_HAS_LFS    CMakeFiles/cmTryCompileExec3183477249.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec3183477249 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VXL_HAS_DBGHELP_H failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1422608224/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1422608224.dir/build.make CMakeFiles/cmTryCompileExec1422608224.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1422608224.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_DBGHELP_H   -o CMakeFiles/cmTryCompileExec1422608224.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1119:21: fatal error: Windows.h: No such file or directory
+ #include <Windows.h>
+                     ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec1422608224.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1422608224/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Determining if the include file ieeefp.h exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec116994566/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec116994566.dir/build.make CMakeFiles/cmTryCompileExec116994566.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec116994566.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w    -o CMakeFiles/cmTryCompileExec116994566.dir/CheckIncludeFile.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:20: fatal error: ieeefp.h: No such file or directory
+ #include <ieeefp.h>
+                    ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec116994566.dir/CheckIncludeFile.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec116994566/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the std::shared_ptr<void> exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2803497690/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2803497690.dir/build.make CMakeFiles/cmTryCompileExec2803497690.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2803497690.dir/CheckTypeExists.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w    -o CMakeFiles/cmTryCompileExec2803497690.dir/CheckTypeExists.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp/CheckTypeExists.cxx
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp/CheckTypeExists.cxx:4:30: error: variable or field ‘cmakeRequireSymbol’ declared void
+ void cmakeRequireSymbol(std::shared_ptr<void> dummy){(void)dummy;}
+                              ^
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp/CheckTypeExists.cxx:4:25: error: ‘shared_ptr’ is not a member of ‘std’
+ void cmakeRequireSymbol(std::shared_ptr<void> dummy){(void)dummy;}
+                         ^
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp/CheckTypeExists.cxx:4:41: error: expected primary-expression before ‘void’
+ void cmakeRequireSymbol(std::shared_ptr<void> dummy){(void)dummy;}
+                                         ^
+make[4]: *** [CMakeFiles/cmTryCompileExec2803497690.dir/CheckTypeExists.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2803497690/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+File /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp/CheckTypeExists.c:
+/* */
+#include <memory>
+
+void cmakeRequireSymbol(std::shared_ptr<void> dummy){(void)dummy;}
+int main()
+{return 0;
+}
+
+Performing Test VXL_HAS_SSE2_HARDWARE_SUPPORT succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4259426176/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4259426176.dir/build.make CMakeFiles/cmTryCompileExec4259426176.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4259426176.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_SSE2_HARDWARE_SUPPORT   -o CMakeFiles/cmTryCompileExec4259426176.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec4259426176
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4259426176.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_SSE2_HARDWARE_SUPPORT    CMakeFiles/cmTryCompileExec4259426176.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec4259426176 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VXL_HAS_ALIGNED_MALLOC failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2951042245/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2951042245.dir/build.make CMakeFiles/cmTryCompileExec2951042245.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2951042245.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_ALIGNED_MALLOC   -o CMakeFiles/cmTryCompileExec2951042245.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx: In function ‘int main()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1183:47: error: ‘_aligned_malloc’ was not declared in this scope
+   void* x = _aligned_malloc(4*sizeof(float),16);
+                                               ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1184:18: error: ‘_aligned_free’ was not declared in this scope
+   _aligned_free(x);
+                  ^
+make[4]: *** [CMakeFiles/cmTryCompileExec2951042245.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2951042245/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VXL_HAS_MINGW_ALIGNED_MALLOC failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec744204456/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec744204456.dir/build.make CMakeFiles/cmTryCompileExec744204456.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec744204456.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_MINGW_ALIGNED_MALLOC   -o CMakeFiles/cmTryCompileExec744204456.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx: In function ‘int main()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1195:54: error: ‘__mingw_aligned_malloc’ was not declared in this scope
+   void* x = __mingw_aligned_malloc(4*sizeof(float),16);
+                                                      ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1196:25: error: ‘__mingw_aligned_free’ was not declared in this scope
+   __mingw_aligned_free(x);
+                         ^
+make[4]: *** [CMakeFiles/cmTryCompileExec744204456.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec744204456/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VXL_HAS_POSIX_MEMALIGN failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2890834339/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2890834339.dir/build.make CMakeFiles/cmTryCompileExec2890834339.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2890834339.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_POSIX_MEMALIGN   -o CMakeFiles/cmTryCompileExec2890834339.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx: In function ‘int main()’:
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1207:40: error: ‘memalign’ was not declared in this scope
+   void* x = memalign(16,4*sizeof(float));
+                                        ^
+make[4]: *** [CMakeFiles/cmTryCompileExec2890834339.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2890834339/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_COMPLEX_POW_WORKS succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2509699047/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2509699047.dir/build.make CMakeFiles/cmTryCompileExec2509699047.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2509699047.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_COMPLEX_POW_WORKS   -o CMakeFiles/cmTryCompileExec2509699047.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec2509699047
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2509699047.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_COMPLEX_POW_WORKS    CMakeFiles/cmTryCompileExec2509699047.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec2509699047 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Determining if the finite exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2155603618/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2155603618.dir/build.make CMakeFiles/cmTryCompileExec2155603618.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2155603618.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec2155603618.dir/CheckSymbolExists.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:20: fatal error: ieeefp.h: No such file or directory
+ #include <ieeefp.h>
+                    ^
+compilation terminated.
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2155603618.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTryCompileExec2155603618/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+File /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <ieeefp.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef finite
+  return ((int*)(&finite))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2348196764/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2348196764.dir/build.make CMakeFiles/cmTryCompileExec2348196764.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2348196764.dir/TestEndianess.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec2348196764.dir/TestEndianess.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec2348196764
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2348196764.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w     CMakeFiles/cmTryCompileExec2348196764.dir/TestEndianess.c.o  -o cmTryCompileExec2348196764 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Test VCL_CHAR_IS_SIGNED succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1161945815/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1161945815.dir/build.make CMakeFiles/cmTryCompileExec1161945815.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1161945815.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_CHAR_IS_SIGNED   -o CMakeFiles/cmTryCompileExec1161945815.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec1161945815
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1161945815.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_CHAR_IS_SIGNED    CMakeFiles/cmTryCompileExec1161945815.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec1161945815 -rdynamic -lm 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 8-bit int. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1537856993/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1537856993.dir/build.make CMakeFiles/cmTryCompileExec1537856993.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1537856993.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec1537856993.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[8]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[16]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec1537856993.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1537856993/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 16-bit int. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3534120722/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3534120722.dir/build.make CMakeFiles/cmTryCompileExec3534120722.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3534120722.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec3534120722.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[16]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[8]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec3534120722.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3534120722/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 16-bit int. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3741083460/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3741083460.dir/build.make CMakeFiles/cmTryCompileExec3741083460.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3741083460.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec3741083460.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[16]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[32]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec3741083460.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3741083460/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 32-bit int. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2765045742/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2765045742.dir/build.make CMakeFiles/cmTryCompileExec2765045742.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2765045742.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec2765045742.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[32]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[16]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2765045742.dir/vxl_platform_tests.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec2765045742/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 32-bit int. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2993038480/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2993038480.dir/build.make CMakeFiles/cmTryCompileExec2993038480.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2993038480.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec2993038480.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[32]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[64]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec2993038480.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2993038480/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 64-bit int. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4077702722/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4077702722.dir/build.make CMakeFiles/cmTryCompileExec4077702722.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4077702722.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec4077702722.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+In file included from /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1044:0:
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp/config.h:1:18: error: ‘__int64’ was not declared in this scope
+ #define THE_TYPE __int64
+                  ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1047:14: note: in expansion of macro ‘THE_TYPE’
+ double cast( THE_TYPE a, unsigned THE_TYPE b, signed THE_TYPE c )
+              ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1047:26: error: expected primary-expression before ‘unsigned’
+ double cast( THE_TYPE a, unsigned THE_TYPE b, signed THE_TYPE c )
+                          ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1047:47: error: expected primary-expression before ‘signed’
+ double cast( THE_TYPE a, unsigned THE_TYPE b, signed THE_TYPE c )
+                                               ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1047:65: error: expression list treated as compound expression in initializer [-fpermissive]
+ double cast( THE_TYPE a, unsigned THE_TYPE b, signed THE_TYPE c )
+                                                                 ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1048:1: error: expected ‘,’ or ‘;’ before ‘{’ token
+ {
+ ^
+In file included from /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1044:0:
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp/config.h:1:18: error: ‘__int64’ was not declared in this scope
+ #define THE_TYPE __int64
+                  ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:34: note: in expansion of macro ‘THE_TYPE’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+                                  ^
+make[4]: *** [CMakeFiles/cmTryCompileExec4077702722.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec4077702722/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 32-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3444996053/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3444996053.dir/build.make CMakeFiles/cmTryCompileExec3444996053.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3444996053.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec3444996053.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[32]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[128]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec3444996053.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3444996053/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 32-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3844584978/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3844584978.dir/build.make CMakeFiles/cmTryCompileExec3844584978.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3844584978.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec3844584978.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[32]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[64]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec3844584978.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3844584978/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 64-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1083435095/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1083435095.dir/build.make CMakeFiles/cmTryCompileExec1083435095.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1083435095.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec1083435095.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[64]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[32]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec1083435095.dir/vxl_platform_tests.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec1083435095/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 64-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1118895128/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1118895128.dir/build.make CMakeFiles/cmTryCompileExec1118895128.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1118895128.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec1118895128.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[64]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[128]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec1118895128.dir/vxl_platform_tests.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec1118895128/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 96-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1401063854/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1401063854.dir/build.make CMakeFiles/cmTryCompileExec1401063854.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1401063854.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec1401063854.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[96]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[32]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec1401063854.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1401063854/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 96-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4104688133/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4104688133.dir/build.make CMakeFiles/cmTryCompileExec4104688133.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4104688133.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec4104688133.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[96]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[64]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec4104688133.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec4104688133/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 96-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1859439549/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1859439549.dir/build.make CMakeFiles/cmTryCompileExec1859439549.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1859439549.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec1859439549.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[96]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[128]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec1859439549.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1859439549/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 128-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1718414773/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1718414773.dir/build.make CMakeFiles/cmTryCompileExec1718414773.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1718414773.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec1718414773.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[128]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[32]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec1718414773.dir/vxl_platform_tests.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec1718414773/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Looking for 128-bit float. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1054625788/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1054625788.dir/build.make CMakeFiles/cmTryCompileExec1054625788.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1054625788.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVXL_HAS_TYPE_OF_SIZE -I/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeTmp    -o CMakeFiles/cmTryCompileExec1054625788.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1060:35: error: conflicting declaration ‘int (* verify_size)[128]’
+ extern int (*verify_size)[THE_SIZE];
+                                   ^
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx:1059:14: error: ‘verify_size’ has a previous declaration as ‘int (* verify_size)[64]’
+ extern int (*verify_size)[sizeof(THE_TYPE) * CHAR_BIT];
+              ^
+make[4]: *** [CMakeFiles/cmTryCompileExec1054625788.dir/vxl_platform_tests.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1054625788/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Determining if the function tell exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec253805735/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec253805735.dir/build.make CMakeFiles/cmTryCompileExec253805735.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec253805735.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=tell   -o CMakeFiles/cmTryCompileExec253805735.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec253805735
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec253805735.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=tell    CMakeFiles/cmTryCompileExec253805735.dir/CheckFunctionExists.c.o  -o cmTryCompileExec253805735 -rdynamic -lm 
+CMakeFiles/cmTryCompileExec253805735.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `tell'
+collect2: error: ld returned 1 exit status
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [cmTryCompileExec253805735] Error 1
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec253805735/fast] Error 2
+
+
+Performing Test VCL_NUMERIC_LIMITS_HAS_INFINITY succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1754636381/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1754636381.dir/build.make CMakeFiles/cmTryCompileExec1754636381.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1754636381.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_NUMERIC_LIMITS_HAS_INFINITY   -o CMakeFiles/cmTryCompileExec1754636381.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec1754636381
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1754636381.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_NUMERIC_LIMITS_HAS_INFINITY    CMakeFiles/cmTryCompileExec1754636381.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec1754636381 -rdynamic -lm 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Performing Test VCL_PROCESSOR_HAS_INFINITY succeeded with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3786898336/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3786898336.dir/build.make CMakeFiles/cmTryCompileExec3786898336.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3786898336.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_PROCESSOR_HAS_INFINITY   -o CMakeFiles/cmTryCompileExec3786898336.dir/vxl_platform_tests.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/VNL/src/vxl/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec3786898336
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3786898336.dir/link.txt --verbose=1
+/usr/bin/c++      -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -w -DVCL_PROCESSOR_HAS_INFINITY    CMakeFiles/cmTryCompileExec3786898336.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec3786898336 -rdynamic -lm 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec753839358/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec753839358.dir/build.make CMakeFiles/cmTryCompileExec753839358.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec753839358.dir/TestEndianess.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow     -o CMakeFiles/cmTryCompileExec753839358.dir/TestEndianess.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec753839358
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec753839358.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow      CMakeFiles/cmTryCompileExec753839358.dir/TestEndianess.c.o  -o cmTryCompileExec753839358 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1550107452/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1550107452.dir/build.make CMakeFiles/cmTryCompileExec1550107452.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1550107452.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow     -o CMakeFiles/cmTryCompileExec1550107452.dir/CheckSymbolExists.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1550107452
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1550107452.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow      CMakeFiles/cmTryCompileExec1550107452.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1550107452 -rdynamic 
+CMakeFiles/cmTryCompileExec1550107452.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec1550107452] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1550107452/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+File /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1787067280/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1787067280.dir/build.make CMakeFiles/cmTryCompileExec1787067280.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1787067280.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1787067280.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1787067280
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1787067280.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1787067280.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1787067280 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec1787067280] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1787067280/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file type_traits exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2991315878/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2991315878.dir/build.make CMakeFiles/cmTryCompileExec2991315878.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2991315878.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds    -o CMakeFiles/cmTryCompileExec2991315878.dir/CheckIncludeFile.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/4.8/type_traits:35:0,
+                 from /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/4.8/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2991315878.dir/CheckIncludeFile.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec2991315878/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdlib.h;unistd.h;inttypes.h;sys/ioctl.h;sys/time.h;sys/file.h;sys/socket.h;sys/sockio.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4221105632/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4221105632.dir/build.make CMakeFiles/cmTryCompileExec4221105632.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4221105632.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone    -o CMakeFiles/cmTryCompileExec4221105632.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:9:24: fatal error: sys/sockio.h: No such file or directory
+ #include <sys/sockio.h>
+                        ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec4221105632.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec4221105632/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <stdlib.h>
+#include <unistd.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/time.h>
+#include <sys/file.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+
+
+int main(){return 0;}
+
+Determining if files stdlib.h;unistd.h;inttypes.h;sys/ioctl.h;sys/time.h;sys/file.h;sys/socket.h;net/if.h;netinet/in.h;net/if_dl.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1037933442/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1037933442.dir/build.make CMakeFiles/cmTryCompileExec1037933442.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1037933442.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone    -o CMakeFiles/cmTryCompileExec1037933442.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:11:23: fatal error: net/if_dl.h: No such file or directory
+ #include <net/if_dl.h>
+                       ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec1037933442.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1037933442/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <stdlib.h>
+#include <unistd.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/time.h>
+#include <sys/file.h>
+#include <sys/socket.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <net/if_dl.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/time.h;winsock.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1531624077/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1531624077.dir/build.make CMakeFiles/cmTryCompileExec1531624077.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1531624077.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone    -o CMakeFiles/cmTryCompileExec1531624077.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:3:21: fatal error: winsock.h: No such file or directory
+ #include <winsock.h>
+                     ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec1531624077.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1531624077/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <sys/time.h>
+#include <winsock.h>
+
+
+int main(){return 0;}
+
+Determining if the include file rpc.h exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2741400672/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2741400672.dir/build.make CMakeFiles/cmTryCompileExec2741400672.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2741400672.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone    -o CMakeFiles/cmTryCompileExec2741400672.dir/CheckIncludeFile.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:17: fatal error: rpc.h: No such file or directory
+ #include <rpc.h>
+                 ^
+compilation terminated.
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2741400672.dir/CheckIncludeFile.c.o] Error 1
+make[3]: *** [cmTryCompileExec2741400672/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec208096605/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec208096605.dir/build.make CMakeFiles/cmTryCompileExec208096605.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec208096605.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTryCompileExec208096605.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec208096605
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec208096605.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone -DCHECK_FUNCTION_EXISTS=_stricmp    CMakeFiles/cmTryCompileExec208096605.dir/CheckFunctionExists.c.o  -o cmTryCompileExec208096605 -rdynamic 
+CMakeFiles/cmTryCompileExec208096605.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_stricmp'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec208096605] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec208096605/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1983606937/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1983606937.dir/build.make CMakeFiles/cmTryCompileExec1983606937.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1983606937.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTryCompileExec1983606937.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1983606937
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1983606937.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone -DCHECK_FUNCTION_EXISTS=_strnicmp    CMakeFiles/cmTryCompileExec1983606937.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1983606937 -rdynamic 
+CMakeFiles/cmTryCompileExec1983606937.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_strnicmp'
+collect2: error: ld returned 1 exit status
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [cmTryCompileExec1983606937] Error 1
+make[3]: *** [cmTryCompileExec1983606937/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function _snprintf exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3517472293/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3517472293.dir/build.make CMakeFiles/cmTryCompileExec3517472293.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3517472293.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone -DCHECK_FUNCTION_EXISTS=_snprintf   -o CMakeFiles/cmTryCompileExec3517472293.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3517472293
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3517472293.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -fno-ipa-cp-clone -DCHECK_FUNCTION_EXISTS=_snprintf    CMakeFiles/cmTryCompileExec3517472293.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3517472293 -rdynamic 
+CMakeFiles/cmTryCompileExec3517472293.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_snprintf'
+collect2: error: ld returned 1 exit status
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [cmTryCompileExec3517472293] Error 1
+make[3]: *** [cmTryCompileExec3517472293/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test GDCM_HAVE_WCHAR_IFSTREAM failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1026524514/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1026524514.dir/build.make CMakeFiles/cmTryCompileExec1026524514.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1026524514.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -Wno-array-bounds -w -fno-ipa-cp-clone -DGDCM_HAVE_WCHAR_IFSTREAM   -o CMakeFiles/cmTryCompileExec1026524514.dir/src.cxx.o -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx:2:62: error: no matching function for call to ‘std::basic_ifstream<char>::basic_ifstream(const wchar_t [10])’
+ int main() { const wchar_t fn[10] = {}; std::ifstream is( fn ); return 0;}
+                                                              ^
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx:2:62: note: candidates are:
+In file included from /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/src.cxx:1:0:
+/usr/include/c++/4.8/fstream:467:7: note: std::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+       ^
+/usr/include/c++/4.8/fstream:467:7: note:   no known conversion for argument 1 from ‘const wchar_t [10]’ to ‘const char*’
+/usr/include/c++/4.8/fstream:453:7: note: std::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+       ^
+/usr/include/c++/4.8/fstream:453:7: note:   candidate expects 0 arguments, 1 provided
+/usr/include/c++/4.8/fstream:427:11: note: std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream:427:11: note:   no known conversion for argument 1 from ‘const wchar_t [10]’ to ‘const std::basic_ifstream<char>&’
+make[4]: *** [CMakeFiles/cmTryCompileExec1026524514.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1026524514/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <fstream>
+int main() { const wchar_t fn[10] = {}; std::ifstream is( fn ); return 0;}
+Determining if the function WSAStartup exists in the ws2_32;m failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4090679358/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4090679358.dir/build.make CMakeFiles/cmTryCompileExec4090679358.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4090679358.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=WSAStartup   -o CMakeFiles/cmTryCompileExec4090679358.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4090679358
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4090679358.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=WSAStartup    CMakeFiles/cmTryCompileExec4090679358.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4090679358 -rdynamic -lws2_32 -lm 
+/usr/bin/ld: cannot find -lws2_32
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec4090679358] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec4090679358/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists in the wsock32;m failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2803638861/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2803638861.dir/build.make CMakeFiles/cmTryCompileExec2803638861.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2803638861.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec2803638861.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2803638861
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2803638861.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec2803638861.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2803638861 -rdynamic -lwsock32 -lm 
+/usr/bin/ld: cannot find -lwsock32
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec2803638861] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2803638861/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostname exists in the ucb;m failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec216924936/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec216924936.dir/build.make CMakeFiles/cmTryCompileExec216924936.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec216924936.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTryCompileExec216924936.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec216924936
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec216924936.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=gethostname    CMakeFiles/cmTryCompileExec216924936.dir/CheckFunctionExists.c.o  -o cmTryCompileExec216924936 -rdynamic -lucb -lm 
+/usr/bin/ld: cannot find -lucb
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec216924936] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec216924936/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists in the socket;m failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1180817450/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1180817450.dir/build.make CMakeFiles/cmTryCompileExec1180817450.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1180817450.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1180817450.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1180817450
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1180817450.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1180817450.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1180817450 -rdynamic -lsocket -lm 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec1180817450] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1180817450/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if files ;globus/common.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2632321634/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2632321634.dir/build.make CMakeFiles/cmTryCompileExec2632321634.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2632321634.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec2632321634.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:27: fatal error: globus/common.h: No such file or directory
+ #include <globus/common.h>
+                           ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec2632321634.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2632321634/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <globus/common.h>
+
+
+int main(){return 0;}
+
+Determining if files ;io.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3860569816/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3860569816.dir/build.make CMakeFiles/cmTryCompileExec3860569816.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3860569816.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec3860569816.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec3860569816.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3860569816/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <io.h>
+
+
+int main(){return 0;}
+
+Determining if files ;mfhdf.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2241086059/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2241086059.dir/build.make CMakeFiles/cmTryCompileExec2241086059.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2241086059.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec2241086059.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:19: fatal error: mfhdf.h: No such file or directory
+ #include <mfhdf.h>
+                   ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec2241086059.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2241086059/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <mfhdf.h>
+
+
+int main(){return 0;}
+
+Determining if files ;pdb.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3134719311/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3134719311.dir/build.make CMakeFiles/cmTryCompileExec3134719311.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3134719311.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec3134719311.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:17: fatal error: pdb.h: No such file or directory
+ #include <pdb.h>
+                 ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec3134719311.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3134719311/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <pdb.h>
+
+
+int main(){return 0;}
+
+Determining if files pthread.h;setjmp.h;srbclient.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec983943763/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec983943763.dir/build.make CMakeFiles/cmTryCompileExec983943763.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec983943763.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec983943763.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:4:23: fatal error: srbclient.h: No such file or directory
+ #include <srbclient.h>
+                       ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec983943763.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec983943763/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <pthread.h>
+#include <setjmp.h>
+#include <srbclient.h>
+
+
+int main(){return 0;}
+
+Determining if files pthread.h;setjmp.h;stddef.h;stdint.h;string.h;strings.h;sys/ioctl.h;sys/proc.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3038699722/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3038699722.dir/build.make CMakeFiles/cmTryCompileExec3038699722.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3038699722.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec3038699722.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:9:22: fatal error: sys/proc.h: No such file or directory
+ #include <sys/proc.h>
+                      ^
+compilation terminated.
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec3038699722.dir/CheckIncludeFiles.c.o] Error 1
+make[3]: *** [cmTryCompileExec3038699722/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <pthread.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/proc.h>
+
+
+int main(){return 0;}
+
+Determining if files pthread.h;setjmp.h;stddef.h;stdint.h;string.h;strings.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;time.h;sys/timeb.h;sys/types.h;unistd.h;stdlib.h;memory.h;dlfcn.h;features.h;inttypes.h;netinet/in.h;winsock2.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3768197513/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3768197513.dir/build.make CMakeFiles/cmTryCompileExec3768197513.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3768197513.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec3768197513.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:23:22: fatal error: winsock2.h: No such file or directory
+ #include <winsock2.h>
+                      ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec3768197513.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3768197513/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <pthread.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <sys/timeb.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <memory.h>
+#include <dlfcn.h>
+#include <features.h>
+#include <inttypes.h>
+#include <netinet/in.h>
+#include <winsock2.h>
+
+
+int main(){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec656915788/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec656915788.dir/build.make CMakeFiles/cmTryCompileExec656915788.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec656915788.dir/H5_SIZEOF___INT64.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -D_POSIX_SOURCE -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec656915788.dir/H5_SIZEOF___INT64.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[4]: *** [CMakeFiles/cmTryCompileExec656915788.dir/H5_SIZEOF___INT64.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec656915788/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function setsysinfo exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4096492994/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4096492994.dir/build.make CMakeFiles/cmTryCompileExec4096492994.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4096492994.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -D_POSIX_SOURCE -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTryCompileExec4096492994.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4096492994
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4096492994.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=setsysinfo    CMakeFiles/cmTryCompileExec4096492994.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4096492994 -rdynamic -lm 
+CMakeFiles/cmTryCompileExec4096492994.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `setsysinfo'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec4096492994] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec4096492994/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sigsetjmp exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec867132197/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec867132197.dir/build.make CMakeFiles/cmTryCompileExec867132197.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec867132197.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -D_POSIX_SOURCE -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTryCompileExec867132197.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec867132197
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec867132197.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=sigsetjmp    CMakeFiles/cmTryCompileExec867132197.dir/CheckFunctionExists.c.o  -o cmTryCompileExec867132197 -rdynamic -lm 
+CMakeFiles/cmTryCompileExec867132197.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `sigsetjmp'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec867132197] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec867132197/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Test H5_ULONG_TO_FP_BOTTOM_BIT_ACCURATE Run failed with the following output and exit code:
+ Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1183980871/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1183980871.dir/build.make CMakeFiles/cmTryCompileExec1183980871.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1183980871.dir/ConversionTests.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DH5_ULONG_TO_FP_BOTTOM_BIT_ACCURATE_TEST   -o CMakeFiles/cmTryCompileExec1183980871.dir/ConversionTests.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/HDF5/src/itkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTryCompileExec1183980871
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1183980871.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DH5_ULONG_TO_FP_BOTTOM_BIT_ACCURATE_TEST    CMakeFiles/cmTryCompileExec1183980871.dir/ConversionTests.c.o  -o cmTryCompileExec1183980871 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+
+Test H5_FP_TO_ULLONG_RIGHT_MAXIMUM Run failed with the following output and exit code:
+ Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1094349024/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1094349024.dir/build.make CMakeFiles/cmTryCompileExec1094349024.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1094349024.dir/ConversionTests.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST   -o CMakeFiles/cmTryCompileExec1094349024.dir/ConversionTests.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/HDF5/src/itkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTryCompileExec1094349024
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1094349024.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST    CMakeFiles/cmTryCompileExec1094349024.dir/ConversionTests.c.o  -o cmTryCompileExec1094349024 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/Modules/ThirdParty/HDF5/src/itkhdf5/CMake/CMakeFiles/CMakeTmp'
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1162255793/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1162255793.dir/build.make CMakeFiles/cmTryCompileExec1162255793.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1162255793.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec1162255793.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:21: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+                     ^
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec1162255793.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1162255793/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(){return 0;}
+
+Determining if files ieeefp.h exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2827443120/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2827443120.dir/build.make CMakeFiles/cmTryCompileExec2827443120.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2827443120.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec2827443120.dir/CheckIncludeFiles.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: ieeefp.h: No such file or directory
+ #include <ieeefp.h>
+                    ^
+compilation terminated.
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec2827443120.dir/CheckIncludeFiles.c.o] Error 1
+make[3]: *** [cmTryCompileExec2827443120/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <ieeefp.h>
+
+
+int main(){return 0;}
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec696226874/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec696226874.dir/build.make CMakeFiles/cmTryCompileExec696226874.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec696226874.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTryCompileExec696226874.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec696226874
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec696226874.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=floor    CMakeFiles/cmTryCompileExec696226874.dir/CheckFunctionExists.c.o  -o cmTryCompileExec696226874 -rdynamic 
+CMakeFiles/cmTryCompileExec696226874.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `floor'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec696226874] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec696226874/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pow exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2803322389/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2803322389.dir/build.make CMakeFiles/cmTryCompileExec2803322389.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2803322389.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTryCompileExec2803322389.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2803322389
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2803322389.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=pow    CMakeFiles/cmTryCompileExec2803322389.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2803322389 -rdynamic 
+CMakeFiles/cmTryCompileExec2803322389.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec2803322389] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2803322389/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sqrt exists failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1562480524/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1562480524.dir/build.make CMakeFiles/cmTryCompileExec1562480524.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1562480524.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTryCompileExec1562480524.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1562480524
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1562480524.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -DCHECK_FUNCTION_EXISTS=sqrt    CMakeFiles/cmTryCompileExec1562480524.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1562480524 -rdynamic 
+CMakeFiles/cmTryCompileExec1562480524.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec1562480524] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1562480524/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec398832442/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec398832442.dir/build.make CMakeFiles/cmTryCompileExec398832442.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec398832442.dir/TestEndianess.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec398832442.dir/TestEndianess.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec398832442
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec398832442.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w     CMakeFiles/cmTryCompileExec398832442.dir/TestEndianess.c.o  -o cmTryCompileExec398832442 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Value of the 22nd bit of a 32-bit quiet-NaN is 1TestQnanhibit.c produced following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4216057216/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4216057216.dir/build.make CMakeFiles/cmTryCompileExec4216057216.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4216057216.dir/TestQnanhibit.c.o
+/usr/bin/cc   -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w    -o CMakeFiles/cmTryCompileExec4216057216.dir/TestQnanhibit.c.o   -c /home/snr/Support/Plus-build-codeblocks/itk/Modules/ThirdParty/NrrdIO/src/NrrdIO/CMake/TestQnanhibit.c
+Linking C executable cmTryCompileExec4216057216
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4216057216.dir/link.txt --verbose=1
+/usr/bin/cc     -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w     CMakeFiles/cmTryCompileExec4216057216.dir/TestQnanhibit.c.o  -o cmTryCompileExec4216057216 -rdynamic 
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/itk-bin/CMakeFiles/CMakeTmp'
+-DTEEM_QNANHIBIT=1
+
+

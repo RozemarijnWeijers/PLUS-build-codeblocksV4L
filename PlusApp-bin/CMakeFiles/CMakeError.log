@@ -1,0 +1,102 @@
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2305036640/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2305036640.dir/build.make CMakeFiles/cmTryCompileExec2305036640.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2305036640.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -Wno-array-bounds -msse2   -ftemplate-depth-50 -fno-tree-vectorize  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2305036640.dir/CheckSymbolExists.cxx.o -c /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+make[4]: *** [CMakeFiles/cmTryCompileExec2305036640.dir/CheckSymbolExists.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec2305036640/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+
+File /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1202306446/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1202306446.dir/build.make CMakeFiles/cmTryCompileExec1202306446.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1202306446.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -Wno-array-bounds -msse2   -ftemplate-depth-50 -fno-tree-vectorize  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1202306446.dir/CheckSymbolExists.cxx.o -c /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+make[4]: *** [CMakeFiles/cmTryCompileExec1202306446.dir/CheckSymbolExists.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec1202306446/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+
+File /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3767508760/fast"
+make[3]: Entering directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3767508760.dir/build.make CMakeFiles/cmTryCompileExec3767508760.dir/build
+make[4]: Entering directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3767508760.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -Wno-array-bounds -msse2   -ftemplate-depth-50 -fno-tree-vectorize  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3767508760.dir/CheckSymbolExists.cxx.o -c /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+make[4]: *** [CMakeFiles/cmTryCompileExec3767508760.dir/CheckSymbolExists.cxx.o] Error 1
+make[4]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3767508760/fast] Error 2
+make[3]: Leaving directory `/home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp'
+
+File /home/snr/Support/Plus-build-codeblocks/PlusApp-bin/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

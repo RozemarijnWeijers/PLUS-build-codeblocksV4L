@@ -1,0 +1,9 @@
+time|level|timeoffset|message|location
+072015_112653.699|INFO|000.000476| Software version: Plus-2.3.0.4217 - Linux| in vtkPlusLogger(183)
+072015_112653.699|INFO|000.000553| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/072015_112653_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+072015_112653.703|INFO|000.004531| EmTracker: Local time offset: 0ms| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(869)
+072015_112653.706|ERROR|000.006792| Failed to open port: /dev/ttyUSB0 - Error opening serial connection| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/PolarisTracking/vtkNDITracker.cxx(228)
+072015_112653.706|ERROR|000.006827| EmTracker: Cannot connect to data source, ConnectInternal failed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(960)
+072015_112653.706|ERROR|000.006843| Unable to connect device: EmTracker.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(306)
+072015_112653.814|INFO|000.115397| Copy buffer to video buffer...| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusBuffer.cxx(705)
+072015_112653.831|WARNING|000.132621| vtkSavedDataSource LocalBuffer is invalid| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/SavedDataSource/vtkSavedDataSource.cxx(824)

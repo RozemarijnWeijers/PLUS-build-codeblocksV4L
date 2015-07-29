@@ -1,0 +1,4 @@
+# Target labels
+ ITKIOTransformMatlab
+# Source files and their labels
+/home/snr/Support/Plus-build-codeblocks/itk/Modules/IO/TransformMatlab/src/itkMatlabTransformIOFactory.cxx

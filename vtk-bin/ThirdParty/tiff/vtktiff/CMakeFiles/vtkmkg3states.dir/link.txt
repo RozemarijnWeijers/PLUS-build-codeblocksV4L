@@ -1,0 +1,1 @@
+/usr/bin/cc     -w -w -g  -Wl,--fatal-warnings -Wl,--no-undefined -lc -Wl,--fatal-warnings -Wl,--no-undefined -lc    CMakeFiles/vtkmkg3states.dir/mkg3states.c.o  -o /home/snr/Support/Plus-build-codeblocks/bin/vtkmkg3states-6.2 -rdynamic 
