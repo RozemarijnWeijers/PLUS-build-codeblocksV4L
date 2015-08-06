@@ -1,0 +1,9 @@
+time|level|timeoffset|message|location
+073015_174454.242|INFO|000.000382| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+073015_174454.242|INFO|000.000460| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/073015_174454_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+073015_174454.242|INFO|000.000914| Constructed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(162)
+073015_174454.243|INFO|000.001794| Selected US image orientation: MF| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDataSource.cxx(264)
+073015_174454.244|INFO|000.002055| notify| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(753)
+073015_174454.244|INFO|000.002124| start connecting| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(192)
+073015_174454.244|INFO|000.002163| openedDevice| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(263)
+073015_174454.271|INFO|000.029491| videomode| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx(381)

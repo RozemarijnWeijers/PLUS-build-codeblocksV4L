@@ -49,6 +49,10 @@ Authors include: Danielle Pace
 #include <sys/stat.h> //added
 #include <sys/mman.h> //added
 
+
+#include "libv4lconvert.h"
+
+
 // because of warnings in windows header push and pop the warning level
 //#ifdef _MSC_VER
 //#pragma warning (push, 3)
@@ -146,8 +150,8 @@ unsigned int vtkLinuxVideoSource::n_buffers; //added
 //----------------------------------------------------------------------------
 vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
 : Internal(new vtkLinuxVideoSourceInternal)
-, WndClassName(NULL)
-, Preview(0)
+//, WndClassName(NULL)
+//, Preview(0)
 , FrameIndex(0)
 {
   this->RequireImageOrientationInConfiguration = true;
@@ -159,6 +163,7 @@ vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
   this->FrameSize[1] = 480;
   this->FrameSize[2] = 1;
   this->StartThreadForInternalUpdates=true;
+  this->AcquisitionRate = 30;
   LOG_INFO("Constructed");
 }
 
@@ -191,14 +196,18 @@ PlusStatus vtkLinuxVideoSource::InternalConnect()//const char* device)//virtual
   }
   LOG_INFO("start connecting");
   //SetVideoDevice
-  strcpy(this->dev_name, "/dev/video1");//device); LATER DIFFERENT
-  //dev_name = "/dev/video1";
-  //io=IO_METHOD_MMAP; //added
+  //strcpy(this->dev_name, "/dev/video1");//device); webcam     LATER from config file
+  strcpy(this->dev_name, "/dev/video0");//device);framegrabber  LATER from config file
+
+  //open video device
   this->OpenDevice();
+
+  //Initialize video vedice
   this->InitDevice();
   this->DeviceInitialized = 1;
 
-  if( this->GetNumberOfVideoSources() == 1 )
+  //create datasource objects for every videosource
+  /*if( this->GetNumberOfVideoSources() == 1 )
   {
   vtkPlusDataSource* aSource(NULL);
     if( this->GetFirstVideoSource(aSource) != PLUS_SUCCESS )
@@ -208,6 +217,7 @@ PlusStatus vtkLinuxVideoSource::InternalConnect()//const char* device)//virtual
     }
     else
     {
+      //set parameters of the data source
       US_IMAGE_TYPE imageType = aSource->GetImageType();
       aSource->SetPixelType(VTK_UNSIGNED_CHAR);
       aSource->SetNumberOfScalarComponents(imageType == US_IMG_RGB_COLOR ? 3 : 1);
@@ -225,13 +235,13 @@ PlusStatus vtkLinuxVideoSource::InternalConnect()//const char* device)//virtual
         LOG_ERROR("Unable to retrieve the video source in the Epiphan device on channel " << (*this->OutputChannels.begin())->GetChannelId());
         return PLUS_FAIL;
       }
-
+      //set parameters of the data source
       US_IMAGE_TYPE imageType = aSource->GetImageType();
       aSource->SetPixelType(VTK_UNSIGNED_CHAR);
       aSource->SetNumberOfScalarComponents(imageType == US_IMG_RGB_COLOR ? 3 : 1);
       aSource->SetInputFrameSize(this->FrameSize);
     }
-  }
+  }*/
   LOG_INFO("internalconnect");
   return PLUS_SUCCESS;
 }
@@ -262,14 +272,15 @@ if (-1 == fd) {
 LOG_INFO("openedDevice");
 }
 
-void vtkLinuxVideoSource::InitDevice()//added void?
+void vtkLinuxVideoSource::InitDevice()//added
 {
-  struct v4l2_capability cap;
-  struct v4l2_cropcap cropcap;
-  struct v4l2_crop crop;
-  struct v4l2_format fmt;
+  struct v4l2_capability cap;   //pointer to driver
+  struct v4l2_cropcap cropcap;  //giving the bounds of the subsection of the picture within an capture window
+  struct v4l2_crop crop;        //the source rectangle
+  struct v4l2_format fmt;       //data format
   unsigned int min;
 
+  //query capabilities of device and set in cap
   if (-1 == xioctl (fd, VIDIOC_QUERYCAP, &cap)) {
     if (EINVAL == errno) {
       fprintf (stderr, "%s is no V4L2 device\n",
@@ -280,41 +291,49 @@ void vtkLinuxVideoSource::InitDevice()//added void?
     }
   }
 
+  //chech capture capability of device
   if (!(cap.capabilities & V4L2_CAP_VIDEO_CAPTURE)) {
     fprintf (stderr, "%s is no video capture device\n",
        dev_name);
     exit (PLUS_FAIL);
   }
+    if (!(cap.capabilities & V4L2_CAP_STREAMING)) {
+    fprintf (stderr, "%s is no video streaming device\n",
+       dev_name);
+    exit (PLUS_FAIL);
+  }
 
+  //dit kan denk ik weg
   switch (io) {
-  case IO_METHOD_READ:
+  /*case IO_METHOD_READ:
     if (!(cap.capabilities & V4L2_CAP_READWRITE)) {
       fprintf (stderr, "%s does not support read i/o\n",
          dev_name);
       exit (PLUS_FAIL); // added EXIT_FAILURE->PLUS_FAIL
     }
 
-    break;
-
+    break;*/
   case IO_METHOD_MMAP:
-  case IO_METHOD_USERPTR:
+  /*case IO_METHOD_USERPTR:
     if (!(cap.capabilities & V4L2_CAP_STREAMING)) {
       fprintf (stderr, "%s does not support streaming i/o\n",
          dev_name);
       exit (PLUS_FAIL);
-    }
+    }*/
 
     break;
   }
 
+  //set type of data stream in cropcap
   CLEAR (cropcap);
-
   cropcap.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
 
+  //query and set the cropping capabilities
   if (0 == xioctl (fd, VIDIOC_CROPCAP, &cropcap)) {
     crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
     crop.c = cropcap.defrect; /* reset to default */
 
+    //set cropping rectangle
     if (-1 == xioctl (fd, VIDIOC_S_CROP, &crop)) {
       switch (errno) {
       case EINVAL:
@@ -330,14 +349,15 @@ void vtkLinuxVideoSource::InitDevice()//added void?
     /* Errors ignored. */
   }
 
+  //set data format parameters
   CLEAR (fmt);
-
   fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-  fmt.fmt.pix.width       = this->FrameSize[0];
-  fmt.fmt.pix.height      = this->FrameSize[1];
-  fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;
-  fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;
+  fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+  fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+  fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
+  fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
 
+  //negotiate data format
   if (-1 == xioctl (fd, VIDIOC_S_FMT, &fmt))
     errno_exit ("VIDIOC_S_FMT");
 
@@ -351,45 +371,44 @@ void vtkLinuxVideoSource::InitDevice()//added void?
   if (fmt.fmt.pix.sizeimage < min)
     fmt.fmt.pix.sizeimage = min;
 
+  //InitMmap
   switch (io) {
-  case IO_METHOD_READ:
-    //InitRead (fmt.fmt.pix.sizeimage);              //LATER
-    break;
-
+  /*case IO_METHOD_READ:
+    //InitRead (fmt.fmt.pix.sizeimage);              //LATER or not
+    //break;*/
   case IO_METHOD_MMAP:
     InitMmap ();
     break;
-
-  case IO_METHOD_USERPTR:
-    //InitUserp (fmt.fmt.pix.sizeimage);             //LATER
-    break;
+  /*case IO_METHOD_USERPTR:
+    InitUserp (fmt.fmt.pix.sizeimage);             //LATER or not
+    break;*/
   }
 
-  //Set Input channel to 3 = S-Video on a Hauppauge Impact VCB
-  int channel = 1;
-
-  //  if (-1 == xioctl (fd,VIDIOC_S_INPUT , &this->VideoChannel))
-  /*if (-1 == xioctl (fd, VIDIOC_S_INPUT , &channel))    // LATER NAAR KIJKEN!!
+  //select video input
+  //Set Input channel to 3 = S-Video on a Hauppauge Impact VCB -> 3 for framegrabber comment this part
+  int channel = 3;
+  if (-1 == xioctl (fd, VIDIOC_S_INPUT , &channel))    // LATER NAAR KIJKEN voor webcam!!
     errno_exit ("VIDIOC_S_INPUT");
 
+  //set video standaard to NTSC
   v4l2_std_id std_id;
-
-  if(this->VideoMode == 1) //is this nessecary
+  /*if(this->VideoMode == 1) //is this nessecary?
     {
     //Set video mode to NTSC
     std_id = V4L2_STD_NTSC;
     }
   else if(this->VideoMode == 2)
     {//Set video mode to PAL
-    std_id = V4L2_STD_PAL;
-    }
 
+    std_id = V4L2_STD_PAL;
+    }*/
   std_id = V4L2_STD_NTSC;
 
-  if (-1 == ioctl (fd, VIDIOC_S_STD, &std_id)) {     // LATER NAAR KIJKENH
+  //select videostandard of the current input
+  if (-1 == ioctl (fd, VIDIOC_S_STD, &std_id)) {     // LATER NAAR KIJKEN for webcam!!
         perror ("VIDIOC_S_STD");
         exit (PLUS_FAIL);
-        }*/
+        }
 
   LOG_INFO("initdevice");
 }
@@ -397,81 +416,62 @@ void vtkLinuxVideoSource::InitDevice()//added void?
 //----------------------------------------------------------------------------//added
 void vtkLinuxVideoSource::InitMmap (void)
 {
-        struct v4l2_requestbuffers req;
+  struct v4l2_requestbuffers req;
 
-        CLEAR(req);
+  //request for buffer parameters
+  CLEAR(req);
+  req.count = 4;                            //number of buffers requested, only when memory is mmap
+  req.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;   //set type
+  req.memory = V4L2_MEMORY_MMAP;            //map device memory into application address space
 
-        req.count = 4;
-        req.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-        req.memory = V4L2_MEMORY_MMAP;
+  //initiate memory mapped I/O, mmap buffers must be allocated before they can be mapped to the application's address space
+  if (-1 == xioctl(fd, VIDIOC_REQBUFS, &req)) {
+     if (EINVAL == errno) {
+        fprintf(stderr, "%s does not support "
+               "memory mapping\n", dev_name);
+        exit(EXIT_FAILURE);
+     } else {
+        errno_exit("VIDIOC_REQBUFS");
+     }
+  }
+  if (req.count < 2) {
+     fprintf(stderr, "Insufficient buffer memory on %s\n",
+            dev_name);
+     exit(EXIT_FAILURE);
+  }
 
-        if (-1 == xioctl(fd, VIDIOC_REQBUFS, &req)) {
-                if (EINVAL == errno) {
-                        fprintf(stderr, "%s does not support "
-                                 "memory mapping\n", dev_name);
-                        exit(EXIT_FAILURE);
-                } else {
-                        errno_exit("VIDIOC_REQBUFS");
-                }
-        }
+  //allocateds a block of memory for buffers
+  buffers = (buffer*)calloc(req.count, sizeof(*buffers));
+  //check for buffers
+  if (!buffers) {
+    fprintf(stderr, "Out of memory\n");
+    exit(EXIT_FAILURE);
+  }
 
-        if (req.count < 2) {
-                fprintf(stderr, "Insufficient buffer memory on %s\n",
-                         dev_name);
-                exit(EXIT_FAILURE);
-        }
+  //create buffers
+  for (n_buffers = 0; n_buffers < req.count; ++n_buffers) {
+      struct v4l2_buffer buf;
 
-        buffers = (buffer*)calloc(req.count, sizeof(*buffers));
+      //set buffer parameters
+      CLEAR(buf);
+      buf.type        = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+      buf.memory      = V4L2_MEMORY_MMAP;
+      buf.index       = n_buffers;
 
-        if (!buffers) {
-                fprintf(stderr, "Out of memory\n");
-                exit(EXIT_FAILURE);
-        }
-
-        for (n_buffers = 0; n_buffers < req.count; ++n_buffers) {
-                struct v4l2_buffer buf;
-
-                CLEAR(buf);
-
-                buf.type        = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-                buf.memory      = V4L2_MEMORY_MMAP;
-                buf.index       = n_buffers;
-
-                if (-1 == xioctl(fd, VIDIOC_QUERYBUF, &buf))
-                        errno_exit("VIDIOC_QUERYBUF");
-
-                buffers[n_buffers].length = buf.length;
-                buffers[n_buffers].start =
-                        mmap(NULL /* start anywhere */,
-                              buf.length,
-                              PROT_READ | PROT_WRITE /* required */,
-                              MAP_SHARED /* recommended */,
-                              fd, buf.m.offset);
-
-                if (MAP_FAILED == buffers[n_buffers].start)
-                        errno_exit("mmap");
-        }
-}
-
-
-//----------------------------------------------------------------------------//added
-int vtkLinuxVideoSource::xioctl(int fd, int request, void *arg)
-{
-  int r;
-
-  do r = ioctl (fd, request, arg);
-  while (-1 == r && EINTR == errno);
-
-  return r;
-}
-
-//----------------------------------------------------------------------------//added
-void vtkLinuxVideoSource::errno_exit (const char * s)
-{
-  fprintf (stderr, "%s error %d, %s\n",
-     s, errno, strerror (errno));
-
-  exit (PLUS_FAIL);
+      //query status of and set parameters of requested buffers
+      if (-1 == xioctl(fd, VIDIOC_QUERYBUF, &buf))
+         errno_exit("VIDIOC_QUERYBUF");
+      //set start and length in buffers
+      buffers[n_buffers].length = buf.length;
+      buffers[n_buffers].start =
+             mmap(NULL /* start anywhere */,
+                  buf.length,
+                  PROT_READ | PROT_WRITE /* required */,
+                  MAP_SHARED /* recommended */,
+                  fd, buf.m.offset);
+      if (MAP_FAILED == buffers[n_buffers].start)
+         errno_exit("mmap");
+  }
 }
 
 //----------------------------------------------------------------------------
@@ -487,14 +487,14 @@ PlusStatus vtkLinuxVideoSource::InternalDisconnect()//virtual
 void vtkLinuxVideoSource::CloseDevice(void)
 {
 LOG_INFO("close device");
-  /*if (-1 == close (fd)){
+  if (-1 == close (fd)){
     fprintf (stderr, "%s error %d, %s\n",
        "close", errno, strerror (errno));
 
     exit (EXIT_FAILURE);
   }
 
-  fd = -1;*/
+  fd = -1;
 }
 
 //----------------------------------------------------------------------------//added
@@ -564,23 +564,50 @@ LOG_INFO("internalupdate");
     return PLUS_SUCCESS;
   }
 
-  fd_set fds;
-  FD_ZERO(&fds);
-  FD_SET(fd, &fds);
-  struct timeval tv = {0};
-  tv.tv_sec = 2;
-  int r = select(fd+1, &fds, NULL, NULL, &tv);
-  if(-1 == r)
+ /* for(int i=0; i<n_buffers; i++)
   {
-    perror("Waiting for Frame");
-    return PLUS_SUCCESS;
-  }
-/*
-  if(-1 == xioctl(fd, VIDIOC_DQBUF, &buf))
-  {
-      perror("Retrieving Frame");
+    fd_set fds;
+    FD_ZERO(&fds);
+    FD_SET(fd, &fds);
+    struct timeval tv = {0};
+    tv.tv_sec = 2;
+    int r = select(fd+1, &fds, NULL, NULL, &tv);
+    if(-1 == r)
+    {
+      perror("Waiting for Frame");
       return PLUS_SUCCESS;
+    }
+
+    struct v4l2_buffer buf;
+    CLEAR(buf);
+    buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    buf.memory = V4L2_MEMORY_MMAP;
+    buf.index = i;
+    if(-1 == xioctl(fd, VIDIOC_DQBUF, &buf))
+    {
+      switch (errno)
+      {
+             case EAGAIN:
+                  return PLUS_FAIL;
+             case EIO:
+                  // Could ignore EIO, see spec.
+                  // fall through
+             default:
+                  errno_exit("VIDIOC_DQBUF");
+      }
+    }
+
+    process_image(buffers[buf.index].start, buf.bytesused);*/
+
+    /*struct v4l2_buffer buf;
+    CLEAR(buf);
+    buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    buf.memory = V4L2_MEMORY_MMAP;
+    buf.index = i;*/
+    /*if (-1 == xioctl (fd, VIDIOC_QBUF, &buf))
+      errno_exit ("VIDIOC_QBUF");
   }*/
+
   /*V2U_GrabFrame2 * frame = NULL;     // from epiphan
 
 
@@ -629,7 +656,7 @@ LOG_INFO("internalupdate");
     }
   }
 
-  FrmGrab_Release( (FrmGrabber*)this->FrameGrabber, frame );
+  //FrmGrab_Release( (FrmGrabber*)this->FrameGrabber, frame );
 
   this->FrameNumber++;*/
 
@@ -637,37 +664,77 @@ LOG_INFO("internalupdate");
 }
 
 //----------------------------------------------------------------------------
+PlusStatus vtkLinuxVideoSource::process_image(const void *p, int size)
+{
+ /* LOG_INFO("process_image");
+  vtkPlusDataSource* aSource(NULL);
+  for( int i = 0; i < this->GetNumberOfVideoSources(); ++i )
+  {
+    LIBV4L_PUBLIC int v4lconvert_convert(struct v4lconvert_data *data,
+        const struct v4l2_format *src_fmt,
+        const struct v4l2_format *dest_fmt,
+        unsigned char *src, int src_size, unsigned char *dest, int dest_size);
+
+    if( this->GetVideoSourceByIndex(i, aSource) != PLUS_SUCCESS )
+    {
+      LOG_ERROR("Unable to retrieve the video source in the Epiphan device on channel " << (*this->OutputChannels.begin())->GetChannelId());
+      return PLUS_FAIL;
+    }
+    int numberOfScalarComponents(1);
+    if( aSource->GetImageType() == US_IMG_RGB_COLOR )
+    {
+      numberOfScalarComponents = 3;
+    }
+    if( aSource->AddItem(buf, aSource->GetInputImageOrientation(), this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(), 0, this->FrameNumber) != PLUS_SUCCESS )
+    {
+      LOG_ERROR("Error adding item to video source " << aSource->GetSourceId() << " on channel " << (*this->OutputChannels.begin())->GetChannelId() );
+      return PLUS_FAIL;
+    }
+    else
+    {
+      this->Modified();
+    }
+    /*int jpgfile;
+    if((jpgfile = open("/tmp/myimage.jpeg", O_WRONLY | O_CREAT, 0660)) < 0)
+    {
+      perror("open");
+      exit(1);
+    }
+
+    write(jpgfile, p, size);
+    close(jpgfile);*/
+  //}
+}
+
+//----------------------------------------------------------------------------
 PlusStatus vtkLinuxVideoSource::InternalStartRecording()//virtual
 {
-//start_capturing(); //added
-//capturing(); //added
 LOG_INFO("start recording");      //this is just for testing LATER aanpassen
 unsigned int i;
 enum v4l2_buf_type type;
 
 switch (io) {
-case IO_METHOD_READ:
-       /* Nothing to do. */
-       break;
-
+/*case IO_METHOD_READ:
+       // Nothing to do.
+       break;*/
 case IO_METHOD_MMAP:
-       /*for (i = 0; i < n_buffers; ++i) {
+       for (i = 0; i < n_buffers; ++i) {
              struct v4l2_buffer buf;
 
              CLEAR(buf);
              buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
              buf.memory = V4L2_MEMORY_MMAP;
              buf.index = i;
-
+             //exchange a buffer with the diver
              if (-1 == xioctl(fd, VIDIOC_QBUF, &buf))
                        errno_exit("VIDIOC_QBUF");
-             }*/
+             }
        type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+       //start streaming
        if (-1 == xioctl(fd, VIDIOC_STREAMON, &type))
                 errno_exit("VIDIOC_STREAMON");
        break;
-
-case IO_METHOD_USERPTR:
+/*case IO_METHOD_USERPTR:
        for (i = 0; i < n_buffers; ++i) {
                 struct v4l2_buffer buf;
 
@@ -684,7 +751,7 @@ case IO_METHOD_USERPTR:
         type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
         if (-1 == xioctl(fd, VIDIOC_STREAMON, &type))
             errno_exit("VIDIOC_STREAMON");
-        break;
+        break;*/
 }
 
 return PLUS_SUCCESS;
@@ -741,6 +808,26 @@ LOG_INFO("updateframebuffer");
 PlusStatus vtkLinuxVideoSource::WriteConfiguration(vtkXMLDataElement* config)
 {
 }*/
+
+//----------------------------------------------------------------------------//added
+int vtkLinuxVideoSource::xioctl(int fd, int request, void *arg)
+{
+  int r;
+
+  do r = ioctl (fd, request, arg);
+  while (-1 == r && EINTR == errno);
+
+  return r;
+}
+
+//----------------------------------------------------------------------------//added
+void vtkLinuxVideoSource::errno_exit (const char * s)
+{
+  fprintf (stderr, "%s error %d, %s\n",
+     s, errno, strerror (errno));
+
+  exit (PLUS_FAIL);
+}
 
 //----------------------------------------------------------------------------
 PlusStatus vtkLinuxVideoSource::NotifyConfigured() //virtual

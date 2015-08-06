@@ -145,7 +145,7 @@ protected:
 private:
   static char dev_name[256]; //added
   static int fd; //added
-  struct buffer *  buffers; //added
+  struct buffer*  buffers; //added
   static unsigned int  n_buffers; //added
   static io_method io; //added
 
@@ -156,6 +156,7 @@ private:
   void InitDevice(); //added void??
   void InitMmap(void); //added
   void UninitDevice(void); //added
+  PlusStatus process_image(const void *p, int size);
 
   void errno_exit (const char *s); //added
 

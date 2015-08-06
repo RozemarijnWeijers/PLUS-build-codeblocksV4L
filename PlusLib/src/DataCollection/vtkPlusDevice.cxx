@@ -1017,7 +1017,7 @@ PlusStatus vtkPlusDevice::StartRecording()
 
   this->RecordingStartTime = vtkAccurateTimer::GetSystemTime();
   this->Recording = 1;
-  LOG_INFO("start internalupdate1");
+  LOG_INFO("before start internalupdate");
   if( this->StartThreadForInternalUpdates )
   {
   LOG_INFO("start internalupdate");

@@ -77,6 +77,8 @@ sys/stat.h
 -
 sys/mman.h
 -
+libv4lconvert.h
+/home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/libv4lconvert.h
 
 /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.h
 vtkDataCollectionExport.h
