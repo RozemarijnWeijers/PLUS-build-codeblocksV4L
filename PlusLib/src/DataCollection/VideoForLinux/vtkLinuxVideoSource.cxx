@@ -564,9 +564,9 @@ LOG_INFO("internalupdate");
     return PLUS_SUCCESS;
   }
 
- /* for(int i=0; i<n_buffers; i++)
+  for(int i=0; i<n_buffers; i++)
   {
-    fd_set fds;
+   /* fd_set fds;
     FD_ZERO(&fds);
     FD_SET(fd, &fds);
     struct timeval tv = {0};
@@ -576,7 +576,7 @@ LOG_INFO("internalupdate");
     {
       perror("Waiting for Frame");
       return PLUS_SUCCESS;
-    }
+    }*/
 
     struct v4l2_buffer buf;
     CLEAR(buf);
@@ -597,16 +597,16 @@ LOG_INFO("internalupdate");
       }
     }
 
-    process_image(buffers[buf.index].start, buf.bytesused);*/
+    process_image(buffers[buf.index].start, buf.bytesused);
 
     /*struct v4l2_buffer buf;
     CLEAR(buf);
     buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
     buf.memory = V4L2_MEMORY_MMAP;
     buf.index = i;*/
-    /*if (-1 == xioctl (fd, VIDIOC_QBUF, &buf))
+    if (-1 == xioctl (fd, VIDIOC_QBUF, &buf))
       errno_exit ("VIDIOC_QBUF");
-  }*/
+  }
 
   /*V2U_GrabFrame2 * frame = NULL;     // from epiphan
 
@@ -664,28 +664,43 @@ LOG_INFO("internalupdate");
 }
 
 //----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::process_image(const void *p, int size)
+PlusStatus vtkLinuxVideoSource::process_image(const void *buffers_start, int buffers_size)
 {
- /* LOG_INFO("process_image");
+  LOG_INFO("process_image");
+
   vtkPlusDataSource* aSource(NULL);
   for( int i = 0; i < this->GetNumberOfVideoSources(); ++i )
   {
-    LIBV4L_PUBLIC int v4lconvert_convert(struct v4lconvert_data *data,
-        const struct v4l2_format *src_fmt,
-        const struct v4l2_format *dest_fmt,
-        unsigned char *src, int src_size, unsigned char *dest, int dest_size);
-
     if( this->GetVideoSourceByIndex(i, aSource) != PLUS_SUCCESS )
     {
-      LOG_ERROR("Unable to retrieve the video source in the Epiphan device on channel " << (*this->OutputChannels.begin())->GetChannelId());
+      LOG_ERROR("Unable to retrieve the video source in the Linux device on channel " << (*this->OutputChannels.begin())->GetChannelId());
       return PLUS_FAIL;
     }
+
     int numberOfScalarComponents(1);
     if( aSource->GetImageType() == US_IMG_RGB_COLOR )
     {
       numberOfScalarComponents = 3;
     }
-    if( aSource->AddItem(buf, aSource->GetInputImageOrientation(), this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(), 0, this->FrameNumber) != PLUS_SUCCESS )
+
+    struct v4l2_format src_fmt;  //maybe from init device later
+    src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    src_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+    src_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+    src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
+    src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+    struct v4l2_format dest_fmt;
+    dest_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    dest_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+    dest_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+    dest_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;              //set pixel format
+    dest_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+    unsigned char *dest;
+    int dest_size=buffers_size; //klopt dit?????
+
+    LIBV4L_PUBLIC int v4lconvert_convert(*buffers_start, &src_fmt, &dest_fmt, *buffer_start, buffer_size, *dest, dest_size);
+
+    /*if( aSource->AddItem(buffers_start, aSource->GetInputImageOrientation(), this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(), 0, this->FrameNumber) != PLUS_SUCCESS )
     {
       LOG_ERROR("Error adding item to video source " << aSource->GetSourceId() << " on channel " << (*this->OutputChannels.begin())->GetChannelId() );
       return PLUS_FAIL;
@@ -693,7 +708,7 @@ PlusStatus vtkLinuxVideoSource::process_image(const void *p, int size)
     else
     {
       this->Modified();
-    }
+    }*/
     /*int jpgfile;
     if((jpgfile = open("/tmp/myimage.jpeg", O_WRONLY | O_CREAT, 0660)) < 0)
     {
@@ -703,7 +718,8 @@ PlusStatus vtkLinuxVideoSource::process_image(const void *p, int size)
 
     write(jpgfile, p, size);
     close(jpgfile);*/
-  //}
+  }
+return PLUS_SUCCESS;
 }
 
 //----------------------------------------------------------------------------
