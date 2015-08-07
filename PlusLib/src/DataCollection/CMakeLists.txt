@@ -679,8 +679,10 @@ IF (PLUS_USE_VFL_VIDEO)
  
   SET (DataCollection_INCLUDE_DIRS ${DataCollection_INCLUDE_DIRS} 
     ${CMAKE_CURRENT_SOURCE_DIR}/VideoForLinux 
-    )      
-
+    ) 
+  SET (DataCollection_LIBS ${DataCollection_LIBS} 
+    v4lconvert
+    )
 ENDIF (PLUS_USE_VFL_VIDEO)
 
 # --------------------------------------------------------------------------

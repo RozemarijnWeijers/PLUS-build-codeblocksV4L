@@ -11,7 +11,7 @@ All rights reserved.
 See Copyright.txt or http://www.kitware.com/Copyright.htm for details.
 Authors include: Danielle Pace
 =========================================================================*/
-
+//#define WITH_V4L2_LIB 1		/* v4l library *///added?
 //#include "PixelCodec.h"
 #include "PlusConfigure.h"
 #include "vtkObjectFactory.h"
@@ -49,9 +49,7 @@ Authors include: Danielle Pace
 #include <sys/stat.h> //added
 #include <sys/mman.h> //added
 
-
 #include "libv4lconvert.h"
-
 
 // because of warnings in windows header push and pop the warning level
 //#ifdef _MSC_VER
@@ -146,6 +144,8 @@ char vtkLinuxVideoSource::dev_name[256]; //added
 vtkLinuxVideoSource::io_method vtkLinuxVideoSource::io; //added
 int vtkLinuxVideoSource::fd; //added
 unsigned int vtkLinuxVideoSource::n_buffers; //added
+static struct v4lconvert_data *v4lconvert_data; //added
+static unsigned char *dst_buf; //added
 
 //----------------------------------------------------------------------------
 vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
@@ -277,8 +277,10 @@ void vtkLinuxVideoSource::InitDevice()//added
   struct v4l2_capability cap;   //pointer to driver
   struct v4l2_cropcap cropcap;  //giving the bounds of the subsection of the picture within an capture window
   struct v4l2_crop crop;        //the source rectangle
-  struct v4l2_format fmt;       //data format
+  struct v4l2_format src_fmt;       //data format
+  struct v4l2_format dst_fmt;       //data format
   unsigned int min;
+  int sizeimage;
 
   //query capabilities of device and set in cap
   if (-1 == xioctl (fd, VIDIOC_QUERYCAP, &cap)) {
@@ -350,26 +352,46 @@ void vtkLinuxVideoSource::InitDevice()//added
   }
 
   //set data format parameters
-  CLEAR (fmt);
-  fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-  fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
-  fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
-  fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
-  fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
-
+  CLEAR (src_fmt);
+  src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+  src_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+  src_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+  src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
+  src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+  CLEAR (dst_fmt);
+  dst_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+  dst_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+  dst_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+  dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;              //set pixel format
+  dst_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+  v4lconvert_data = v4lconvert_create(fd);
+  if (v4lconvert_data == NULL)
+      errno_exit("v4lconvert_create");
+  if (v4lconvert_try_format(v4lconvert_data, &dst_fmt, &src_fmt) != 0)
+      errno_exit("v4lconvert_try_format");
   //negotiate data format
-  if (-1 == xioctl (fd, VIDIOC_S_FMT, &fmt))
+  if (-1 == xioctl(fd, VIDIOC_S_FMT, &src_fmt))
     errno_exit ("VIDIOC_S_FMT");
 
   /* Note VIDIOC_S_FMT may change width and height. */
 
   /* Buggy driver paranoia. */
-  min = fmt.fmt.pix.width * 2;
-  if (fmt.fmt.pix.bytesperline < min)
-    fmt.fmt.pix.bytesperline = min;
-  min = fmt.fmt.pix.bytesperline * fmt.fmt.pix.height;
-  if (fmt.fmt.pix.sizeimage < min)
-    fmt.fmt.pix.sizeimage = min;
+  min = src_fmt.fmt.pix.width * 2;
+  if (src_fmt.fmt.pix.bytesperline < min)
+    src_fmt.fmt.pix.bytesperline = min;
+  min = src_fmt.fmt.pix.bytesperline * src_fmt.fmt.pix.height;
+  if (src_fmt.fmt.pix.sizeimage < min)
+    src_fmt.fmt.pix.sizeimage = min;
+
+
+	sizeimage = src_fmt.fmt.pix.sizeimage;
+	dst_buf = (unsigned char*)malloc(dst_fmt.fmt.pix.sizeimage);
+	/*printf("raw pixfmt: %c%c%c%c %dx%d\n",
+		src_fmt.fmt.pix.pixelformat & 0xff,
+	       (src_fmt.fmt.pix.pixelformat >> 8) & 0xff,
+	       (src_fmt.fmt.pix.pixelformat >> 16) & 0xff,
+	       (src_fmt.fmt.pix.pixelformat >> 24) & 0xff,
+		src_fmt.fmt.pix.width, src_fmt.fmt.pix.height);*/
 
   //InitMmap
   switch (io) {
@@ -566,7 +588,7 @@ LOG_INFO("internalupdate");
 
   for(int i=0; i<n_buffers; i++)
   {
-   /* fd_set fds;
+    fd_set fds;   //What does this part do??
     FD_ZERO(&fds);
     FD_SET(fd, &fds);
     struct timeval tv = {0};
@@ -576,95 +598,48 @@ LOG_INFO("internalupdate");
     {
       perror("Waiting for Frame");
       return PLUS_SUCCESS;
-    }*/
-
-    struct v4l2_buffer buf;
-    CLEAR(buf);
-    buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    buf.memory = V4L2_MEMORY_MMAP;
-    buf.index = i;
-    if(-1 == xioctl(fd, VIDIOC_DQBUF, &buf))
-    {
-      switch (errno)
-      {
-             case EAGAIN:
-                  return PLUS_FAIL;
-             case EIO:
-                  // Could ignore EIO, see spec.
-                  // fall through
-             default:
-                  errno_exit("VIDIOC_DQBUF");
-      }
     }
 
-    process_image(buffers[buf.index].start, buf.bytesused);
-
-    /*struct v4l2_buffer buf;
-    CLEAR(buf);
-    buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    buf.memory = V4L2_MEMORY_MMAP;
-    buf.index = i;*/
-    if (-1 == xioctl (fd, VIDIOC_QBUF, &buf))
-      errno_exit ("VIDIOC_QBUF");
+    read_frame();
   }
-
-  /*V2U_GrabFrame2 * frame = NULL;     // from epiphan
-
-
-  // If someone ever wants RGB8 or YUY2 (etc...) this line will have to be changed
-  // to support any future video format choices
-  // ReadConfiguration will probably need a new flag to tell this line what to do
-  V2U_UINT32 videoFormat = (this->CaptureImageType == US_IMG_RGB_COLOR ? V2U_GRABFRAME_FORMAT_RGB24 : V2U_GRABFRAME_FORMAT_Y8);
-
-  frame = FrmGrab_Frame( (FrmGrabber*)this->FrameGrabber, videoFormat, this->CropRectangle );
-
-  if (frame == NULL)
-  {
-    LOG_WARNING("Frame not captured for video format: " << videoFormat);
-    return PLUS_FAIL;
-  }
-
-  if ( frame->crop.width != this->FrameSize[0] || frame->crop.height != this->FrameSize[1])
-  {
-    LOG_ERROR("Image size received from Epiphan (" << frame->crop.width << "x" << frame->crop.height << ") does not match the clip rectangle size (" <<
-      this->FrameSize[0] << "x" << this->FrameSize[1] << ")");
-    FrmGrab_Release( (FrmGrabber*)this->FrameGrabber, frame );
-    return PLUS_FAIL;
-  }
-
-  vtkPlusDataSource* aSource(NULL);
-  for( int i = 0; i < this->GetNumberOfVideoSources(); ++i )
-  {
-    if( this->GetVideoSourceByIndex(i, aSource) != PLUS_SUCCESS )
-    {
-      LOG_ERROR("Unable to retrieve the video source in the Epiphan device on channel " << (*this->OutputChannels.begin())->GetChannelId());
-      return PLUS_FAIL;
-    }
-    int numberOfScalarComponents(1);
-    if( aSource->GetImageType() == US_IMG_RGB_COLOR )
-    {
-      numberOfScalarComponents = 3;
-    }
-    if( aSource->AddItem(frame->pixbuf, aSource->GetInputImageOrientation(), this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(), 0, this->FrameNumber) != PLUS_SUCCESS )
-    {
-      LOG_ERROR("Error adding item to video source " << aSource->GetSourceId() << " on channel " << (*this->OutputChannels.begin())->GetChannelId() );
-      return PLUS_FAIL;
-    }
-    else
-    {
-      this->Modified();
-    }
-  }
-
-  //FrmGrab_Release( (FrmGrabber*)this->FrameGrabber, frame );
-
-  this->FrameNumber++;*/
 
   return PLUS_SUCCESS;
 }
+//---------------------------------------------------------------------------- //added
+PlusStatus vtkLinuxVideoSource::read_frame()
+{
+LOG_INFO("read_frame");
+	struct v4l2_buffer buf;
+	CLEAR(buf);
+		buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+		buf.memory = V4L2_MEMORY_MMAP;
 
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::process_image(const void *buffers_start, int buffers_size)
+		if (xioctl(fd, VIDIOC_DQBUF, &buf) < 0) {
+			switch (errno) {
+			case EAGAIN:
+				return PLUS_FAIL;
+
+			case EIO:
+				/* Could ignore EIO, see spec. */
+
+				/* fall through */
+
+			default:
+				errno_exit("VIDIOC_DQBUF");
+			}
+		}
+		assert(buf.index < n_buffers);
+		process_image(buffers[buf.index].start, buf.bytesused);
+
+		if (xioctl(fd, VIDIOC_QBUF, &buf) < 0)
+			errno_exit("VIDIOC_QBUF");
+
+return PLUS_SUCCESS;
+}
+
+
+//---------------------------------------------------------------------------- //added
+PlusStatus vtkLinuxVideoSource::process_image(void *buffers_start, int buffers_size)
 {
   LOG_INFO("process_image");
 
@@ -682,23 +657,26 @@ PlusStatus vtkLinuxVideoSource::process_image(const void *buffers_start, int buf
     {
       numberOfScalarComponents = 3;
     }
+  struct v4l2_format src_fmt;       //data format
+  struct v4l2_format dst_fmt;       //data format
 
-    struct v4l2_format src_fmt;  //maybe from init device later
-    src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    src_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
-    src_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
-    src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
-    src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
-    struct v4l2_format dest_fmt;
-    dest_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    dest_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
-    dest_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
-    dest_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;              //set pixel format
-    dest_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
-    unsigned char *dest;
-    int dest_size=buffers_size; //klopt dit?????
-
-    LIBV4L_PUBLIC int v4lconvert_convert(*buffers_start, &src_fmt, &dest_fmt, *buffer_start, buffer_size, *dest, dest_size);
+      CLEAR (src_fmt);
+  src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+  src_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+  src_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+  src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
+  src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+  CLEAR (dst_fmt);
+  dst_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+  dst_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+  dst_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+  dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;              //set pixel format
+  dst_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+    if (v4lconvert_convert(v4lconvert_data, &src_fmt, &dst_fmt, (unsigned char*)buffers_start, buffers_size, dst_buf, dst_fmt.fmt.pix.sizeimage) < 0) {
+		if (errno != EAGAIN)
+			errno_exit("v4l_convert");
+		return PLUS_FAIL;
+	}
 
     /*if( aSource->AddItem(buffers_start, aSource->GetInputImageOrientation(), this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(), 0, this->FrameNumber) != PLUS_SUCCESS )
     {

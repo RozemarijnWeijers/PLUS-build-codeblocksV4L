@@ -156,7 +156,8 @@ private:
   void InitDevice(); //added void??
   void InitMmap(void); //added
   void UninitDevice(void); //added
-  PlusStatus process_image(const void *p, int size);
+  PlusStatus process_image (void *buffers_start, int buffers_size);
+  PlusStatus read_frame();
 
   void errno_exit (const char *s); //added
 

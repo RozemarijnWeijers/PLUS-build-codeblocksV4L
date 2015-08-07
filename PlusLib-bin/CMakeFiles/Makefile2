@@ -2767,8 +2767,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/all: src/PlusOpenIGT
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/ConvertFcsvToXml.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles  3
@@ -2808,8 +2808,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/all: src/PlusOpenIGT
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/ConvertXmlToFcsv.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles 
@@ -2849,8 +2849,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/all: src/PlusOpenIGTLi
 src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/PatternLocTest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles 
@@ -2890,8 +2890,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/all: src/PlusOpenIGT
 src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/ProbeCalibration.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles 
@@ -2931,8 +2931,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/all: src/PlusOpen
 src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/TemporalCalibration.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles 
@@ -2972,8 +2972,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/all:
 src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkCenterOfRotationCalibAlgoTest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles 
@@ -3013,8 +3013,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluati
 src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkFreehandCalibrationStatisticalEvaluation.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles 
@@ -3090,8 +3090,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTe
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationLandmarkDetectionTest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles  67
@@ -3131,8 +3131,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/all: src/P
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkPhantomRegistrationTest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles  68
@@ -3172,8 +3172,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/all: s
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkSegmentedWiresPositionsTest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles  92
@@ -3213,8 +3213,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/all: src/Plus
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkSpacingCalibAlgoTest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles 
@@ -3254,8 +3254,8 @@ src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/all: src/Plu
 src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/all: src/ImageProcessingAlgo/CMakeFiles/vtkImageProcessingAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/all: src/UsSimulatorAlgo/CMakeFiles/vtkUsSimulatorAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/all: src/VolumeReconstruction/CMakeFiles/vtkVolumeReconstruction.dir/all
-src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/all: src/DataCollection/CMakeFiles/vtkDataCollection.dir/all
+src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/all: src/CalibrationAlgo/CMakeFiles/vtkCalibrationAlgo.dir/all
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/depend
 	$(MAKE) -f src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/build.make src/CalibrationAlgo/Testing/CMakeFiles/vtkStylusCalibrationTest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/snr/Support/Plus-build-codeblocks/PlusLib-bin/CMakeFiles  93
