@@ -145,7 +145,7 @@ vtkLinuxVideoSource::io_method vtkLinuxVideoSource::io; //added
 int vtkLinuxVideoSource::fd; //added
 unsigned int vtkLinuxVideoSource::n_buffers; //added
 static struct v4lconvert_data *v4lconvert_data; //added
-static unsigned char *dst_buf; //added
+static unsigned char *dst_buf= NULL; //added
 
 //----------------------------------------------------------------------------
 vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
@@ -162,6 +162,7 @@ vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
   this->FrameSize[0] = 640;
   this->FrameSize[1] = 480;
   this->FrameSize[2] = 1;
+  this->FrameNumber=1;
   this->StartThreadForInternalUpdates=true;
   this->AcquisitionRate = 30;
   LOG_INFO("Constructed");
@@ -195,6 +196,7 @@ PlusStatus vtkLinuxVideoSource::InternalConnect()//const char* device)//virtual
     return PLUS_SUCCESS;
   }
   LOG_INFO("start connecting");
+
   //SetVideoDevice
   //strcpy(this->dev_name, "/dev/video1");//device); webcam     LATER from config file
   strcpy(this->dev_name, "/dev/video0");//device);framegrabber  LATER from config file
@@ -269,7 +271,7 @@ if (-1 == fd) {
        dev_name);
     exit (PLUS_FAIL);
     }
-LOG_INFO("openedDevice");
+LOG_INFO("openedDevices");
 }
 
 void vtkLinuxVideoSource::InitDevice()//added
@@ -372,7 +374,6 @@ void vtkLinuxVideoSource::InitDevice()//added
   //negotiate data format
   if (-1 == xioctl(fd, VIDIOC_S_FMT, &src_fmt))
     errno_exit ("VIDIOC_S_FMT");
-
   /* Note VIDIOC_S_FMT may change width and height. */
 
   /* Buggy driver paranoia. */
@@ -384,8 +385,17 @@ void vtkLinuxVideoSource::InitDevice()//added
     src_fmt.fmt.pix.sizeimage = min;
 
 
-	sizeimage = src_fmt.fmt.pix.sizeimage;
+	//sizeimage = src_fmt.fmt.pix.sizeimage;
 	dst_buf = (unsigned char*)malloc(dst_fmt.fmt.pix.sizeimage);
+	if (dst_buf == NULL)
+	{
+        std::cerr << "Alloc failed" << std::endl;
+        exit(-1);
+	}
+	memset(dst_buf, 0x00, dst_fmt.fmt.pix.sizeimage);
+
+	//dst_buf = (unsigned char*)calloc(1,dst_fmt.fmt.pix.sizeimage);
+
 	/*printf("raw pixfmt: %c%c%c%c %dx%d\n",
 		src_fmt.fmt.pix.pixelformat & 0xff,
 	       (src_fmt.fmt.pix.pixelformat >> 8) & 0xff,
@@ -621,9 +631,7 @@ LOG_INFO("read_frame");
 
 			case EIO:
 				/* Could ignore EIO, see spec. */
-
 				/* fall through */
-
 			default:
 				errno_exit("VIDIOC_DQBUF");
 			}
@@ -651,34 +659,44 @@ PlusStatus vtkLinuxVideoSource::process_image(void *buffers_start, int buffers_s
       LOG_ERROR("Unable to retrieve the video source in the Linux device on channel " << (*this->OutputChannels.begin())->GetChannelId());
       return PLUS_FAIL;
     }
-
-    int numberOfScalarComponents(1);
-    if( aSource->GetImageType() == US_IMG_RGB_COLOR )
+    else
     {
-      numberOfScalarComponents = 3;
+      US_IMAGE_TYPE imageType = aSource->GetImageType();
+      aSource->SetNumberOfScalarComponents(3);//imageType == US_IMG_RGB_COLOR ? 3 : 1);
+      aSource->SetInputFrameSize(this->FrameSize);
     }
-  struct v4l2_format src_fmt;       //data format
-  struct v4l2_format dst_fmt;       //data format
 
-      CLEAR (src_fmt);
-  src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-  src_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
-  src_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
-  src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
-  src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
-  CLEAR (dst_fmt);
-  dst_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-  dst_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
-  dst_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
-  dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;              //set pixel format
-  dst_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
-    if (v4lconvert_convert(v4lconvert_data, &src_fmt, &dst_fmt, (unsigned char*)buffers_start, buffers_size, dst_buf, dst_fmt.fmt.pix.sizeimage) < 0) {
+    struct v4l2_format src_fmt;       //data format
+    struct v4l2_format dst_fmt;       //data format
+
+    CLEAR (src_fmt);
+    src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    src_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+    src_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+    src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;              //set pixel format
+    src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+    CLEAR (dst_fmt);
+    dst_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    dst_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
+    dst_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
+    dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;              //set pixel format
+    dst_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+
+    //printf("v4lconvert_data: %p\nsrc_fmt: %p\ndst_fmt: %p\nbuffers_start: %p\ndst_buf: %p\n",v4lconvert_data, &src_fmt, &dst_fmt, (unsigned char*)buffers_start, dst_buf);
+    std::cerr << "dest size: " << dst_fmt.fmt.pix.sizeimage << std::endl;
+
+    if (v4lconvert_convert(v4lconvert_data, &src_fmt, &dst_fmt, (unsigned char*)buffers_start, buffers_size, dst_buf, 921600) < 0) {  //lelijk size buffer dest
+        std::cerr << "error: " << v4lconvert_get_error_message(v4lconvert_data);
 		if (errno != EAGAIN)
 			errno_exit("v4l_convert");
 		return PLUS_FAIL;
 	}
 
-    /*if( aSource->AddItem(buffers_start, aSource->GetInputImageOrientation(), this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(), 0, this->FrameNumber) != PLUS_SUCCESS )
+    int numberOfScalarComponents(3);
+
+    if( aSource->AddItem(dst_buf, aSource->GetInputImageOrientation(),
+    this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(),
+    0, this->FrameNumber) != PLUS_SUCCESS )
     {
       LOG_ERROR("Error adding item to video source " << aSource->GetSourceId() << " on channel " << (*this->OutputChannels.begin())->GetChannelId() );
       return PLUS_FAIL;
@@ -686,7 +704,7 @@ PlusStatus vtkLinuxVideoSource::process_image(void *buffers_start, int buffers_s
     else
     {
       this->Modified();
-    }*/
+    }
     /*int jpgfile;
     if((jpgfile = open("/tmp/myimage.jpeg", O_WRONLY | O_CREAT, 0660)) < 0)
     {
@@ -697,6 +715,7 @@ PlusStatus vtkLinuxVideoSource::process_image(void *buffers_start, int buffers_s
     write(jpgfile, p, size);
     close(jpgfile);*/
   }
+  this->FrameNumber++;
 return PLUS_SUCCESS;
 }
 
