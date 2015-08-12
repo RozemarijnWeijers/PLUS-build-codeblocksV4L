@@ -127,8 +127,8 @@ protected:
 
   char* WndClassName;
   int Preview;
-  int Initialized; //added
-  int DeviceInitialized; //added
+  //int Initialized; naar internal
+  //int DeviceInitialized; naar internal
   int FrameIndex;
   int VideoMode; //NTSC == 1, PAL == 2 //added
   int FrameSize[3]; //added
@@ -143,13 +143,14 @@ protected:
   PlusVideoFrame UncompressedVideoFrame;
 
 private:
-  static char dev_name[256]; //added
-  static int fd; //added
+  char dev_name[256]; //added
+  int fd; //added
   struct buffer*  buffers; //added
-  static unsigned int  n_buffers; //added
-  static io_method io; //added
+  struct v4lconvert_data *v4lconvert_data; //added
+  unsigned int  n_buffers; //added
+  unsigned char *dst_buf= NULL; //added  IS DEZE NODIG?
+  io_method io; //added
 
-  int xioctl(int fd, int request, void *arg); //added
 
   void OpenDevice(void); //added
   void CloseDevice(void); //added
@@ -158,12 +159,8 @@ private:
   void UninitDevice(void); //added
   PlusStatus process_image (void *buffers_start, int buffers_size);
   PlusStatus read_frame();
-
+  int xioctl(int fd, int request, void *arg); //added
   void errno_exit (const char *s); //added
-
-//private:
-  //vtkLinuxVideoSource(const vtkLinuxVideoSource&);  // Not implemented.
-  //void operator=(const vtkLinuxVideoSource&);  // Not implemented.
 };
 
 #endif
