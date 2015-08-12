@@ -114,23 +114,17 @@ public:
 };
 
 //Not exactly sure what these are for, but I need those
-vtkCxxRevisionMacro(vtkV4L2VideoSource, "$Revision: 1.0$"); //??
+vtkCxxRevisionMacro(vtkV4L2VideoSource, "$Revision: 1.0$");
 vtkStandardNewMacro(vtkLinuxVideoSource);
 
 //----------------------------------------------------------------------------
 vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
 : Internal(new vtkLinuxVideoSourceInternal)
-//, WndClassName(NULL)
-//, Preview(0)
 , FrameIndex(0)
 {
   this->RequireImageOrientationInConfiguration = true;
   this->StartThreadForInternalUpdates=true;
   this->fd = -1;
-  this->io = IO_METHOD_MMAP;
-  this->FrameSize[0] = 640;  //naar internal en setframesize
-  this->FrameSize[1] = 480;  //naar internal en set framesize
-  this->FrameSize[2] = 1;    //naar internal en set framesize
   this->AcquisitionRate = 30; // naar read from config file?
 
   //SetVideoDevice
@@ -143,9 +137,7 @@ vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
 //----------------------------------------------------------------------------
 vtkLinuxVideoSource::~vtkLinuxVideoSource()//destructor
 {
-  this->vtkLinuxVideoSource::ReleaseSystemResources();
   // what else should be in here?
-
   delete this->Internal;
   this->Internal = NULL;
 }
@@ -306,7 +298,7 @@ void vtkLinuxVideoSource::InitDevice()
   LOG_INFO("initdevice");
 }
 
-//----------------------------------------------------------------------------//added
+//----------------------------------------------------------------------------
 void vtkLinuxVideoSource::InitMmap (void)
 {
   struct v4l2_requestbuffers req;
@@ -363,98 +355,51 @@ void vtkLinuxVideoSource::InitMmap (void)
 }
 
 //----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::InternalDisconnect()//virtual
+PlusStatus vtkLinuxVideoSource::InternalDisconnect()
 {
     LOG_INFO("disconnect");
-    /*this->UninitDevice();
-    this->CloseDevice();*/
+    this->UninitDevice();
+    this->CloseDevice();
     return PLUS_SUCCESS;
 }
 
-//----------------------------------------------------------------------------//added
+//----------------------------------------------------------------------------
 void vtkLinuxVideoSource::CloseDevice(void)
 {
 LOG_INFO("close device");
   if (-1 == close (fd)){
     fprintf (stderr, "%s error %d, %s\n",
        "close", errno, strerror (errno));
-
-    exit (EXIT_FAILURE);
+    exit (PLUS_FAIL);
   }
 
   fd = -1;
 }
 
-//----------------------------------------------------------------------------//added
+//----------------------------------------------------------------------------
 void vtkLinuxVideoSource::UninitDevice(void)
 {
 LOG_INFO("uninitDevice");
-  /*unsigned int i;
-
-  switch (io) {
-  case IO_METHOD_READ:
-    free (buffers[0].start);
-    break;
-
-  case IO_METHOD_MMAP:
-    for (i = 0; i < n_buffers; ++i)
+  unsigned int i;
+  for (i = 0; i < n_buffers; ++i)
     if (-1 == munmap (buffers[i].start, buffers[i].length))
-    errno_exit ("munmap");
-    break;
+       errno_exit ("munmap");
 
-  case IO_METHOD_USERPTR:
-    for (i = 0; i < n_buffers; ++i)
-    free (buffers[i].start);
-    break;
-  }
-
-  free (buffers);*/
-
+  free (buffers);
 }
 
 //----------------------------------------------------------------------------
-void vtkLinuxVideoSource::SetPreview(int showPreview)
+PlusStatus vtkLinuxVideoSource::InternalUpdate()
 {
-LOG_INFO("setpreview");
-}
-
-//----------------------------------------------------------------------------
-void vtkLinuxVideoSource::ReleaseSystemResources()
-{
- LOG_INFO("ReleaseResources");
-  /*if (this->Recording)
-    {
-      this->Stop();
-    }*/
-
-  this->Internal->Initialized = 0;
-}
-
-//----------------------------------------------------------------------------
-void vtkLinuxVideoSource::OnParentWndDestroy()
-{
-LOG_INFO("onparentdestroy");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::AddFrameToBuffer(void* lpVideoHeader)
-{
-LOG_INFO("addframetobuffer");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::InternalUpdate()//virtual
-{
-LOG_INFO("internalupdate");
+//LOG_INFO("internalupdate");
   if (!this->Recording)
   {
-    // drop the frame, we are not recording data now
-    return PLUS_SUCCESS;
+    return PLUS_SUCCESS; // drop the frame, we are not recording data now
   }
 
   for(int i=0; i<n_buffers; i++)
   {
-    fd_set fds;   //What does this part do??
+    /*fd_set fds;   //What does this part do?? do we need it?
     FD_ZERO(&fds);
     FD_SET(fd, &fds);
     struct timeval tv = {0};
@@ -464,52 +409,50 @@ LOG_INFO("internalupdate");
     {
       perror("Waiting for Frame");
       return PLUS_SUCCESS;
-    }
+    }*/
 
-    read_frame();
+    ReadFrame();
   }
 
   return PLUS_SUCCESS;
 }
-//---------------------------------------------------------------------------- //added
-PlusStatus vtkLinuxVideoSource::read_frame()
+
+//----------------------------------------------------------------------------
+PlusStatus vtkLinuxVideoSource::ReadFrame()
 {
-LOG_INFO("read_frame");
+//LOG_INFO("ReadFrame");
 	struct v4l2_buffer buf;
 	CLEAR(buf);
-		buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-		buf.memory = V4L2_MEMORY_MMAP;
+	buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+	buf.memory = V4L2_MEMORY_MMAP;
 
-		if (xioctl(fd, VIDIOC_DQBUF, &buf) < 0) {
-			switch (errno) {
-			case EAGAIN:
-				return PLUS_FAIL;
-
-			case EIO:
-				/* Could ignore EIO, see spec. */
-				/* fall through */
-			default:
-				errno_exit("VIDIOC_DQBUF");
-			}
+	if (xioctl(fd, VIDIOC_DQBUF, &buf) < 0) {
+		switch (errno) {
+		case EAGAIN:
+			return PLUS_FAIL;
+		case EIO:
+			/* Could ignore EIO, see spec. */ /* fall through */
+		default:
+			errno_exit("VIDIOC_DQBUF");
 		}
-		assert(buf.index < n_buffers);
-		process_image(buffers[buf.index].start, buf.bytesused);
+	}
+	ProcessImage(buffers[buf.index].start, buf.bytesused);
 
-		if (xioctl(fd, VIDIOC_QBUF, &buf) < 0)
-			errno_exit("VIDIOC_QBUF");
+	if (xioctl(fd, VIDIOC_QBUF, &buf) < 0)
+		errno_exit("VIDIOC_QBUF");
 
 return PLUS_SUCCESS;
 }
 
-
-//---------------------------------------------------------------------------- //added
-PlusStatus vtkLinuxVideoSource::process_image(void *buffers_start, int buffers_size)
+//----------------------------------------------------------------------------
+PlusStatus vtkLinuxVideoSource::ProcessImage(void *buffers_start, int buffers_size)
 {
-  LOG_INFO("process_image");
+  //LOG_INFO("ProcessImage");
 
   vtkPlusDataSource* aSource(NULL);
   for( int i = 0; i < this->GetNumberOfVideoSources(); ++i )
   {
+    int numberOfScalarComponents = this->Internal->dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24 ? 3 : 1;
     if( this->GetVideoSourceByIndex(i, aSource) != PLUS_SUCCESS )
     {
       LOG_ERROR("Unable to retrieve the video source in the Linux device on channel " << (*this->OutputChannels.begin())->GetChannelId());
@@ -517,42 +460,21 @@ PlusStatus vtkLinuxVideoSource::process_image(void *buffers_start, int buffers_s
     }
     else
     {
-      US_IMAGE_TYPE imageType = aSource->GetImageType();
-      aSource->SetNumberOfScalarComponents(3);//imageType == US_IMG_RGB_COLOR ? 3 : 1);
-      aSource->SetInputFrameSize(this->FrameSize);
+      //US_IMAGE_TYPE imageType = aSource->GetImageType(); ///hier later nog naar kijken
+      aSource->SetNumberOfScalarComponents(numberOfScalarComponents);
+      aSource->SetInputFrameSize(this->Internal->dst_FrameSize);
     }
 
-    struct v4l2_format src_fmt;       //data format
-    struct v4l2_format dst_fmt;       //data format
-
-    CLEAR (src_fmt);
-    src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    src_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
-    src_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
-    src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_BGR24;//YUYV;              //set pixel format
-    src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
-    CLEAR (dst_fmt);
-    dst_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    dst_fmt.fmt.pix.width       = this->FrameSize[0];             //USE SetFramSize LATER
-    dst_fmt.fmt.pix.height      = this->FrameSize[1];             //USE SetFramSize LATER
-    dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;              //set pixel format
-    dst_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
-
-    //printf("v4lconvert_data: %p\nsrc_fmt: %p\ndst_fmt: %p\nbuffers_start: %p\ndst_buf: %p\n",v4lconvert_data, &src_fmt, &dst_fmt, (unsigned char*)buffers_start, dst_buf);
-    std::cerr << "dest size: " << dst_fmt.fmt.pix.sizeimage << std::endl;
-
-    if (v4lconvert_convert(v4lconvert_data, &src_fmt, &dst_fmt, (unsigned char*)buffers_start, buffers_size, dst_buf, 921600) < 0) {  //lelijk size buffer dest
+    if (v4lconvert_convert(v4lconvert_data, &this->Internal->src_fmt, &this->Internal->dst_fmt, (unsigned char*)buffers_start, buffers_size, dst_buf, this->Internal->dst_fmt.fmt.pix.sizeimage) < 0) {
         std::cerr << "error: " << v4lconvert_get_error_message(v4lconvert_data);
 		if (errno != EAGAIN)
 			errno_exit("v4l_convert");
 		return PLUS_FAIL;
 	}
 
-    int numberOfScalarComponents(3);
-
     if( aSource->AddItem(dst_buf, aSource->GetInputImageOrientation(),
-    this->FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(),
-    0, this->FrameNumber) != PLUS_SUCCESS )
+       this->Internal->dst_FrameSize, VTK_UNSIGNED_CHAR, numberOfScalarComponents, aSource->GetImageType(),
+       0, this->FrameNumber) != PLUS_SUCCESS )
     {
       LOG_ERROR("Error adding item to video source " << aSource->GetSourceId() << " on channel " << (*this->OutputChannels.begin())->GetChannelId() );
       return PLUS_FAIL;
@@ -561,32 +483,19 @@ PlusStatus vtkLinuxVideoSource::process_image(void *buffers_start, int buffers_s
     {
       this->Modified();
     }
-    /*int jpgfile;
-    if((jpgfile = open("/tmp/myimage.jpeg", O_WRONLY | O_CREAT, 0660)) < 0)
-    {
-      perror("open");
-      exit(1);
-    }
-
-    write(jpgfile, p, size);
-    close(jpgfile);*/
   }
+
   this->FrameNumber++;
-return PLUS_SUCCESS;
+  return PLUS_SUCCESS;
 }
 
 //----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::InternalStartRecording()//virtual
+PlusStatus vtkLinuxVideoSource::InternalStartRecording()
 {
-LOG_INFO("start recording");      //this is just for testing LATER aanpassen
-unsigned int i;
-enum v4l2_buf_type type;
+  LOG_INFO("start recording");
+  unsigned int i;
+  enum v4l2_buf_type type;
 
-switch (io) {
-/*case IO_METHOD_READ:
-       // Nothing to do.
-       break;*/
-case IO_METHOD_MMAP:
        for (i = 0; i < n_buffers; ++i) {
              struct v4l2_buffer buf;
 
@@ -602,73 +511,35 @@ case IO_METHOD_MMAP:
        //start streaming
        if (-1 == xioctl(fd, VIDIOC_STREAMON, &type))
                 errno_exit("VIDIOC_STREAMON");
-       break;
-/*case IO_METHOD_USERPTR:
-       for (i = 0; i < n_buffers; ++i) {
-                struct v4l2_buffer buf;
 
-            CLEAR(buf);
-            buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-            buf.memory = V4L2_MEMORY_USERPTR;
-            buf.index = i;
-            buf.m.userptr = (unsigned long)buffers[i].start;
-            buf.length = buffers[i].length;
+  this->FrameNumber=1;
+  this->Internal->Initialized = 1;
 
-            if (-1 == xioctl(fd, VIDIOC_QBUF, &buf))
-                      errno_exit("VIDIOC_QBUF");
-            }
-        type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-        if (-1 == xioctl(fd, VIDIOC_STREAMON, &type))
-            errno_exit("VIDIOC_STREAMON");
-        break;*/
-}
-
-this->FrameNumber=1;
-this->Internal->Initialized = 1;
-
-return PLUS_SUCCESS;
+  return PLUS_SUCCESS;
 }
 
 //----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::InternalStopRecording()//virtual
+PlusStatus vtkLinuxVideoSource::InternalStopRecording()
 {
-LOG_INFO("stopreconring");
+  LOG_INFO("stop recording");
+  }
+
+//----------------------------------------------------------------------------
+PlusStatus vtkLinuxVideoSource::SetFrameSize(int x, int y)
+{
+  LOG_INFO("setframesize");
 }
 
 //----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::VideoFormatDialog()
+PlusStatus vtkLinuxVideoSource::SetAcquisitionRate(double rate)
 {
-LOG_INFO("videoformatdialog");
+  LOG_INFO("setaquisisitionrate");
 }
 
 //----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::VideoSourceDialog()
+PlusStatus vtkLinuxVideoSource::SetOutputFormat(int format)
 {
-LOG_INFO("videosourcedialog");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::SetFrameSize(int x, int y)//virtual
-{
-LOG_INFO("setframesize");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::SetAcquisitionRate(double rate)//virtual
-{
-LOG_INFO("setaquisisitionrate");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::SetOutputFormat(int format)//virtual
-{
-LOG_INFO("setoutputformat");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::UpdateFrameBuffer()
-{
-LOG_INFO("updateframebuffer");
+  LOG_INFO("setoutputformat");
 }
 
 //---------------------------------------------------------------------------- added epiphan
@@ -681,7 +552,7 @@ PlusStatus vtkLinuxVideoSource::WriteConfiguration(vtkXMLDataElement* config)
 {
 }*/
 
-//----------------------------------------------------------------------------//added
+//----------------------------------------------------------------------------
 int vtkLinuxVideoSource::xioctl(int fd, int request, void *arg)
 {
   int r;
@@ -692,7 +563,7 @@ int vtkLinuxVideoSource::xioctl(int fd, int request, void *arg)
   return r;
 }
 
-//----------------------------------------------------------------------------//added
+//----------------------------------------------------------------------------
 void vtkLinuxVideoSource::errno_exit (const char * s)
 {
   fprintf (stderr, "%s error %d, %s\n",
@@ -702,21 +573,9 @@ void vtkLinuxVideoSource::errno_exit (const char * s)
 }
 
 //----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::NotifyConfigured() //virtual
+PlusStatus vtkLinuxVideoSource::NotifyConfigured()
 {
-LOG_INFO("notify");
-  /*if( this->OutputChannels.size() > 1 )
-  {
-    LOG_WARNING("WinLinuxSource is expecting one output channel and there are " << this->OutputChannels.size() << " channels. First output channel will be used.");
-    return PLUS_FAIL;
-  }
-
-  if( this->OutputChannels.size() == 0 )
-  {
-    LOG_ERROR("No output channels defined for Linux video source. Cannot proceed." );
-    this->CorrectlyConfigured = false;
-    return PLUS_FAIL;
-  }*/
+LOG_INFO("notify"); //what is this for?
 
   return PLUS_SUCCESS;
 }

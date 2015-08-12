@@ -44,12 +44,7 @@ class vtkLinuxVideoSourceInternal;
 class vtkDataCollectionExport vtkLinuxVideoSource : public vtkPlusDevice
 {
 public:
-  typedef enum {        //added
-    IO_METHOD_READ,
-    IO_METHOD_MMAP,
-    IO_METHOD_USERPTR,
-  } io_method;
-  struct buffer {       //added
+  struct buffer {
         void *                  start;
         size_t                  length;
   };
@@ -72,28 +67,8 @@ public:
   /*! Request a particular output format (default: VTK_RGB). */
   virtual PlusStatus SetOutputFormat(int format);
 
-  /*! Turn on/off the preview (overlay) window. */
-  void SetPreview(int showPreview);
-  vtkBooleanMacro(Preview,int);
-  /*! Get state of preview (overlay) window */
-  vtkGetMacro(Preview,int);
-
-  /*! Bring up a modal dialog box for video format selection. */
-  PlusStatus VideoFormatDialog();
-
-  /*! Bring up a modal dialog box for video input selection. */
-  PlusStatus VideoSourceDialog();
-
-  /*! Callback function called on parent window destroyed. Public to allow calling from static function. */
-  void OnParentWndDestroy();
-
-  /*! Adds a frame to the frame buffer. Called whenever the driver notified a new frame acquisition. Public to allow calling from static function. */
-  PlusStatus AddFrameToBuffer(void *lpVideoHeader);
-
   /*! Verify the device is correctly configured */
   virtual PlusStatus NotifyConfigured();
-
-  virtual bool IsTracker() const { return false; }
 
 protected:
 
@@ -103,7 +78,7 @@ protected:
   ~vtkLinuxVideoSource();
 
   /*! Device-specific connect */
-  virtual PlusStatus InternalConnect();//(const char* device);
+  virtual PlusStatus InternalConnect();
 
   /*! Device-specific disconnect */
   virtual PlusStatus InternalDisconnect();
@@ -121,26 +96,10 @@ protected:
   */
   virtual PlusStatus InternalUpdate();
 
-
-  /*! Set the capture window class name */
-  vtkSetStringMacro(WndClassName);
-
-  char* WndClassName;
-  int Preview;
-  //int Initialized; naar internal
-  //int DeviceInitialized; naar internal
+  vtkLinuxVideoSourceInternal *Internal;
   int FrameIndex;
   int VideoMode; //NTSC == 1, PAL == 2 //added
-  int FrameSize[3]; //added
-
-  vtkLinuxVideoSourceInternal *Internal;
-
-  /*! Update the buffer format to match the capture settings */
-  PlusStatus UpdateFrameBuffer();
-
-  void ReleaseSystemResources();
-
-  PlusVideoFrame UncompressedVideoFrame;
+  int FrameSize[3];
 
 private:
   char dev_name[256]; //added
@@ -149,16 +108,14 @@ private:
   struct v4lconvert_data *v4lconvert_data; //added
   unsigned int  n_buffers; //added
   unsigned char *dst_buf= NULL; //added  IS DEZE NODIG?
-  io_method io; //added
-
 
   void OpenDevice(void); //added
   void CloseDevice(void); //added
   void InitDevice(); //added void??
   void InitMmap(void); //added
   void UninitDevice(void); //added
-  PlusStatus process_image (void *buffers_start, int buffers_size);
-  PlusStatus read_frame();
+  PlusStatus ProcessImage (void *buffers_start, int buffers_size);
+  PlusStatus ReadFrame();
   int xioctl(int fd, int request, void *arg); //added
   void errno_exit (const char *s); //added
 };
