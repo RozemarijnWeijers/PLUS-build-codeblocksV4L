@@ -28,10 +28,10 @@
   <CoordinateDefinitions>
     <Transform From="Image" To="Reference"
       Matrix="
-        1.0 0.0 0.0 0.0
-        0.0 1.0 0.0 0.0
-        0.0 0.0 1.0 0.0        
-        0.0 0.0 0.0 1.0" />
+        0.2 0.0 0.0 0.0
+        0.0 0.2 0.0 0.0
+        0.0 0.0 0.2 0.0        
+        0 0 0 1" />
   </CoordinateDefinitions>
   
   <PlusOpenIGTLinkServer 

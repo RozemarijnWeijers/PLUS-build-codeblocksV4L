@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="all" />
-	<File name="../PlusLib/src/DataCollection/vtkPlusDeviceFactory.cxx" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1854" topLine="36" />
+			<Cursor1 position="4353" topLine="114" />
 		</Cursor>
 	</File>
-	<File name="OldV4L2.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="102" topLine="63" />
-		</Cursor>
-	</File>
-	<File name="../PlusLib/src/DataCollection/vtkPlusDevice.cxx" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../PlusLib/src/DataCollection/vtkPlusDevice.cxx" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="33926" topLine="297" />
 		</Cursor>
@@ -29,116 +24,20 @@
 			<Collapse line="321" />
 			<Collapse line="336" />
 			<Collapse line="354" />
-			<Collapse line="360" />
-			<Collapse line="381" />
-			<Collapse line="407" />
-			<Collapse line="417" />
-			<Collapse line="434" />
-			<Collapse line="440" />
-			<Collapse line="467" />
-			<Collapse line="473" />
-			<Collapse line="489" />
-			<Collapse line="592" />
-			<Collapse line="604" />
-			<Collapse line="616" />
-			<Collapse line="650" />
-			<Collapse line="681" />
-			<Collapse line="710" />
-			<Collapse line="739" />
-			<Collapse line="881" />
-			<Collapse line="945" />
-			<Collapse line="1037" />
-			<Collapse line="1075" />
-			<Collapse line="1122" />
-			<Collapse line="1156" />
-			<Collapse line="1195" />
-			<Collapse line="1209" />
-			<Collapse line="1231" />
-			<Collapse line="1249" />
-			<Collapse line="1262" />
-			<Collapse line="1283" />
-			<Collapse line="1312" />
-			<Collapse line="1342" />
-			<Collapse line="1396" />
-			<Collapse line="1480" />
-			<Collapse line="1511" />
-			<Collapse line="1529" />
-			<Collapse line="1544" />
-			<Collapse line="1562" />
-			<Collapse line="1578" />
-			<Collapse line="1593" />
-			<Collapse line="1608" />
-			<Collapse line="1621" />
-			<Collapse line="1633" />
-			<Collapse line="1655" />
-			<Collapse line="1673" />
-			<Collapse line="1679" />
-			<Collapse line="1692" />
-			<Collapse line="1705" />
-			<Collapse line="1711" />
-			<Collapse line="1717" />
-			<Collapse line="1723" />
-			<Collapse line="1764" />
-			<Collapse line="1778" />
-			<Collapse line="1796" />
-			<Collapse line="1815" />
-			<Collapse line="1830" />
-			<Collapse line="1836" />
-			<Collapse line="1842" />
-			<Collapse line="1848" />
-			<Collapse line="1854" />
-			<Collapse line="1888" />
-			<Collapse line="1895" />
-			<Collapse line="1912" />
-			<Collapse line="1918" />
-			<Collapse line="2017" />
-			<Collapse line="2023" />
-			<Collapse line="2067" />
-			<Collapse line="2089" />
-			<Collapse line="2096" />
-			<Collapse line="2103" />
 		</Folding>
 	</File>
-	<File name="../PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../PlusLib/src/DataCollection/vtkPlusDeviceFactory.cxx" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="15673" topLine="148" />
+			<Cursor1 position="1854" topLine="36" />
+		</Cursor>
+	</File>
+	<File name="../PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.cxx" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3532" topLine="123" />
 		</Cursor>
 		<Folding>
-			<Collapse line="64" />
-			<Collapse line="130" />
-			<Collapse line="166" />
-			<Collapse line="179" />
-			<Collapse line="185" />
-			<Collapse line="239" />
-			<Collapse line="265" />
-			<Collapse line="398" />
-			<Collapse line="458" />
-			<Collapse line="469" />
-			<Collapse line="478" />
-			<Collapse line="487" />
-			<Collapse line="501" />
-			<Collapse line="528" />
-			<Collapse line="534" />
-			<Collapse line="546" />
-			<Collapse line="552" />
-			<Collapse line="694" />
-			<Collapse line="700" />
-			<Collapse line="706" />
+			<Collapse line="86" />
 		</Folding>
-	</File>
-	<File name="OldV4L2.cxx" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3639" topLine="103" />
-		</Cursor>
-		<Folding>
-			<Collapse line="687" />
-			<Collapse line="699" />
-		</Folding>
-	</File>
-	<File name="../PlusLib/src/DataCollection/VideoForLinux/vtkLinuxVideoSource.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="841" topLine="1" />
-		</Cursor>
 	</File>
 	<File name="../PlusLib/src/DataCollection/vtkDataCollector.cxx" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
