@@ -54,21 +54,12 @@ public:
   void PrintSelf(ostream& os, vtkIndent indent);
 
   /*! Read configuration from xml data */  //from epiphan
-  //virtual PlusStatus ReadConfiguration(vtkXMLDataElement* config);
-  /*! Write configuration to xml data */  //from epiphan
-  //virtual PlusStatus WriteConfiguration(vtkXMLDataElement* config);
-
-  /*! Request a particular frame size */
-  virtual PlusStatus SetFrameSize(int x, int y);
-
-  /*! Request a particular frame rate (default 30 frames per second). */
-  virtual PlusStatus SetAcquisitionRate(double rate);
-
-  /*! Request a particular output format (default: VTK_RGB). */
-  virtual PlusStatus SetOutputFormat(int format);
+  virtual PlusStatus ReadConfiguration(vtkXMLDataElement* rootConfigElement);
 
   /*! Verify the device is correctly configured */
   virtual PlusStatus NotifyConfigured();
+
+  virtual bool IsTracker() const { return false; }
 
 protected:
 
@@ -100,10 +91,10 @@ protected:
   int FrameIndex;
   int VideoMode; //NTSC == 1, PAL == 2 //added
   int FrameSize[3];
+  int fd; //added
 
 private:
   char dev_name[256]; //added
-  int fd; //added
   struct buffer*  buffers; //added
   struct v4lconvert_data *v4lconvert_data; //added
   unsigned int  n_buffers; //added

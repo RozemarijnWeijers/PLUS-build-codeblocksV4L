@@ -11,45 +11,26 @@ All rights reserved.
 See Copyright.txt or http://www.kitware.com/Copyright.htm for details.
 Authors include: Danielle Pace
 =========================================================================*/
-//#define WITH_V4L2_LIB 1		/* v4l library *///added?
-//#include "PixelCodec.h"
 #include "PlusConfigure.h"
 #include "vtkObjectFactory.h"
 #include "vtkPlusChannel.h"
 #include "vtkPlusDataSource.h"
 #include "vtkUnsignedCharArray.h"
-#include "vtkLinuxVideoSource.h"  //added
-
-#include "vtkImageData.h"       //added
-#include "vtkCriticalSection.h"  //added
-#include "vtkTimerLog.h"        //added
-#include "vtkInformation.h"     //added
-#include "vtkInformationVector.h"  //added
-#include "vtkStreamingDemandDrivenPipeline.h"  //added
-#include "vtkUnsignedCharArray.h"  //added
-#include "vtksys/SystemTools.hxx"   //added
-
+#include "vtkLinuxVideoSource.h"
 #include <ctype.h>
 
-#include "linux/v4l2-common.h"  //added
-#include "linux/videodev2.h"    //added
-#include <linux/types.h>        //added
-#include "vtkWindows.h"         //added
-
-//New-Start
-#include "vtkDataArray.h"
-#include "vtkMultiThreader.h"
-#include "vtkMutexLock.h"
-
-#include <string.h> //added
-#include <time.h>
-#include <fcntl.h> //added
-#include <errno.h> //added
-#include <sys/ioctl.h> //added
-#include <sys/stat.h> //added
-#include <sys/mman.h> //added
-
 #include "libv4lconvert.h"
+#include "linux/v4l2-common.h"
+#include "linux/videodev2.h"
+#include <linux/types.h>
+#include "vtkMultiThreader.h"
+
+
+#include <fcntl.h>
+#include <errno.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/mman.h>
 
 #if ( _MSC_VER >= 1300 ) // Visual studio .NET
 #pragma warning ( disable : 4311 )
@@ -65,13 +46,6 @@ public:
   {
   Initialized = 0;
   DeviceInitialized = 0;
-  src_FrameSize[0] = 640; //later goed berekenen!!!!!!!
-  src_FrameSize[1] = 480;
-  src_FrameSize[2] = 1;
-  dst_FrameSize[0] = 640;
-  dst_FrameSize[1] = 480;
-  dst_FrameSize[2] = 1;
-  VideoMode = 1;
   }
   //----------------------------------------------------------------------------
   virtual ~vtkLinuxVideoSourceInternal()
@@ -79,38 +53,69 @@ public:
   CLEAR (src_fmt);
   CLEAR (dst_fmt);
   }
+
   //----------------------------------------------------------------------------
-  PlusStatus GetSrcFmt()
+  PlusStatus GetSrcFmt(int fd)
   {   //aanroepen bij initalisatie device
-  CLEAR(src_fmt);
+  src_fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+  if (-1 == ioctl(fd, VIDIOC_G_FMT, &src_fmt)){
+    perror("VIDOIC_G_FMT");
+    exit(PLUS_FAIL);
+  }
+
+  skip_set_std = 0;
+  if (-1 == ioctl(fd, VIDIOC_G_STD, &src_std_id)){
+    skip_set_std = 1;
+    perror("VIDOIC_G_STD");
+    //exit(PLUS_FAIL);
+  }
+
+  skip_set_input = 0;
+  if (-1 == ioctl(fd, VIDIOC_G_INPUT, &src_input_channel)){
+    skip_set_input = 1;
+    perror("VIDOIC_G_INPUT");
+  }
+
+  /*CLEAR(src_fmt);
+
   src_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
   src_fmt.fmt.pix.width       = src_FrameSize[0];               // OPVRAGEN MET FUNCTIE!!
   src_fmt.fmt.pix.height      = src_FrameSize[1];               // OPVRAGEN MET FUNCTIE!!
   src_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_BGR24;             // OPVRAGEN MET FUNCTIE!!
-  src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          // set field order
-  VideoMode                   = 1;                              //nog doen
+  src_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;   */       // set field order
+
   return PLUS_SUCCESS;
   }
+
   //----------------------------------------------------------------------------
   PlusStatus SetDstFmt()
   {  //aanroepen bij initalisatie device
   CLEAR(dst_fmt);
-  dst_fmt.type                = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-  dst_fmt.fmt.pix.width       = dst_FrameSize[0];               //USE SetFramSize LATER
-  dst_fmt.fmt.pix.height      = dst_FrameSize[1];               //USE SetFramSize LATER
+  dst_fmt = src_fmt;
   dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24;             //set pixel format
-  dst_fmt.fmt.pix.field       = V4L2_FIELD_INTERLACED;          //set field order
+  CLEAR(dst_std_id);
+  dst_std_id = src_std_id;                                      // muct be v4l2_STD_NTSC for framegrabber!!!!!!!!
+  CLEAR(dst_FrameSize);
+  dst_FrameSize[0] =dst_fmt.fmt.pix.width;
+  dst_FrameSize[1] =dst_fmt.fmt.pix.height;
+  dst_FrameSize[2] =1;
+  CLEAR(dst_input_channel);
+  dst_input_channel=src_input_channel;                          //must be 3 for framegrabber!!!!!!!!!!!!!!!
+
   return PLUS_SUCCESS;
   }
 
   int Initialized;
   int DeviceInitialized;
-  int VideoMode; //NTSC == 1, PAL == 2 //added
   struct v4l2_format src_fmt;
   struct v4l2_format dst_fmt;
-  int src_FrameSize[3];
+  v4l2_std_id src_std_id;
+  v4l2_std_id dst_std_id;
+  int src_input_channel;
+  int dst_input_channel;
   int dst_FrameSize[3];
-  // add channel for VIDEO_S_INPUT?
+  int skip_set_std;
+  int skip_set_input;
 };
 
 //Not exactly sure what these are for, but I need those
@@ -127,10 +132,9 @@ vtkLinuxVideoSource::vtkLinuxVideoSource() //constructor
   this->fd = -1;
   this->AcquisitionRate = 30; // naar read from config file?
 
-  //SetVideoDevice
-  /*strcpy(this->dev_name, "/dev/video1");//device); webcam     LATER from config file*/
-  strcpy(this->dev_name, "/dev/video0");//device);framegrabber  LATER from config file
-
+  /*SetVideoDevice in config-file now
+  strcpy(this->dev_name, "/dev/video1");//device); webcam     LATER from config file
+  strcpy(this->dev_name, "/dev/video0");//device);framegrabber  LATER from config file*/
   LOG_INFO("Constructed");
 }
 
@@ -195,9 +199,10 @@ LOG_INFO("openedDevices");
 
 void vtkLinuxVideoSource::InitDevice()
 {
+  this->Internal->GetSrcFmt(fd);  //get video format parameters
+  this->Internal->SetDstFmt();  //set video format parameters
+
   struct v4l2_capability cap;   //pointer to driver
-  struct v4l2_cropcap cropcap;  //giving the bounds of the subsection of the picture within an capture window
-  struct v4l2_crop crop;        //the source rectangle
 
   //query capabilities of device and set in cap
   if (-1 == xioctl (fd, VIDIOC_QUERYCAP, &cap)) {
@@ -223,32 +228,31 @@ void vtkLinuxVideoSource::InitDevice()
   }
 
   //set type of data stream in cropcap
+  /*struct v4l2_cropcap cropcap;  //giving the bounds of the subsection of the picture within an capture window
+  struct v4l2_crop crop;        //the source rectangle
   CLEAR (cropcap);
   cropcap.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
 
   //query and set the cropping capabilities
   if (0 == xioctl (fd, VIDIOC_CROPCAP, &cropcap)) {
     crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    crop.c = cropcap.defrect; /* reset to default */
+    crop.c = cropcap.defrect;
 
     //set cropping rectangle
     if (-1 == xioctl (fd, VIDIOC_S_CROP, &crop)) {
       switch (errno) {
       case EINVAL:
-      /* Cropping not supported. */
+      // Cropping not supported.
       break;
       default:
-      /* Errors ignored. */
+      // Errors ignored.
       break;
           }
         }
       }
   else {
-    /* Errors ignored. */
-  }
-
-  this->Internal->GetSrcFmt();  //get video format parameters
-  this->Internal->SetDstFmt();  //set video format parameters
+    // Errors ignored.
+  }*/
 
   //create and check format convertion of data stream
   v4lconvert_data = v4lconvert_create(fd);
@@ -265,7 +269,6 @@ void vtkLinuxVideoSource::InitDevice()
   dst_buf = (unsigned char*)malloc(this->Internal->dst_fmt.fmt.pix.sizeimage);
   if (dst_buf == NULL)
   {
-      std::cerr << "Alloc failed" << std::endl;
       exit(-1);
   }
   memset(dst_buf, 0x00, this->Internal->dst_fmt.fmt.pix.sizeimage);
@@ -275,11 +278,14 @@ void vtkLinuxVideoSource::InitDevice()
 
   //select video input (set Input channel to 3 = S-Video on a Hauppauge Impact VCB -> 3 for framegrabber comment this part)
   int channel = 3;
-  if (-1 == xioctl (fd, VIDIOC_S_INPUT , &channel))    // LATER NAAR KIJKEN for other devices
-    errno_exit ("VIDIOC_S_INPUT");
+  if (this->Internal->skip_set_input == 0){
+    if (-1 == xioctl (fd, VIDIOC_S_INPUT , &this->Internal->dst_input_channel))    // LATER NAAR KIJKEN for other devices
+      errno_exit ("VIDIOC_S_INPUT");
+  }
+
 
   //set video standaard
-  v4l2_std_id std_id;
+  /*v4l2_std_id std_id;
   if(this->Internal->VideoMode == 1)
     {
     std_id = V4L2_STD_NTSC;  //Set video mode to NTSC
@@ -287,13 +293,15 @@ void vtkLinuxVideoSource::InitDevice()
   else if(this->Internal->VideoMode == 2)
     {
     std_id = V4L2_STD_PAL;  //Set video mode to PAL
-    }
+    }*/
 
   //select videostandard of the current input
-  if (-1 == ioctl (fd, VIDIOC_S_STD, &std_id)) {     // LATER NAAR KIJKEN for other devices
+  if (this->Internal->skip_set_std == 0){
+    if (-1 == ioctl (fd, VIDIOC_S_STD, &this->Internal->dst_std_id)) {     // LATER NAAR KIJKEN for other devices
         perror ("VIDIOC_S_STD");
         exit (PLUS_FAIL);
         }
+  }
 
   LOG_INFO("initdevice");
 }
@@ -452,7 +460,7 @@ PlusStatus vtkLinuxVideoSource::ProcessImage(void *buffers_start, int buffers_si
   vtkPlusDataSource* aSource(NULL);
   for( int i = 0; i < this->GetNumberOfVideoSources(); ++i )
   {
-    int numberOfScalarComponents = this->Internal->dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24 ? 3 : 1;
+    int numberOfScalarComponents = 3;//this->Internal->dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24 ? 3 : 1;
     if( this->GetVideoSourceByIndex(i, aSource) != PLUS_SUCCESS )
     {
       LOG_ERROR("Unable to retrieve the video source in the Linux device on channel " << (*this->OutputChannels.begin())->GetChannelId());
@@ -522,35 +530,24 @@ PlusStatus vtkLinuxVideoSource::InternalStartRecording()
 PlusStatus vtkLinuxVideoSource::InternalStopRecording()
 {
   LOG_INFO("stop recording");
+  enum v4l2_buf_type type;
+  type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+  //stop streaming
+  if (-1 == xioctl(fd, VIDIOC_STREAMOFF, &type))
+                errno_exit("VIDIOC_STREAMON");
+  return PLUS_SUCCESS;
   }
 
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::SetFrameSize(int x, int y)
-{
-  LOG_INFO("setframesize");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::SetAcquisitionRate(double rate)
-{
-  LOG_INFO("setaquisisitionrate");
-}
-
-//----------------------------------------------------------------------------
-PlusStatus vtkLinuxVideoSource::SetOutputFormat(int format)
-{
-  LOG_INFO("setoutputformat");
-}
-
 //---------------------------------------------------------------------------- added epiphan
-/*PlusStatus vtkLinuxVideoSource::ReadConfiguration(vtkXMLDataElement* config)
+PlusStatus vtkLinuxVideoSource::ReadConfiguration(vtkXMLDataElement* rootConfigElement)
 {
-}
+  XML_FIND_DEVICE_ELEMENT_REQUIRED_FOR_READING(deviceConfig, rootConfigElement);
 
-//---------------------------------------------------------------------------- added epiphan
-PlusStatus vtkLinuxVideoSource::WriteConfiguration(vtkXMLDataElement* config)
-{
-}*/
+  const char* device_name = deviceConfig->GetAttribute("DeviceName");
+  strcpy(this->dev_name, device_name);
+
+  return PLUS_SUCCESS;
+}
 
 //----------------------------------------------------------------------------
 int vtkLinuxVideoSource::xioctl(int fd, int request, void *arg)

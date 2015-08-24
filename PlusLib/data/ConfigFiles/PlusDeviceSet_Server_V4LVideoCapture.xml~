@@ -6,6 +6,7 @@
       Description="Broadcasting acquired video through OpenIGTLink" />
     <Device
       Id="VideoDevice" 
+      DeviceName="/dev/video0"
       Type="VFLVideo" >
       <DataSources>
         <DataSource Type="Video" Id="Video" PortUsImageOrientation="MF"  />     

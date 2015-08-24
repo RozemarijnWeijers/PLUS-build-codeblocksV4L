@@ -6,6 +6,7 @@
       Description="Broadcasting acquired video through OpenIGTLink" />
     <Device
       Id="VideoDevice" 
+      DeviceName="/dev/video0"
       Type="VFLVideo" >
       <DataSources>
         <DataSource Type="Video" Id="Video" PortUsImageOrientation="MF"  />     
@@ -28,7 +29,7 @@
   <PlusOpenIGTLinkServer 
     MaxNumberOfIgtlMessagesToSend="1" 
     MaxTimeSpentWithProcessingMs="50" 
-    ListeningPort="18944" 
+    ListeningPort="18945" 
     SendValidTransformsOnly="true" 
     OutputChannelId="VideoStream" > 
     <DefaultClientInfo> 

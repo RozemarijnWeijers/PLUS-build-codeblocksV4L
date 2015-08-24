@@ -1,0 +1,6 @@
+time|level|timeoffset|message|location
+082415_102012.763|INFO|000.000416| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+082415_102012.763|INFO|000.000500| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/082415_102012_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+082415_102012.763|ERROR|000.000707| VTK log: ERROR: In /home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLParser.cxx, line 483|vtkXMLDataParser (0xd44ce0): Error parsing XML in stream at line 68, column 6, byte index 2106: not well-formed (invalid token)||| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(75)
+082415_102012.763|ERROR|000.000748| Last error: Success| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(81)
+082415_102012.763|ERROR|000.000801| Reading device set configuration file failed: syntax error in /home/snr/Documents/PlusDeviceSet_Server_Ascension3DG(Slicer).xml| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(101)
