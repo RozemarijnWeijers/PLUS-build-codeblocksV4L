@@ -1,0 +1,7 @@
+time|level|timeoffset|message|location
+082515_112937.309|INFO|000.000482| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+082515_112937.310|INFO|000.000579| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/082515_112937_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+082515_112946.410|ERROR|009.101210| Cannot connect to the server (170.223.221.150:18944).| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/OpenIGTLink/vtkOpenIGTLinkDevice.cxx(138)
+082515_112946.410|ERROR|009.101346| TrackerDevice: Cannot connect to data source, ConnectInternal failed| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(959)
+082515_112946.410|ERROR|009.101418| Unable to connect device: TrackerDevice.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkDataCollector.cxx(306)
+082515_112946.410|ERROR|009.101528| Datacollector failed to connect to devices| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(132)

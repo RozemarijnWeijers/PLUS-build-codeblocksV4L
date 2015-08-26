@@ -1,0 +1,4 @@
+time|level|timeoffset|message|location
+082615_153718.649|INFO|000.000406| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+082615_153718.649|INFO|000.000485| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/082615_153718_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+082615_153718.649|ERROR|000.000529| Reading device set configuration file failed: /home/snr/Support/Plus-build-codeblocks/PlusLib/data/ConfigFiles/PlusDeviceSet_Server_V4LVideoCapture_with_Utrasonix.xml does not exist in the current directory or in /home/snr/Support/Plus-build-codeblocks/PlusLib/data/ConfigFiles| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(94)

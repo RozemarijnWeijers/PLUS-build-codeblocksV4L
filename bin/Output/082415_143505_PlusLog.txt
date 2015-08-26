@@ -1,0 +1,3 @@
+time|level|timeoffset|message|location
+082415_143505.268|INFO|000.000382| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+082415_143505.268|INFO|000.000458| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/082415_143505_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)

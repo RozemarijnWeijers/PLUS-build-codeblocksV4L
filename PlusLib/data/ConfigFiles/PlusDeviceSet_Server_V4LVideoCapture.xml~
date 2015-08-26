@@ -15,6 +15,7 @@
         <OutputChannel Id="VideoStream" VideoDataSourceId="Video" />
       </OutputChannels>
     </Device>
+
   </DataCollection>
 
   <CoordinateDefinitions>
@@ -29,7 +30,7 @@
   <PlusOpenIGTLinkServer 
     MaxNumberOfIgtlMessagesToSend="1" 
     MaxTimeSpentWithProcessingMs="50" 
-    ListeningPort="18944" 
+    ListeningPort="18945" 
     SendValidTransformsOnly="true" 
     OutputChannelId="VideoStream" > 
     <DefaultClientInfo> 

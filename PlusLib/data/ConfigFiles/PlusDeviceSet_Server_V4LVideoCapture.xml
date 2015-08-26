@@ -15,6 +15,7 @@
         <OutputChannel Id="VideoStream" VideoDataSourceId="Video" />
       </OutputChannels>
     </Device>
+
   </DataCollection>
 
   <CoordinateDefinitions>

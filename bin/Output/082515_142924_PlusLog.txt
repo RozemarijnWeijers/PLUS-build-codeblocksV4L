@@ -1,0 +1,10 @@
+time|level|timeoffset|message|location
+082515_142924.344|INFO|000.000471| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+082515_142924.345|INFO|000.000585| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/082515_142924_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+082515_142924.348|INFO|000.003698| before start internalupdate| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(1020)
+082515_142924.348|INFO|000.003752| start internalupdate| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(1023)
+082515_142926.348|INFO|002.004514| Plus OpenIGTLink server started on port: 18945| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+082515_142926.349|INFO|002.004632| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+082515_142927.879|INFO|003.534631| Stop requested...| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(354)
+082515_142928.479|INFO|004.135002| Plus OpenIGTLink server stopped.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(157)
+082515_142928.479|INFO|004.135103| Shutdown successful.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(259)

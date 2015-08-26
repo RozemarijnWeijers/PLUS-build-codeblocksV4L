@@ -61,6 +61,12 @@ public:
 
   virtual bool IsTracker() const { return false; }
 
+  PlusStatus SetChannel(int device_channel);
+
+  PlusStatus SetCropHeight(int crop_heigth);
+
+  PlusStatus SetCropWidth(int crop_width);
+
 protected:
 
   /*! Constructor */
@@ -92,9 +98,12 @@ protected:
   int VideoMode; //NTSC == 1, PAL == 2 //added
   int FrameSize[3];
   int fd; //added
+  int channel;
 
 private:
   char dev_name[256]; //added
+  int crop_h;
+  int crop_w;
   struct buffer*  buffers; //added
   struct v4lconvert_data *v4lconvert_data; //added
   unsigned int  n_buffers; //added

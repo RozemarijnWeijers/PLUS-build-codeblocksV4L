@@ -1,0 +1,13 @@
+time|level|timeoffset|message|location
+082515_143733.647|INFO|000.000391| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+082515_143733.647|INFO|000.000466| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/082515_143733_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+082515_143733.650|INFO|000.002856| before start internalupdate| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(1020)
+082515_143733.650|INFO|000.002896| start internalupdate| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/DataCollection/vtkPlusDevice.cxx(1023)
+082515_143735.650|INFO|002.003356| Plus OpenIGTLink server started on port: 18945| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(105)
+082515_143735.650|INFO|002.003479| Press Ctrl-C to quit.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(193)
+082515_143739.511|INFO|005.864238| Received new client connection (client 1 at 127.0.0.1:18945). Number of connected clients: 1| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(200)
+082515_143739.652|INFO|006.005040| OpenIGTLink broadcasting started. No data was available between 0-2.86512sec, therefore no data were broadcasted during this time period.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(387)
+082515_143809.646|INFO|035.998843| Stop requested...| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(354)
+082515_143810.246|INFO|036.599152| Client disconnected (127.0.0.1:18945). Number of connected clients: 0| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(742)
+082515_143810.246|INFO|036.599207| Plus OpenIGTLink server stopped.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/vtkPlusOpenIGTLinkServer.cxx(157)
+082515_143810.246|INFO|036.599235| Shutdown successful.| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(259)
