@@ -1,0 +1,2 @@
+time|level|timeoffset|message|location
+082715_111459.293|INFO|000.035556| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)

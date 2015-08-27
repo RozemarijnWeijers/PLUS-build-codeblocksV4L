@@ -7,7 +7,12 @@
     <Device
       Id="VideoDevice" 
       DeviceName="/dev/video0"
-      Type="VFLVideo" >
+      Channel="0"
+      Type="VFLVideo"
+      CropHeight="260"
+      CropWidth="385"
+      CropTop="110"
+      CropLeft="285">
       <DataSources>
         <DataSource Type="Video" Id="Video" PortUsImageOrientation="MF"  />     
       </DataSources>      

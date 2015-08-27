@@ -1,0 +1,6 @@
+time|level|timeoffset|message|location
+082715_143009.170|INFO|000.000395| Software version: Plus-2.3.0.4221 - Linux| in vtkPlusLogger(183)
+082715_143009.170|INFO|000.000475| Logging at level 3 (INFO) to file: /home/snr/Support/Plus-build-codeblocks/bin/Output/082715_143009_PlusLog.txt| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(85)
+082715_143009.170|ERROR|000.000688| VTK log: ERROR: In /home/snr/Support/Plus-build-codeblocks/vtk/IO/XMLParser/vtkXMLParser.cxx, line 483|vtkXMLDataParser (0x12cef30): Error parsing XML in stream at line 83, column 6, byte index 2396: mismatched tag||| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(75)
+082715_143009.170|ERROR|000.000726| Last error: Success| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusCommon/vtkPlusLogger.cxx(81)
+082715_143009.170|ERROR|000.000778| Reading device set configuration file failed: syntax error in /home/snr/Support/Plus-build-codeblocks/PlusLib/data/ConfigFiles/PlusDeviceSet_Server_V4LVideoCapture_with_Ultrasonix.xml| in /home/snr/Support/Plus-build-codeblocks/PlusLib/src/PlusServer/Testing/PlusServer.cxx(101)

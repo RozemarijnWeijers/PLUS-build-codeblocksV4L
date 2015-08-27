@@ -67,6 +67,10 @@ public:
 
   PlusStatus SetCropWidth(int crop_width);
 
+  PlusStatus SetCropTop(int crop_top);
+
+  PlusStatus SetCropLeft(int crop_left);
+
 protected:
 
   /*! Constructor */
@@ -104,6 +108,8 @@ private:
   char dev_name[256]; //added
   int crop_h;
   int crop_w;
+  int crop_t;
+  int crop_l;
   struct buffer*  buffers; //added
   struct v4lconvert_data *v4lconvert_data; //added
   unsigned int  n_buffers; //added

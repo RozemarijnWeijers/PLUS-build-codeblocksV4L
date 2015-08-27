@@ -85,7 +85,7 @@ public:
     dst_fmt = src_fmt;
     dst_fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_RGB24; //set pixel format
     CLEAR(dst_std_id);
-    dst_std_id = src_std_id; // muct be v4l2_STD_NTSC for framegrabber!!!!
+    dst_std_id = V4L2_STD_PAL;//src_std_id; // muct be v4l2_STD_NTSC for framegrabber!!!!
     CLEAR(dst_FrameSize);
     dst_FrameSize[0] =dst_fmt.fmt.pix.width;
     dst_FrameSize[1] =dst_fmt.fmt.pix.height;
@@ -209,31 +209,43 @@ void vtkLinuxVideoSource::InitDevice()
   }
 
   //set type of data stream in cropcap
-  /*struct v4l2_cropcap cropcap;  //giving the bounds of the subsection of the picture within an capture window
-  struct v4l2_crop crop;        //the source rectangle
-  CLEAR (cropcap);
+  struct v4l2_cropcap cropcap; //giving the bounds of the subsection of the picture within an capture window
+  struct v4l2_crop crop; //the source rectangle
+
+  memset (&cropcap, 0, sizeof (cropcap));
   cropcap.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
 
   //query and set the cropping capabilities
-  if (0 == xioctl (fd, VIDIOC_CROPCAP, &cropcap)) {
-    crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    crop.c = cropcap.defrect;
+  if (-1 == ioctl (fd, VIDIOC_CROPCAP, &cropcap)) {
+	perror ("VIDIOC_CROPCAP");
+	exit (EXIT_FAILURE);
+  }
 
-    //set cropping rectangle
-    if (-1 == xioctl (fd, VIDIOC_S_CROP, &crop)) {
-      switch (errno) {
-      case EINVAL:
-      // Cropping not supported.
-      break;
-      default:
-      // Errors ignored.
-      break;
-          }
-        }
-      }
-  else {
-    // Errors ignored.
-  }*/
+  memset (&crop, 0, sizeof (crop));
+  crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+  crop.c = cropcap.defrect;
+
+  if (crop_h != -1) {
+    crop.c.height = crop_h;
+  }
+  if (crop_w != -1) {
+    crop.c.width = crop_w;
+  }
+  if (crop_t != -1) {
+    crop.c.top += crop_t;
+  }
+  if (crop_l != -1) {
+    crop.c.left += crop_l;
+  }
+  std::cout<<crop.c.height<<std::endl;
+  std::cout<<crop.c.width<<std::endl;
+  std::cout<<crop.c.left<<std::endl;
+  std::cout<<crop.c.top<<std::endl;
+
+  if (-1 == ioctl (fd, VIDIOC_S_CROP, &crop) && errno != EINVAL) {
+	perror ("VIDIOC_S_CROP");
+	exit (EXIT_FAILURE);
+  }
 
   //create and check format convertion of data stream
   v4lconvert_data = v4lconvert_create(fd);
@@ -260,6 +272,7 @@ void vtkLinuxVideoSource::InitDevice()
   InitMmap ();
 
   //select video input (set Input channel to 3 = S-Video on a Hauppauge Impact VCB -> 3 for framegrabber comment this part)
+  //channel=0;
   if (this->Internal->skip_set_input == 0) {
     if (-1 == xioctl (fd, VIDIOC_S_INPUT , &channel)) { //must be 3 for S-Video and 0 for RCA
       errno_exit ("VIDIOC_S_INPUT");
@@ -526,21 +539,35 @@ PlusStatus vtkLinuxVideoSource::InternalStopRecording()
 //----------------------------------------------------------------------------
 PlusStatus vtkLinuxVideoSource::SetChannel(int device_channel)
 {
-  int channel=device_channel;
+  channel=device_channel;
   return PLUS_SUCCESS;
 }
 
 //----------------------------------------------------------------------------
 PlusStatus vtkLinuxVideoSource::SetCropHeight(int crop_heigth)
 {
-  int crop_h=crop_heigth;
+  crop_h=crop_heigth;
   return PLUS_SUCCESS;
 }
 
 //----------------------------------------------------------------------------
 PlusStatus vtkLinuxVideoSource::SetCropWidth(int crop_width)
 {
-  int crop_w=crop_width;
+  crop_w=crop_width;
+  return PLUS_SUCCESS;
+}
+
+//----------------------------------------------------------------------------
+PlusStatus vtkLinuxVideoSource::SetCropTop(int crop_top)
+{
+  crop_t=crop_top;
+  return PLUS_SUCCESS;
+}
+
+//----------------------------------------------------------------------------
+PlusStatus vtkLinuxVideoSource::SetCropLeft(int crop_left)
+{
+  crop_l=crop_left;
   return PLUS_SUCCESS;
 }
 
@@ -561,7 +588,7 @@ PlusStatus vtkLinuxVideoSource::ReadConfiguration(vtkXMLDataElement* rootConfigE
   }
 
   int crop_heigth;
-  if(deviceConfig->GetScalarAttribute("CropHeigth", crop_heigth)) {
+  if(deviceConfig->GetScalarAttribute("CropHeight", crop_heigth)) {
     SetCropHeight(crop_heigth);
   }
   else {
@@ -575,6 +602,23 @@ PlusStatus vtkLinuxVideoSource::ReadConfiguration(vtkXMLDataElement* rootConfigE
   else {
     crop_w=-1;
   }
+
+  int crop_top;
+  if(deviceConfig->GetScalarAttribute("CropTop", crop_top)) {
+    SetCropTop(crop_top);
+  }
+  else {
+    crop_t=-1;
+  }
+
+  int crop_left;
+  if(deviceConfig->GetScalarAttribute("CropLeft", crop_left)) {
+    SetCropLeft(crop_left);
+  }
+  else {
+    crop_l=-1;
+  }
+
 
   return PLUS_SUCCESS;
 }

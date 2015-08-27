@@ -9,16 +9,18 @@
       Id="VideoDevice" 
       DeviceName="/dev/video0"
       Channel="0"
-      CropHeigth="100"
-      CropWidth="101"
-      Type="VFLVideo" >
+      Type="VFLVideo"
+      CropHeight="260"
+      CropWidth="385"
+      CropTop="110"
+      CropLeft="285">
       <DataSources>
         <DataSource Type="Video" Id="Video1" PortUsImageOrientation="MF"  />     
       </DataSources>      
       <OutputChannels>
         <OutputChannel Id="VideoStream" VideoDataSourceId="Video1" />
       </OutputChannels>
-    </Device>
+  </Device>
 
   <Device
         Id="TrackerDevice"
@@ -41,7 +43,7 @@
         </OutputChannels>
   </Device>
 
-    <Device 
+  <Device 
       Id="TrackedVideoDevice" 
       Type="VirtualMixer" >
       <InputChannels>
@@ -51,7 +53,34 @@
       <OutputChannels>
         <OutputChannel Id="TrackedVideoStream"/>
       </OutputChannels>
+  </Device>
+
+  <Device
+      Id="CaptureDevice"
+      AcquisitionRate="8"
+      RequestedFrameRate="30"
+      Type="VirtualDiscCapture"
+      BaseFilename="Record.mha" >
+      <InputChannels>
+        <InputChannel Id="TrackedVideoStream" />
+      </InputChannels>
+  </Device>
+	
+  <Device
+      Id="VolumeReconstructorDevice"
+      Type="VirtualVolumeReconstructor">
+      <InputChannels>
+        <InputChannel Id="TrackedVideoStream" />
+      </InputChannels>
+      <VolumeReconstruction
+        ImageCoordinateFrame="Image" 
+        ReferenceCoordinateFrame="Reference"
+        Interpolation="NEAREST_NEIGHBOR" 
+        Optimization="NONE" 
+        Compounding="OFF" 
+        FillHoles="OFF"/>
     </Device>
+
   </DataCollection>
 
   <CoordinateDefinitions> 
@@ -63,9 +92,9 @@
         0 0 0 1" />
     <Transform From="Transducer" To="Probe"
       Matrix="
- 	1 0 0 0
+ 	0 0 1 0
 	0 1 0 0
-	0 0 1 0     
+	1 0 0 0     
         0 0 0 1" />
     <Transform From="Reference" To="Tracker"
       Matrix="
