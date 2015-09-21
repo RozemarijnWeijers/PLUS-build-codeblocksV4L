@@ -530,7 +530,7 @@ PlusStatus vtkLinuxVideoSource::InternalStopRecording()
 
   //stop streaming
   if (-1 == xioctl(fd, VIDIOC_STREAMOFF, &type)){
-    errno_exit("VIDIOC_STREAMON");
+    errno_exit("VIDIOC_STREAMOFF");
   }
 
   return PLUS_SUCCESS;
